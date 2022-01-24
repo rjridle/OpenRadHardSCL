@@ -6,3 +6,6 @@
 	path = tools/magic
 	url = https://github.com/RTimothyEdwards/magic.git
     ignore = dirty
+[submodule "tools/netgen"]
+	path = tools/netgen
+	url = https://github.com/RTimothyEdwards/netgen.git
