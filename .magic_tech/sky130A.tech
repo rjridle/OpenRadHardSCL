@@ -3286,8 +3286,8 @@ drc
  overhang *pdiff,rpdiff pfet,scpfet,ppu 250 "P-Diffusion overhang of pmos < %d (Poly 7)"
  overhang *mvpdiff,mvrpdiff mvpfet 250 "P-Diffusion overhang of pmos < %d (Poly 7)"
  overhang *poly allfets 130 "Poly overhang of transistor < %d (Poly 8)"
- rect_only allfets "No bends in transistors (Poly 11)"
- rect_only xhrpoly,uhrpoly "No bends in poly resistors (Poly 11)"
+# rect_only allfets "No bends in transistors (Poly 11)"
+# rect_only xhrpoly,uhrpoly "No bends in poly resistors (Poly 11)"
  extend  xpc/a xhrpoly,uhrpoly 2160 \
     "Poly contact extends poly resistor by < %d (LIcon 1c + LI 5)"
  spacing xhrpoly,uhrpoly xhrpoly,uhrpoly 1240 touching_illegal \
