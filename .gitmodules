@@ -1,6 +1,8 @@
 [submodule "tools/xschem"]
 	path = tools/xschem
 	url = https://github.com/StefanSchippers/xschem.git
+    ignore = dirty
 [submodule "tools/magic"]
 	path = tools/magic
 	url = https://github.com/RTimothyEdwards/magic.git
+    ignore = dirty
