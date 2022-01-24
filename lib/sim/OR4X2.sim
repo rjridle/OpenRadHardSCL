@@ -1,0 +1,34 @@
+| units: 0.1  tech: sue  format: MIT
+A A input
+A B input
+A C input
+A D input
+A Y output
+| begin NOR4X1 380 340
+| device NOR4X1.nmos 440 500
+n B gnd net_1 150 1000
+| device NOR4X1.nmos_1 590 500
+n A gnd net_1 150 1000
+| device NOR4X1.nmos_2 750 500
+n C gnd net_1 150 1000
+| device NOR4X1.nmos_3 870 500
+n D gnd net_1 150 1000
+| device NOR4X1.pmos 590 110
+p D vdd NOR4X1.net_2 150 3000
+| device NOR4X1.pmos_1 590 200
+p C NOR4X1.net_2 NOR4X1.net_3 150 3000
+| device NOR4X1.pmos_2 590 290
+p B NOR4X1.net_3 NOR4X1.net_1 150 3000
+| device NOR4X1.pmos_3 590 380
+p A NOR4X1.net_1 net_1 150 3000
+| end NOR4X1
+| begin INVX2 500 340
+| device INVX2.pmos.1 390 270
+p net_1 vdd Y 150 3000
+| device INVX2.pmos.2 390 270
+p net_1 vdd Y 150 3000
+| device INVX2.nmos.1 390 400
+n net_1 gnd Y 150 1000
+| device INVX2.nmos.2 390 400
+n net_1 gnd Y 150 1000
+| end INVX2

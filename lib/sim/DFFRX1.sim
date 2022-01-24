@@ -1,0 +1,86 @@
+| units: 0.1  tech: sue  format: MIT
+A Clk input
+A D input
+A R input
+A Q output
+A QN output
+| device pmos 70 -60
+p Clk vdd Clk_b 150 3000
+| device pmos_1 250 270
+p D vdd net_8 150 3000
+| device pmos_2 250 350
+p Clk net_8 net_3 150 3000
+| device pmos_3 420 -100
+p net_1 vdd net_10 150 3000
+| device pmos_4 420 -20
+p Clk_b net_10 net_3 150 3000
+| device pmos_5 890 270
+p net_1 vdd net_4 150 3000
+| device pmos_6 890 350
+p Clk_b net_4 net_2 150 3000
+| device pmos_7 1100 -100
+p net_5 vdd net_7 150 3000
+| device pmos_8 1100 -20
+p Clk net_7 net_2 150 3000
+| device nmos 250 530
+n D gnd net_9 150 1000
+| device nmos_1 250 450
+n Clk_b net_9 net_3 150 1000
+| device nmos_2 890 450
+n Clk net_6 net_2 150 1000
+| device nmos_3 890 530
+n net_1 gnd net_6 150 1000
+| device nmos_4 1100 160
+n net_5 gnd net_11 150 1000
+| device nmos_5 1100 80
+n Clk_b net_11 net_2 150 1000
+| device nmos_6 420 160
+n net_1 gnd net_12 150 1000
+| device nmos_7 420 80
+n Clk net_12 net_3 150 1000
+| device nmos_8 70 40
+n Clk gnd Clk_b 150 1000
+| begin INVX1 50 -230
+| device INVX1.pmos 390 270
+p R vdd R_ 150 0
+| device INVX1.pmos_1 510 270
+p R vdd R_ 150 0
+| device INVX1.nmos 390 400
+n R gnd R_ 150 0
+| end INVX1
+| begin NOR2XL 500 390
+| device NOR2XL.nmos 440 500
+n net_3 gnd net_1 150 640
+| device NOR2XL.nmos_1 590 500
+n R_ gnd net_1 150 640
+| device NOR2XL.pmos 590 290
+p net_3 vdd NOR2XL.net_1 150 1650
+| device NOR2XL.pmos_1 590 380
+p R_ NOR2XL.net_1 net_1 150 1650
+| end NOR2XL
+| begin INVX1_1 1490 390
+| device INVX1_1.pmos 390 270
+p QN vdd Q 150 0
+| device INVX1_1.pmos_1 510 270
+p QN vdd Q 150 0
+| device INVX1_1.nmos 390 400
+n QN gnd Q 150 0
+| end INVX1_1
+| begin INVX1_2 1390 390
+| device INVX1_2.pmos 390 270
+p net_5 vdd QN 150 0
+| device INVX1_2.pmos_1 510 270
+p net_5 vdd QN 150 0
+| device INVX1_2.nmos 390 400
+n net_5 gnd QN 150 0
+| end INVX1_2
+| begin NOR2X1 1200 390
+| device NOR2X1.nmos 270 580
+n net_2 gnd net_5 150 1000
+| device NOR2X1.nmos_1 450 580
+n R_ gnd net_5 150 1000
+| device NOR2X1.pmos 450 460
+p R_ NOR2X1.net_1 net_5 150 3000
+| device NOR2X1.pmos_1 450 350
+p net_2 vdd NOR2X1.net_1 150 3000
+| end NOR2X1

@@ -1,0 +1,141 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_DFFSX2 {} {
+  make input -name D -origin {50 400}
+  make input -name Clk -origin {-40 -10}
+  make name_net_s -name Clk_b -origin {150 -10}
+  make global -orient RXY -name vdd -origin {70 -110}
+  make global -name gnd -origin {70 90}
+  make global -orient RX -name gnd -origin {420 200}
+  make global -orient RY -name vdd -origin {420 -140}
+  make global -orient RX -name gnd -origin {1100 200}
+  make global -orient RY -name vdd -origin {1100 -140}
+  make global -name gnd -origin {890 570}
+  make global -orient RXY -name vdd -origin {890 230}
+  make global -name gnd -origin {250 570}
+  make global -orient RXY -name vdd -origin {250 230}
+  make name_net_s -orient RX -name Clk -origin {150 350}
+  make name_net_s -orient RX -name Clk_b -origin {150 450}
+  make name_net_s -name Clk_b -origin {520 -20}
+  make name_net_s -name Clk -origin {520 80}
+  make name_net_s -orient RX -name Clk_b -origin {790 350}
+  make name_net_s -orient RX -name Clk -origin {790 450}
+  make name_net_s -name Clk -origin {1200 -20}
+  make name_net_s -name Clk_b -origin {1200 80}
+  make pmos -W 3 -L 0.150u -origin {70 -60}
+  make pmos -W 3 -L 0.150u -origin {250 270}
+  make pmos -W 3 -L 0.150u -origin {250 350}
+  make pmos -orient RX -W 3 -L 0.150u -origin {420 -100}
+  make pmos -orient RX -W 3 -L 0.150u -origin {420 -20}
+  make pmos -W 3 -L 0.150u -origin {890 270}
+  make pmos -W 3 -L 0.150u -origin {890 350}
+  make pmos -orient RX -W 3 -L 0.150u -origin {1100 -100}
+  make pmos -orient RX -W 3 -L 0.150u -origin {1100 -20}
+  make nmos -L 0.150u -origin {250 530}
+  make nmos -L 0.150u -origin {250 450}
+  make nmos -L 0.150u -origin {890 450}
+  make nmos -L 0.150u -origin {890 530}
+  make nmos -orient RX -L 0.150u -origin {1100 160}
+  make nmos -orient RX -L 0.150u -origin {1100 80}
+  make nmos -orient RX -L 0.150u -origin {420 160}
+  make nmos -orient RX -L 0.150u -origin {420 80}
+  make nmos -L 0.150u -origin {70 40}
+  make input -name S -origin {-10 -190}
+  make name_net_s -name S -origin {120 -190}
+  make name_net_s -orient RX -name S -origin {380 420}
+  make name_net_s -orient RX -name S -origin {1050 410}
+  make NAND2XL -origin {460 410}
+  make NAND2XL -origin {1130 400}
+  make output -name Q -origin {1510 390}
+  make INVX2 -origin {1360 390}
+  make INVX2 -origin {1460 390}
+  make output -name QN -origin {1510 460}
+  make_wire 150 -10 70 -10
+  make_wire 480 -100 580 -100
+  make_wire 480 160 580 160
+  make_wire 70 -110 70 -100
+  make_wire 70 -20 70 -10
+  make_wire 0 -60 10 -60
+  make_wire 0 40 10 40
+  make_wire 0 -60 0 -10
+  make_wire 0 -10 0 40
+  make_wire 70 -10 70 0
+  make_wire 70 80 70 90
+  make_wire 580 40 630 40
+  make_wire 580 40 580 160
+  make_wire 580 40 580 -100
+  make_wire 630 40 630 400
+  make_wire 0 -10 -40 -10
+  make_wire 520 80 480 80
+  make_wire 520 -20 480 -20
+  make_wire 1160 -100 1260 -100
+  make_wire 1160 160 1260 160
+  make_wire 1100 30 1100 40
+  make_wire 1100 30 1100 20
+  make_wire 1260 40 1260 160
+  make_wire 1260 40 1260 -100
+  make_wire 1200 80 1160 80
+  make_wire 1200 -20 1160 -20
+  make_wire 830 270 730 270
+  make_wire 830 530 730 530
+  make_wire 790 450 830 450
+  make_wire 790 350 830 350
+  make_wire 730 400 730 270
+  make_wire 730 400 730 530
+  make_wire 190 270 90 270
+  make_wire 190 530 90 530
+  make_wire 150 450 190 450
+  make_wire 150 350 190 350
+  make_wire 90 400 90 270
+  make_wire 90 400 90 530
+  make_wire 50 400 90 400
+  make_wire -10 -190 120 -190
+  make_wire 420 30 420 40
+  make_wire 420 30 420 20
+  make_wire 630 400 730 400
+  make_wire 890 390 890 410
+  make_wire 990 30 1100 30
+  make_wire 520 400 630 400
+  make_wire 250 400 250 410
+  make_wire 250 390 250 400
+  make_wire 330 30 420 30
+  make_wire 250 400 330 400
+  make_wire 380 420 410 420
+  make_wire 330 400 410 400
+  make_wire 330 30 330 400
+  make_wire 1050 410 1080 410
+  make_wire 990 30 990 390
+  make_wire 1310 40 1310 390
+  make_wire 1260 40 1310 40
+  make_wire 890 390 990 390
+  make_wire 990 390 1080 390
+  make_wire 1500 390 1510 390
+  make_wire 1410 390 1400 390
+  make_wire 1410 390 1420 390
+  make_wire 1410 460 1510 460
+  make_wire 1410 390 1410 460
+  make_wire 1190 390 1310 390
+  make_wire 1310 390 1320 390
+}
+
+proc ICON_DFFSX2 args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-50 30} -name Clk
+  icon_term -type input -origin {-50 -20} -name D
+  icon_term -type output -origin {60 10} -name Q
+  icon_term -type input -origin {0 0} -name R
+  icon_term -type input -origin {0 0} -name S
+  icon_term -type output -origin {0 0} -name QN
+  icon_property -origin {20 130} -type user -name name
+  icon_property -origin {20 150} -type user -name M
+  icon_property -origin {20 170} -type user -name dpc
+  icon_line -30 -50 -30 60 40 60 40 -50 -30 -50 -30 -50
+  icon_line 40 10 60 10
+  icon_line -50 30 -30 30
+  icon_line -50 -20 -30 -20
+  icon_line -30 20 -20 30 -30 40 -30 40
+  icon_property -origin {-30 -20} -label D
+  icon_property -origin {20 10} -label Q
+  icon_property -origin {-30 50} -size small -label DFFPOSX1
+}
+

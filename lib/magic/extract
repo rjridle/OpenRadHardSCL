@@ -1,0 +1,20 @@
+#!/bin/bash
+
+sed -i 's/rlabel polycont\|rlabel poly\|rlabel viali\|rlabel nsubdiffcont\|rlabel psubdiffcont/rlabel locali/g' $1
+sed -i 's/rlabel locali/rlabel metal1/g' $1
+sed -i '/^port.*$/d' $1
+sed -i '/rlabel.*/a port SEDTMP n' $1
+sed -i '/vdd$/{$!{N;s/vdd\nport.*/vdd/g;tl;P;D;:l}}' $1
+sed -i '/gnd$/{$!{N;s/gnd\nport.*/gnd/g;tl;P;D;:l}}' $1
+sed -i -r ':a;/SEDTMP/{x;:b;s/9(_*)$/_\1/;tb;s/^(_*)$/0\1/;s/$/:0123456789/;s/([^_])(_*):.*\1(.).*/\3\2/;s/_/0/g;x;G;s/SEDTMP(.*)\n(.*)/\2\1/;ta}' $1
+sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel locali \2/g' $1
+awk '!(seen[$0]++ && (/gnd/ || /vdd/))' $1 > tmp.sim && mv tmp.sim $1
+echo "source magic_extract.tcl" | magic -dnull -noconsole $1
+#mv "tmp.sim" "${1%%.*}_noRC.sim"
+#./fixAP.py "${1%%.*}.spice"
+#mv tmp2.spice "${1%%.*}.spice"
+#rm tmp.spice
+sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel metal1 \2/g' $1
+echo "source magic_calma.tcl;calma" | magic -dnull -noconsole $1
+echo "layout filemerge -in ${1%%.*}.gds -precision 1000 -out tmp.gds;exit" | calibredrv -shell
+mv tmp.gds ${1%%.*}.gds

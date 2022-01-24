@@ -1,0 +1,2 @@
+./extract "$1.mag"
+../../scripts/runlvs.sh "$1.sim" "../sim/$1.sim"

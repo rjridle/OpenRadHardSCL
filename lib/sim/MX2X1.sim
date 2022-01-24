@@ -1,0 +1,21 @@
+| units: 0.1  tech: sue  format: MIT
+A A0 input
+A A1 input
+A S0 input
+A Y output
+| begin INVX1 470 280
+| device INVX1.pmos 390 270
+p S0 vdd net_1 150 0
+| device INVX1.pmos_1 510 270
+p S0 vdd net_1 150 0
+| device INVX1.nmos 390 400
+n S0 gnd net_1 150 0
+| end INVX1
+| device nmos 530 190
+n S0 A1 Y 150 1000
+| device pmos 530 190
+p net_1 A1 Y 150 3000
+| device nmos_1 530 370
+n net_1 A0 Y 150 1000
+| device pmos_1 530 370
+p S0 A0 Y 150 3000

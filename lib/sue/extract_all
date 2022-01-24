@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in *.sue; do
+    bash extract $i
+done
+
+mkdir -p ../sim
+
+mv *.sim ../sim
+
+./clean_all

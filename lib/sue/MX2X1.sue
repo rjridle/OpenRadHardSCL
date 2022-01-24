@@ -1,0 +1,21 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_MX2X1 {} {
+  make input -orient R90 -name S0 -origin {530 130}
+  make input -orient R270 -name S0 -origin {530 430}
+  make INVX1 -origin {470 280}
+  make input -name S0 -origin {430 280}
+  make output -name Y -origin {570 280}
+  make input -name A1 -origin {490 190}
+  make input -name A0 -origin {490 370}
+  make nmos -orient R90 -L 0.15u -origin {530 190}
+  make pmos -orient R270 -W 3 -L 0.15u -origin {530 190}
+  make nmos -orient R90 -L 0.15u -origin {530 370}
+  make pmos -orient R270 -W 3 -L 0.15u -origin {530 370}
+  make_wire 510 280 530 280
+  make_wire 530 280 530 250
+  make_wire 530 310 530 280
+  make_wire 570 280 570 370
+  make_wire 570 280 570 190
+}
+

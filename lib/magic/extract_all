@@ -1,0 +1,13 @@
+#!/bin/bash
+for i in *.mag; do
+    bash extract $i
+done
+
+mkdir -p ../spice
+mkdir -p ../gds
+
+cp *.spice ../spice_tests/
+mv *.spice ../spice
+mv *.gds ../gds
+
+./clean_all

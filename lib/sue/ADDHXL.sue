@@ -1,0 +1,93 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_ADDHXL {} {
+  make global -orient RXY -name vdd -origin {270 330}
+  make global -orient RXY -name vdd -origin {410 330}
+  make global -name gnd -origin {330 600}
+  make global -name gnd -origin {620 560}
+  make global -orient RXY -name vdd -origin {620 320}
+  make output -name CO -origin {650 430}
+  make input -name A -origin {100 170}
+  make input -name B -origin {100 210}
+  make name_net_s -name A -origin {160 170}
+  make name_net_s -name B -origin {160 210}
+  make name_net_s -name A -origin {210 370}
+  make name_net_s -name A -origin {270 480}
+  make name_net_s -name B -origin {350 370}
+  make name_net_s -name B -origin {270 560}
+  make global -name gnd -origin {1150 560}
+  make global -orient RXY -name vdd -origin {1150 320}
+  make output -name S -origin {1180 430}
+  make global -orient RXY -name vdd -origin {820 340}
+  make global -orient RXY -name vdd -origin {950 310}
+  make pmos -W 3 -L 0.15u -origin {950 350}
+  make pmos -W 3 -L 0.15u -origin {950 430}
+  make global -name gnd -origin {920 650}
+  make name_net_s -name A -origin {800 530}
+  make name_net_s -name B -origin {920 530}
+  make name_net_s -name B -origin {890 350}
+  make name_net_s -name A -origin {890 430}
+  make pmos -W 3 -L 0.15u -origin {410 370}
+  make pmos -W 3 -L 0.15u -origin {270 370}
+  make pmos -W 3 -L 0.15u -origin {820 380}
+  make nmos -L 0.15u -origin {330 480}
+  make nmos -L 0.15u -origin {330 560}
+  make pmos -W 1.65 -L 0.15u -origin {620 360}
+  make nmos -W 0.64 -L 0.15u -origin {620 520}
+  make nmos -L 0.15u -origin {860 530}
+  make nmos -L 0.15u -origin {980 530}
+  make nmos -L 0.15u -origin {920 610}
+  make pmos -W 1.65 -L 0.15u -origin {1150 360}
+  make nmos -W 0.64 -L 0.15u -origin {1150 520}
+  make_wire 270 410 270 420
+  make_wire 410 410 410 420
+  make_wire 560 420 560 360
+  make_wire 560 420 560 520
+  make_wire 650 430 620 430
+  make_wire 620 430 620 400
+  make_wire 620 430 620 480
+  make_wire 100 170 160 170
+  make_wire 100 210 160 210
+  make_wire 330 420 330 440
+  make_wire 330 420 270 420
+  make_wire 330 420 410 420
+  make_wire 1180 430 1150 430
+  make_wire 1150 430 1150 400
+  make_wire 1150 430 1150 480
+  make_wire 820 420 820 470
+  make_wire 1090 470 1090 520
+  make_wire 1090 470 1090 360
+  make_wire 950 470 1090 470
+  make_wire 920 570 860 570
+  make_wire 920 570 980 570
+  make_wire 900 470 900 490
+  make_wire 900 470 820 470
+  make_wire 900 470 950 470
+  make_wire 900 490 860 490
+  make_wire 900 490 980 490
+  make_wire 490 420 490 240
+  make_wire 490 240 760 240
+  make_wire 760 240 760 380
+  make_wire 490 420 410 420
+  make_wire 490 420 560 420
+  make_wire 490 420 490 610
+  make_wire 490 610 860 610
+}
+
+proc ICON_ADDHXL args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-90 -40} -name A
+  icon_term -type input -origin {-90 0} -name B
+  icon_term -type output -origin {90 -40} -name CO
+  icon_term -type output -origin {90 0} -name S
+  icon_property -origin {0 0} -size large -anchor center -label ADDHXL
+  icon_line -90 -60 90 -60 90 60 -90 60 -90 -60
+  icon_property -origin {-80 -40} -label A
+  icon_property -origin {-80 0} -label B
+  icon_property -origin {80 -40} -anchor e -label CO
+  icon_property -origin {80 0} -anchor e -label S
+  icon_property -origin {-90 280} -type user -name name
+  icon_property -origin {-90 300} -type user -name M
+  icon_property -origin {-90 320} -type user -name dpc
+}
+

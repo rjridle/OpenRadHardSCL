@@ -1,0 +1,29 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_OR4XL {} {
+  make INVXL -origin {500 340}
+  make output -name Y -origin {540 340}
+  make input -name A -origin {300 340}
+  make input -name B -origin {300 300}
+  make input -name C -origin {300 260}
+  make input -name D -origin {300 380}
+  make NOR4XL -origin {380 340}
+}
+
+proc ICON_OR4XL args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type input -origin {-50 -20} -name A
+  icon_term -type input -origin {-50 0} -name B
+  icon_term -type output -origin {60 -20} -name Y
+  icon_term -type input -origin {0 0} -name C
+  icon_term -type input -origin {0 0} -name D
+  icon_property -origin {0 130} -type user -name name
+  icon_property -origin {0 150} -type user -name M
+  icon_property -origin {0 170} -type user -name dpc
+  icon_line -50 -40 -50 20 60 20 60 -40 -50 -40
+  icon_property -origin {20 10} -size small -label OR4XL
+  icon_property -origin {-40 -20} -size small -label A
+  icon_property -origin {-40 0} -size small -label B
+  icon_property -origin {40 -20} -size small -label Y
+}
+

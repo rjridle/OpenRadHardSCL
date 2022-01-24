@@ -1,0 +1,8 @@
+* SPICE3 file created from cross_nmos_m1.ext - technology: sky130A
+
+.subckt cross_nmos_m1 A VSS
+M1000 A a_56_188# VSS VSS nshort w=3u l=0.15u
++  ad=0.3176p pd=3u as=1.8318p ps=12.66u
+M1001 A a_240_188# VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends

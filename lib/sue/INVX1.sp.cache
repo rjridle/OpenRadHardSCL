@@ -1,0 +1,9 @@
+set NETLIST_CACHE(INVX1,cells) {{icon nmos /import/other/mmi/mmi/sue/schematics/mspice/nmos.sue {}} {icon pmos /import/other/mmi/mmi/sue/schematics/mspice/pmos.sue {}}}
+set netlist_props spice
+set netlist_level 1000
+set NETLIST_CACHE(INVX1,globals) {vdd gnd}
+set NETLIST_EXPLICIT_GLOBALS {}
+set NETLIST_CACHE(INVX1,version) MMI_SUE5.6.37
+set NETLIST_CACHE(INVX1) {{.SUBCKT INVX1 A Y } {M_1 Y A vdd vdd pshort W='2u*1u' L=0.150u ad='areap(2u,sdd)' } {+ as='areap(2u,sdd)' pd='perip(2u,sdd)' ps='perip(2u,sdd)' } {M_2 Y A vdd vdd pshort W='2u*1u' L=0.150u ad='areap(2u,sdd)' } {+ as='areap(2u,sdd)' pd='perip(2u,sdd)' ps='perip(2u,sdd)' } {M_3 Y A gnd gnd nshort W='3u*1u' L=0.150u ad='arean(3u,sdd)' } {+ as='arean(3u,sdd)' pd='perin(3u,sdd)' ps='perin(3u,sdd)' } {.ENDS	$ INVX1} {}}
+set NETLIST_CACHE(INVX1,names) {{390 310 {0 Y}} {390 230 {0 vdd}} {450 270 {0 A}} {330 400 {0 A}} {390 270 {0 M_1}} {390 200 {1 vdd}} {390 470 {1 gnd}} {390 400 {0 M_3}} {280 330 {1 A}} {480 330 {1 Y}} {510 310 {0 Y}} {510 230 {0 vdd}} {390 440 {0 gnd}} {390 360 {0 Y}} {510 270 {0 M_2}} {330 270 {0 A}}}
+set NETLIST_CACHE(INVX1,wires) {{280 330 330 330 A} {390 330 480 330 Y} {390 330 390 360 Y} {390 440 390 470 gnd} {390 200 390 230 vdd} {390 310 390 330 Y} {330 270 330 330 A} {330 330 330 400 A} {390 310 510 310 Y} {390 230 510 230 vdd} {330 270 450 270 A}}

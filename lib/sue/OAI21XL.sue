@@ -1,0 +1,62 @@
+# SUE version MMI_SUE5.6.37
+
+proc SCHEMATIC_OAI21XL {} {
+  make global -orient RXY -name vdd -origin {-250 120}
+  make global -name gnd -origin {-250 580}
+  make output -name Y -origin {-10 340}
+  make pmos -W 3 -L 0.150u -origin {-320 190}
+  make pmos -W 3 -L 0.150u -origin {-320 290}
+  make nmos -L 0.150u -origin {-240 390}
+  make nmos -orient RX -L 0.150u -origin {-150 490}
+  make nmos -L 0.150u -origin {-320 490}
+  make input -name B0 -origin {-400 390}
+  make name_net_s -name B0 -origin {-50 240}
+  make name_net_s -orient RXY -name A0 -origin {-410 190}
+  make name_net_s -orient RXY -name A1 -origin {-410 290}
+  make input -name A0 -origin {-400 490}
+  make input -orient RX -name A1 -origin {-70 490}
+  make pmos -orient RX -L 0.150u -origin {-150 240}
+  make_wire -320 530 -250 530
+  make_wire -250 530 -150 530
+  make_wire -150 340 -10 340
+  make_wire -250 530 -250 580
+  make_wire -380 190 -410 190
+  make_wire -380 290 -410 290
+  make_wire -380 490 -400 490
+  make_wire -90 490 -70 490
+  make_wire -320 330 -320 340
+  make_wire -320 230 -320 250
+  make_wire -320 440 -320 450
+  make_wire -150 440 -150 450
+  make_wire -240 430 -240 440
+  make_wire -240 440 -150 440
+  make_wire -320 440 -240 440
+  make_wire -240 340 -240 350
+  make_wire -240 340 -150 340
+  make_wire -320 340 -240 340
+  make_wire -400 390 -300 390
+  make_wire -90 240 -50 240
+  make_wire -250 120 -250 150
+  make_wire -150 150 -150 200
+  make_wire -320 150 -250 150
+  make_wire -250 150 -150 150
+  make_wire -150 280 -150 340
+}
+
+proc ICON_OAI21XL args {
+  icon_setup $args {{origin {0 0}} {orient R0} {name {}} {M {}} {dpc {}}}
+  icon_term -type output -origin {60 0} -name Y
+  icon_term -type input -origin {-60 20} -name B0
+  icon_term -type input -origin {-60 -20} -name A0
+  icon_term -type input -origin {-60 0} -name A1
+  icon_property -origin {-10 140} -type user -name name
+  icon_property -origin {-10 160} -type user -name M
+  icon_property -origin {-10 180} -type user -name dpc
+  icon_property -origin {-10 10} -size small -label OAI21
+  icon_property -origin {40 0} -size small -label Y
+  icon_line -60 -30 -60 30 60 30 60 -30 -60 -30 -60 -30
+  icon_property -origin {-50 -20} -size small -label A
+  icon_property -origin {-50 0} -size small -label B
+  icon_property -origin {-50 20} -size small -label C
+}
+

@@ -1,0 +1,38 @@
+| units: 0.1  tech: sue  format: MIT
+A YPAD inout
+A DI output
+| device nmos 430 490
+n net_2 Gnd YPAD 240 1000
+| device pmos 430 260
+p net_1 Vdd YPAD 240 2000
+| device pmos_1 240 240
+p OE Vdd net_1 240 2000
+| device pmos_2 20 240
+p Gnd Vdd net_1 240 2000
+| device pmos_3 20 370
+p OEB net_1 net_2 240 2000
+| device nmos_1 20 500
+n Gnd Gnd net_2 240 1000
+| device nmos_2 240 510
+n OEB Gnd net_2 240 1000
+| device nmos_3 240 380
+n OE net_2 net_1 240 1000
+DEFINE r_100.0 in in
+| device resistor 530 350
+r_100.0 YPAD net_3
+| device nmos_4 120 50
+n Gnd Gnd OEB 240 1000
+| device pmos_4 120 -50
+p Gnd Vdd OEB 240 2000
+| device nmos_5 250 50
+n OEB Gnd OE 240 1000
+| device pmos_5 250 -50
+p OEB Vdd OE 240 2000
+| device nmos_6 680 400
+n net_3 Gnd net_4 240 1000
+| device pmos_6 680 300
+p net_3 Vdd net_4 240 2000
+| device nmos_7 820 400
+n net_4 Gnd DI 240 1000
+| device pmos_7 820 300
+p net_4 Vdd DI 240 2000

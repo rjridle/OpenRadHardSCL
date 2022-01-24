@@ -1,0 +1,32 @@
+| units: 0.1  tech: sue  format: MIT
+A A input
+A B input
+A Y output
+| device pmos.1 590 290
+p B vdd net_2 150 3000
+| device pmos.2 590 290
+p B vdd net_2 150 3000
+| device pmos_1.1 590 380
+p A net_2 net_1 150 3000
+| device pmos_1.2 590 380
+p A net_2 net_1 150 3000
+| device nmos 590 500
+n A gnd net_1 150 1000
+| device nmos_1 440 500
+n B gnd net_1 150 1000
+| device pmos_2.1 740 370
+p net_1 vdd Y 150 3000
+| device pmos_2.2 740 370
+p net_1 vdd Y 150 3000
+| device pmos_2.3 740 370
+p net_1 vdd Y 150 3000
+| device pmos_2.4 740 370
+p net_1 vdd Y 150 3000
+| device nmos_2.1 740 500
+n net_1 gnd Y 150 1000
+| device nmos_2.2 740 500
+n net_1 gnd Y 150 1000
+| device nmos_2.3 740 500
+n net_1 gnd Y 150 1000
+| device nmos_2.4 740 500
+n net_1 gnd Y 150 1000

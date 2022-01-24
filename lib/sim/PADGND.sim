@@ -1,0 +1,3 @@
+| units: 0.1  tech: sue  format: MIT
+| device pmos 440 320
+p Vdd Vdd Gnd 240 100000

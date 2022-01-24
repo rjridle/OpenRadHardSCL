@@ -1,0 +1,5 @@
+#!/bin/bash
+
+printf "select top cell\nselect visible\nmove to -9 0\nsave" > .tmp.tcl
+echo "source .tmp.tcl" | magic -dnull -noconsole $1
+rm .tmp.tcl
