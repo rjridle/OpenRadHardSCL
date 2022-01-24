@@ -9,3 +9,4 @@
 [submodule "tools/netgen"]
 	path = tools/netgen
 	url = https://github.com/RTimothyEdwards/netgen.git
+    ignore = dirty
