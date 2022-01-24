@@ -23,7 +23,7 @@ pex:
 clean:
 	-@cd magic && ./clean_all
 	-@cd magic && rm *.mag
-	@rm -rf spice gds
+	@rm spice/*.spice gds/*.gds
 
 purge: clean
 	-@cd sue && ./clean_all
