@@ -10,3 +10,6 @@
 	path = tools/netgen
 	url = https://github.com/RTimothyEdwards/netgen.git
     ignore = dirty
+[submodule "tools/ngspice"]
+	path = tools/ngspice
+	url = git@github.com:ngspice/ngspice.git
