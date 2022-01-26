@@ -19,7 +19,8 @@ xschem: clean
 	#-@cd xschem && ./scripts/extract_all
 
 lvs: magic xschem
-	echo "(TODO) make lvs"
+	echo "Running LVS"
+	./scripts/runlvs.sh $(VARIANT)
 
 clean:
 	echo "(TODO) make clean"
