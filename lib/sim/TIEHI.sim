@@ -1,6 +1,0 @@
-| units: 0.1  tech: sue  format: MIT
-A Y output
-| device pmos 390 270
-p net_1 vdd Y 150 3000
-| device nmos 390 400
-n net_1 gnd net_1 150 1000

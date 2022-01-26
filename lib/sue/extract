@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sue $1 -SET NETLIST_PROPS=sim -SET NETLIST_TYPE=sim -CMD netlist -cmd exit -BATCH 1

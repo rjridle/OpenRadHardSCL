@@ -1,3 +1,0 @@
-#!/bin/bash
-
-echo "box values -500 1332 5000 1400; box height 1.0um; move S 1.655um; select area; erase; select clear; move N 1um; select area; move S 1um; select clear; box height 0.26um; move S 4.35um;  select area; erase; select clear; move S 0.655um; box height 0.655um; select area; move N 0.26um; select clear; box height 20um; select area; move S 0.26um; save; exit" | magic -dnull -noconsole $1

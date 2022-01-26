@@ -1,0 +1,25 @@
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/XNOR2X2.sch
+.subckt XNOR2X2 A Y B
+*.PININFO A:I Y:O B:I
+M1 net1 A GND GND nmos w=3u l=0.15u m=1
+M2 net1 A VDD VDD pmos w=2u l=0.15u m=1
+M3 net1 A VDD VDD pmos w=2u l=0.15u m=1
+M4 GND B net2 GND nmos w=3u l=0.15u m=1
+M5 VDD B net2 VDD pmos w=2u l=0.15u m=1
+M6 VDD B net2 VDD pmos w=2u l=0.15u m=1
+M7 net6 net2 VDD VDD pmos w=2u l=0.15u m=1
+M8 Y net1 net6 VDD pmos w=2u l=0.15u m=1
+M9 VDD B net5 VDD pmos w=2u l=0.15u m=1
+M10 net5 A Y VDD pmos w=2u l=0.15u m=1
+M11 Y A net4 GND nmos w=3u l=0.15u m=1
+M12 net3 net1 Y GND nmos w=3u l=0.15u m=1
+M13 net4 net2 GND GND nmos w=3u l=0.15u m=1
+M14 GND B net3 GND nmos w=3u l=0.15u m=1
+M15 net6 net2 VDD VDD pmos w=2u l=0.15u m=1
+M16 Y net1 net6 VDD pmos w=2u l=0.15u m=1
+M17 VDD B net5 VDD pmos w=2u l=0.15u m=1
+M18 net5 A Y VDD pmos w=2u l=0.15u m=1
+.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

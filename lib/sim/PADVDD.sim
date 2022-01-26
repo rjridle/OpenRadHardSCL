@@ -1,3 +1,0 @@
-| units: 0.1  tech: sue  format: MIT
-| device nmos 430 350
-n Gnd Gnd Vdd 240 100000

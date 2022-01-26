@@ -1,0 +1,10 @@
+* SPICE3 file created from nmos.ext - technology: sky130A
+
+.subckt nmos A VSS
+M1000 A a_954_179# VSS VSS nshort w=3u l=0.15u
++  ad=0.3176p pd=3u as=2.8633p ps=20.25u
+M1001 A a_770_179# VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1002 a_86_204# a_56_188# VSS VSS nshort w=2.88u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends

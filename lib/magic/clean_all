@@ -1,2 +1,0 @@
-rm -f *.ext *.sim *.cif *.nodes *.spice *.gds *.sp *.mag
-rm MAGIC.LOG

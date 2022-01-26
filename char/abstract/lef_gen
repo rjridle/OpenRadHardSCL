@@ -48,4 +48,4 @@ then
     echo "absExit()" >> abstract_SKILL_script
 fi
 
-cp sky130_osu_sc_18T_ms.lef ../../outputs/
+cp sky130_osu_sc_18T_ms_rhbd.lef ../../outputs/

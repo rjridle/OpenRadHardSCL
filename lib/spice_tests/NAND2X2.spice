@@ -1,16 +1,16 @@
 * SPICE3 file created from NAND2X2.ext - technology: sky130A
 
-.subckt NAND2X2 VDD VSS A B YN
-M1000 YN A VDD VDD pshort w=3u l=0.15u
-+  ad=1.74p pd=13.16u as=2.64p ps=19.76u
-M1001 YN B VDD VDD pshort w=3u l=0.15u
+.subckt NAND2X2 A B YN VDD VSS
+M1000 VDD B YN VDD pshort w=3u l=0.15u
++  ad=2.64p pd=19.76u as=1.74p ps=13.16u
+M1001 YN A a_0_101# VSS nshort w=3u l=0.15u
++  ad=0.1588p pd=1.5u as=0p ps=0u
+M1002 YN A VDD VDD pshort w=3u l=0.15u
 +  ad=0p pd=0u as=0p ps=0u
-M1002 YN A a_0_101# VSS nshort w=3u l=0.15u
-+  ad=0.1588p pd=1.5u as=1.85625p ps=12.67u
 M1003 VSS B a_0_101# VSS nshort w=3u l=0.15u
 +  ad=0.1588p pd=1.5u as=0p ps=0u
 M1004 VDD A YN VDD pshort w=3u l=0.15u
 +  ad=0p pd=0u as=0p ps=0u
-M1005 VDD B YN VDD pshort w=3u l=0.15u
+M1005 YN B VDD VDD pshort w=3u l=0.15u
 +  ad=0p pd=0u as=0p ps=0u
 .ends

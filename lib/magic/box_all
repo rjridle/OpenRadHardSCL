@@ -1,6 +1,0 @@
-#!/bin/bash
-for i in *.mag; do
-    echo "source magic_calma.tcl;save" | magic -dnull -noconsole $i
-done
-
-

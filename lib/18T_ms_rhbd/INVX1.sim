@@ -1,4 +1,0 @@
-| units: 1 tech: sky130A format: MIT
-p A Y VDD 15 200 72 414.5
-n A VSS Y 15 300 28 92
-p A VDD Y 15 200 28 414.5

@@ -1,9 +1,0 @@
-set NETLIST_CACHE(AND2X1,cells) {{icon nmos /import/other/mmi/mmi/sue/schematics/mspice/nmos.sue {}} {icon pmos /import/other/mmi/mmi/sue/schematics/mspice/pmos.sue {}}}
-set netlist_props spice
-set netlist_level 1000
-set NETLIST_CACHE(AND2X1,globals) {vdd gnd}
-set NETLIST_EXPLICIT_GLOBALS {}
-set NETLIST_CACHE(AND2X1,version) MMI_SUE5.6.37
-set NETLIST_CACHE(AND2X1) {{.SUBCKT AND2X1 A B Y } {M_1 Y net_1 vdd vdd p W='3*1u' L=0.15u ad='areap(3,sdd)' } {+ as='areap(3,sdd)' pd='perip(3,sdd)' ps='perip(3,sdd)' } {M_2 net_1 A vdd vdd p W='3*1u' L=0.15u ad='areap(3,sdd)' } {+ as='areap(3,sdd)' pd='perip(3,sdd)' ps='perip(3,sdd)' } {M_3 net_1 B vdd vdd p W='3*1u' L=0.15u ad='areap(3,sdd)' } {+ as='areap(3,sdd)' pd='perip(3,sdd)' ps='perip(3,sdd)' } {M_4 Y net_1 gnd gnd n W='1*1u' L=0.15u ad='arean(1,sdd)' } {+ as='arean(1,sdd)' pd='perin(1,sdd)' ps='perin(1,sdd)' } {M_5 net_1 A net_2 gnd n W='1*1u' L=0.15u ad='arean(1,sdd)' } {+ as='arean(1,sdd)' pd='perin(1,sdd)' ps='perin(1,sdd)' } {M_6 net_2 B gnd gnd n W='1*1u' L=0.15u ad='arean(1,sdd)' } {+ as='arean(1,sdd)' pd='perin(1,sdd)' ps='perin(1,sdd)' } {.ENDS	$ AND2X1} {}}
-set NETLIST_CACHE(AND2X1,names) {{740 490 {0 Y}} {680 370 {0 net_1}} {410 570 {0 M_6}} {590 380 {0 M_3}} {410 490 {0 M_5}} {410 420 {0 net_1}} {410 340 {1 vdd} {2 vdd}} {350 570 {1 B} {2 B}} {350 490 {1 A} {2 A}} {410 380 {0 M_2}} {740 410 {0 Y}} {740 330 {1 vdd} {2 vdd}} {740 530 {0 M_4}} {350 380 {1 A} {2 A}} {530 380 {1 B} {2 B}} {590 420 {0 net_1}} {410 610 {1 gnd} {2 gnd}} {740 370 {0 M_1}} {410 530 {0 net_2} {1 net_2}} {590 340 {1 vdd} {2 vdd}} {410 450 {0 net_1}} {680 530 {0 net_1}} {770 440 {1 Y}} {740 570 {1 gnd} {2 gnd}}}
-set NETLIST_CACHE(AND2X1,wires) {{410 420 410 430 net_1} {410 430 410 450 net_1} {590 420 590 430 net_1} {680 370 680 430 net_1} {680 430 680 530 net_1} {590 430 680 430 net_1} {740 440 770 440 Y} {740 410 740 440 Y} {740 440 740 490 Y} {410 430 590 430 net_1}}
