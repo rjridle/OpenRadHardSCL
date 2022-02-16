@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1643181757
+timestamp 1645048897
 << nwell >>
 rect -36 1344 464 1353
 rect -38 1332 464 1344
@@ -106,7 +106,23 @@ rect 262 13 296 47
 rect 330 13 364 47
 rect 398 13 476 47
 rect -54 0 476 13
-use diff_ring_side  diff_ring_side_1 ./pcells
+use nmos_top_left  nmos_top_left_0 pcells
+timestamp 1643656170
+transform 1 0 45 0 1 165
+box -45 -64 193 238
+use nmos_top_left  nmos_top_left_1
+timestamp 1643656170
+transform 1 0 229 0 1 165
+box -45 -64 193 238
+use M1_M2_contact  M1_M2_contact_1 pcells
+timestamp 1643652910
+transform -1 0 156 0 -1 866
+box 64 391 130 473
+use M1_M2_contact  M1_M2_contact_0
+timestamp 1643652910
+transform 1 0 -38 0 1 481
+box 64 391 130 473
+use diff_ring_side  diff_ring_side_1 pcells
 timestamp 1643181737
 transform 1 0 582 0 1 0
 box -159 0 9 1353
@@ -114,10 +130,6 @@ use diff_ring_side  diff_ring_side_0
 timestamp 1643181737
 transform 1 0 -10 0 1 0
 box -159 0 9 1353
-use M1_M2_contact  M1_M2_contact_0 pcells
-timestamp 1643168619
-transform 1 0 -38 0 1 481
-box 64 391 130 473
 use pmos  pmos_0 pcells
 timestamp 1643179034
 transform 1 0 10 0 1 1228
@@ -126,21 +138,9 @@ use pmos  pmos_1
 timestamp 1643179034
 transform 1 0 186 0 1 1228
 box -36 -312 264 42
-use nmos_top_left  nmos_top_left_1 pcells
-timestamp 1643177486
-transform 1 0 229 0 1 165
-box -45 -64 193 238
-use nmos_top_left  nmos_top_left_0
-timestamp 1643177486
-transform 1 0 45 0 1 165
-box -45 -64 193 238
-use M1_M2_contact  M1_M2_contact_1
-timestamp 1643168619
-transform -1 0 156 0 -1 866
-box 64 391 130 473
 << labels >>
 rlabel metal1 278 26 278 26 1 VSS
-port 4 n
-rlabel metal1 281 1301 281 1301 1 VDD
 port 1 n
+rlabel metal1 281 1301 281 1301 1 VDD
+port 2 n
 << end >>
