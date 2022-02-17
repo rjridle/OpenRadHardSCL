@@ -1,0 +1,16 @@
+* SPICE3 file created from NAND2X2.ext - technology: sky130A
+
+.subckt NAND2X2 YN A B
+M1000 nmos_bottom_left_0/a_41_38# B YN pmos_1/SUB nshort w=2.94u l=0.15u
++  ad=0p pd=0u as=2.03982p ps=14.205u
+M1001 A a_681_916# YN A pshort w=1.26u l=0.15u
++  ad=1.05842p pd=9.245u as=0.7308p ps=6.2u
+M1002 YN a_681_916# A A pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1003 A B YN A pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1004 YN B A A pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1005 YN a_681_916# YN pmos_1/SUB nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends

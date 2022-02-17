@@ -1,0 +1,16 @@
+* SPICE3 file created from INVX2.ext - technology: sky130A
+
+.subckt INVX2 VSS VDD
+M1000 VDD a_86_401# pmos_0/a_86_n251# VDD pshort w=1.26u l=0.15u
++  ad=1.05842p pd=9.245u as=0p ps=0u
+M1001 pmos_0/a_86_n251# a_86_401# VDD VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1002 VDD a_86_401# pmos_1/a_86_n251# VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1003 pmos_1/a_86_n251# a_86_401# VDD VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1004 nmos_top_left_0/a_41_44# a_86_401# VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=1.87112p ps=12.645u
+M1005 nmos_top_left_1/a_41_44# a_86_401# VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends

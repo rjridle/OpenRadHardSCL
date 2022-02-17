@@ -1,0 +1,16 @@
+* SPICE3 file created from XNOR2X2.ext - technology: sky130A
+
+.subckt XNOR2X2 A B YN VDD VSS
+M1000 YN B a_276_629# VDD pshort w=3u l=0.15u
++  ad=1.74p pd=13.16u as=0p ps=0u
+M1001 YN A VSS VSS nshort w=3u l=0.15u
++  ad=0.3176p pd=3u as=1.85625p ps=12.67u
+M1002 a_92_629# A YN VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1003 YN B VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1004 VDD A a_92_629# VDD pshort w=3u l=0.15u
++  ad=0.99p pd=6.66u as=0p ps=0u
+M1005 a_276_629# B VDD VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends

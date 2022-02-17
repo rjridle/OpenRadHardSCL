@@ -1,0 +1,22 @@
+* SPICE3 file created from OR2X2.ext - technology: sky130A
+
+.subckt OR2X2 A B Y VDD VSS
+M1000 VDD a_40_629# Y VDD pshort w=3u l=0.15u
++  ad=2.64p pd=19.76u as=0.87p ps=6.58u
+M1001 a_40_629# B VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=2.9913p ps=20.65u
+M1002 a_312_629# B VDD VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1003 VDD A a_128_629# VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1004 Y a_40_629# VSS VSS nshort w=3u l=0.15u
++  ad=0.1588p pd=1.5u as=0p ps=0u
+M1005 Y a_40_629# VDD VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1006 a_40_629# B a_312_629# VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1007 a_40_629# A VSS VSS nshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1008 a_128_629# A a_40_629# VDD pshort w=3u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends
