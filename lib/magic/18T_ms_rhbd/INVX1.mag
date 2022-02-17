@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1645052899
+timestamp 1645135359
 << nwell >>
 rect -84 1352 670 1353
 rect -67 761 670 1352
@@ -103,38 +103,38 @@ rect 399 13 433 47
 rect 467 13 501 47
 rect 535 13 555 47
 rect 31 0 555 13
-use nmos_top  nmos_top_0 pcells
-timestamp 1643656459
-transform -1 0 412 0 1 101
-box 0 0 238 314
-use li1_M1_contact_para_cent  li1_M1_contact_para_cent_0 pcells
-timestamp 1645050557
-transform 1 0 293 0 1 264
-box -23 -33 23 53
-use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0 pcells
-timestamp 1645050501
-transform 1 0 293 0 1 944
-box -23 -53 49 29
-use pmos4  pmos4_0 pcells
-timestamp 1645051079
-transform 1 0 91 0 1 1228
-box -36 -312 440 42
-use diff_ring_side  diff_ring_side_1 pcells
-timestamp 1643181737
-transform 1 0 75 0 1 0
-box -159 0 9 1353
-use diff_ring_side  diff_ring_side_0
-timestamp 1643181737
-transform 1 0 661 0 1 0
-box -159 0 9 1353
-use poly_li1_contact_perp  poly_li1_contact_perp_0 pcells
-timestamp 1645049645
-transform -1 0 201 0 -1 885
-box 44 399 110 481
 use poly_li1_contact_para  poly_li1_contact_para_0 pcells
 timestamp 1645049503
 transform 1 0 27 0 1 481
 box 70 379 124 465
+use poly_li1_contact_perp  poly_li1_contact_perp_0 pcells
+timestamp 1645049645
+transform -1 0 201 0 -1 885
+box 44 399 110 481
+use diff_ring_side  diff_ring_side_0 pcells
+timestamp 1643181737
+transform 1 0 661 0 1 0
+box -159 0 9 1353
+use diff_ring_side  diff_ring_side_1
+timestamp 1643181737
+transform 1 0 75 0 1 0
+box -159 0 9 1353
+use pmos4  pmos4_0 pcells
+timestamp 1645051079
+transform 1 0 91 0 1 1228
+box -36 -312 440 42
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0 pcells
+timestamp 1645050501
+transform 1 0 293 0 1 944
+box -23 -53 49 29
+use li1_M1_contact_para_cent  li1_M1_contact_para_cent_0 pcells
+timestamp 1645050557
+transform 1 0 293 0 1 264
+box -23 -33 23 53
+use nmos_top  nmos_top_0 pcells
+timestamp 1645135338
+transform -1 0 412 0 1 101
+box 0 0 238 314
 << labels >>
 rlabel metal1 245 31 245 31 1 VSS
 port 1 n

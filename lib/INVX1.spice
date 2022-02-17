@@ -1,0 +1,14 @@
+* SPICE3 file created from INVX1.ext - technology: sky130A
+
+.subckt INVX1 VSS VDD A Y
+M1000 Y A VSS VSS nshort w=3u l=0.15u
++  ad=0.1772p pd=1.56u as=1.158p ps=8.54u
+M1001 VDD A Y VDD pshort w=1.26u l=0.15u
++  ad=1.0584p pd=9.24u as=0.7308p ps=6.2u
+M1002 Y A VDD VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1003 VDD A Y VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+M1004 Y A VDD VDD pshort w=1.26u l=0.15u
++  ad=0p pd=0u as=0p ps=0u
+.ends
