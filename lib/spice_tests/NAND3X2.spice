@@ -1,0 +1,12 @@
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/schematics/NAND3X2.sch
+.subckt NAND3X2 A B C YN
+M1 YN A vdd vdd pshort w=2u l=0.15u m=1
+M2 YN B vdd vdd pshort w=2u l=0.15u m=1
+M4 YN A net1 gnd nshort w=3u l=0.15u m=1
+M5 net1 B net2 gnd nshort w=3u l=0.15u m=1
+M3 YN A vdd vdd pshort w=2u l=0.15u m=1
+M6 YN B vdd vdd pshort w=2u l=0.15u m=1
+M7 YN C vdd vdd pshort w=2u l=0.15u m=1
+M8 YN C vdd vdd pshort w=2u l=0.15u m=1
+M9 net2 C gnd gnd nshort w=3u l=0.15u m=1
+.end

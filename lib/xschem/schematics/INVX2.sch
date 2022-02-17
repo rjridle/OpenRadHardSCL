@@ -84,7 +84,8 @@ N 80 50 80 60 {
 lab=A}
 N 60 20 120 20 {
 lab=Y}
-N 60 80 120 80 {}
+N 60 80 120 80 {
+lab=GND}
 C {gnd.sym} 60 100 0 0 {name=l1 lab=GND}
 C {vdd.sym} 60 -100 0 0 {name=l2 lab=VDD}
 C {ipin.sym} 0 0 0 0 {name=p1 lab=A

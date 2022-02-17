@@ -1,9 +1,9 @@
 #!/bin/bash
-VARIANT=$1
+VARIANT=18T_ms_rhbd
 
-if [ $# -gt 1 ]
+if [ $# -gt 0 ]
 then
-    FILES="magic/${VARIANT}/${2}.mag"
+    FILES="magic/${VARIANT}/${1}.mag"
     echo "Extracting 1 layout: $FILES"
 else
     FILES=$(ls magic/${VARIANT}/*.mag)
