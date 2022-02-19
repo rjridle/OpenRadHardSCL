@@ -3,30 +3,38 @@
 ## Annular Enclosed Layout Transistor
 Following is different methods of calculating the W/L in annular ELT's
 
-### Mid-Line Approximation:
+## Mid-Line Approximation:
 
-    Take length L to be the distance between source and drain, which in this
-    case is just the minimum feature size.
-
-        L = 0.15um
-
-    The width is the sum of all the lines going through the midpoint of the
-    circular portion of the nmos:
-
-        W = 2*ml1 + 2*ml2 + 4*ml_hypotenuse
-
-          = 2(0.22) + 2(0.34) + 4*sqrt(0.155^2 + 0.155^2)
-          = 1.9968124um
+ * Mid-Line Approx. done by hand
+    W = 2*(0.22) + 2*(0.34) + 4*sqrt(0.155^2 + 0.155^2)
+      = 1.997u
+    L = 0.150u (L is taken to be the min distance between src and drain)
     
-    The W/L given by calibre after extracting the GDS is
+ * Magic extraction
+    W = 3.000u
+    L = 0.150u
 
-        L = 0.163375um
-        W = 2.30604um
+ * Calibre extraction
+    W = 2.306u
+    L = 0.163u
 
 ## Rectangular Enclosed Layout Transistor
 Following is different methods of calculating the W/L in rectangular ELT's.
 
-### Mid-line Approximation
+ * Mid-Line Approx. done by hand. 
+    W = 2*(0.65) + 2*(0.52)
+      = 2.340u
+    L = 0.150u (L is taken to be the min distance between src and drain)
 
-    W/L given by calibre after extraction is
+ * Magic extraction
+    W = 2.285u
+    L = 0.150u
+
+ * Calibre extraction
+    W = 2.555u
+    L = 0.154u
+
+
+
+
 

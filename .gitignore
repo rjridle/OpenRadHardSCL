@@ -1,3 +1,9 @@
-*.swp
+*.ext
+*.sim
+*.cif
+*.nodes
+MAGIC.LOG
+*.BAK
+tclIndex
 *.log
 *.out
