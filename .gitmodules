@@ -13,3 +13,4 @@
 [submodule "tools/ngspice"]
 	path = tools/ngspice
 	url = git@github.com:ngspice/ngspice.git
+    ignore = dirty
