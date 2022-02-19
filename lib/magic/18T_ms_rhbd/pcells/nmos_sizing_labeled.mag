@@ -1,0 +1,99 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1645232731
+<< nmos >>
+rect 55 222 85 276
+tri 85 222 101 238 sw
+rect 55 192 161 222
+tri 161 192 191 222 sw
+rect 55 92 85 192
+tri 85 176 101 192 nw
+tri 145 176 161 192 ne
+tri 85 92 101 108 sw
+tri 145 92 161 108 se
+rect 161 92 191 192
+tri 55 62 85 92 ne
+rect 85 62 161 92
+tri 161 62 191 92 nw
+<< ndiff >>
+rect -1 260 55 276
+rect -1 226 9 260
+rect 43 226 55 260
+rect -1 189 55 226
+rect 85 260 246 276
+rect 85 238 202 260
+tri 85 222 101 238 ne
+rect 101 226 202 238
+rect 236 226 246 260
+rect 101 222 246 226
+tri 161 192 191 222 ne
+rect -1 155 9 189
+rect 43 155 55 189
+rect -1 121 55 155
+rect -1 87 9 121
+rect 43 87 55 121
+tri 85 176 101 192 se
+rect 101 176 145 192
+tri 145 176 161 192 sw
+rect 85 148 161 176
+rect 85 114 106 148
+rect 140 114 161 148
+rect 85 108 161 114
+tri 85 92 101 108 ne
+rect 101 92 145 108
+tri 145 92 161 108 nw
+rect 191 189 246 222
+rect 191 155 202 189
+rect 236 155 246 189
+rect 191 121 246 155
+rect -1 62 55 87
+tri 55 62 85 92 sw
+tri 161 62 191 92 se
+rect 191 87 202 121
+rect 236 87 246 121
+rect 191 62 246 87
+rect -1 50 246 62
+rect -1 16 9 50
+rect 43 16 101 50
+rect 135 16 202 50
+rect 236 16 246 50
+rect -1 0 246 16
+<< ndiffc >>
+rect 9 226 43 260
+rect 202 226 236 260
+rect 9 155 43 189
+rect 9 87 43 121
+rect 106 114 140 148
+rect 202 155 236 189
+rect 202 87 236 121
+rect 9 16 43 50
+rect 101 16 135 50
+rect 202 16 236 50
+<< poly >>
+rect 55 276 85 309
+<< locali >>
+rect 9 260 43 276
+rect 9 189 43 226
+rect 202 260 236 276
+rect 202 189 236 226
+rect 9 121 43 155
+rect 106 148 140 164
+rect 106 98 140 114
+rect 202 121 236 155
+rect 9 50 43 87
+rect 202 50 236 87
+rect 43 16 101 50
+rect 135 16 202 50
+rect 9 0 43 16
+rect 202 0 236 16
+<< labels >>
+rlabel space 70 77 101 108 1 ml_hypotenuse
+rlabel space 145 77 176 108 1 ml_hypotenuse
+rlabel space 145 176 176 207 1 ml_hypotenuse
+rlabel space 70 176 101 207 1 ml_hypotenuse
+rlabel nmos 101 207 145 207 1 ml1
+rlabel nmos 176 108 176 176 1 ml2
+rlabel nmos 101 77 145 77 1 ml1
+rlabel nmos 70 108 70 176 1 ml2
+<< end >>
