@@ -3,13 +3,24 @@
 ## Annular Enclosed Layout Transistor
 Following is different methods of calculating the W/L in annular ELT's
 
-## Mid-Line Approximation:
+ * Divide into 3 seperate rectangular transistors, 2 on the top and botton, 2 
+   on the sides, and 4 for the corners, where L remains constant for all. This
+   approximation ignores 8 seperate pieces of FET, 2 on each side of the
+   corners.
+    
+    W/L = 2*(0.22/0.15) + 2*(0.34/0.15) + 4*[sqrt(0.08^2 + 0.08^2)/0.15]
+        = 10.48u
+    
+   If we take L to be 0.150u:
+
+    W = 10.48*0.15 = 1.572u
+    L = 0.150u
 
  * Mid-Line Approx. done by hand
     W = 2*(0.22) + 2*(0.34) + 4*sqrt(0.155^2 + 0.155^2)
       = 1.997u
     L = 0.150u (L is taken to be the min distance between src and drain)
-    
+
  * Magic extraction
     W = 3.000u
     L = 0.150u
