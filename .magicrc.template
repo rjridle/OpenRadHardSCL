@@ -6,13 +6,21 @@ if {[lindex $scalefac 1] < 2} {
 # drc off
 drc euclidean on
 
-# loading technology
+# Turn off the scale option on ext2spice or else it conflicts with the
+# scale in the model files.
+ext2spice scale off
 
-puts stdout "Sourcing design .magicrc for technology sky130A"
-tech load ~/.magic_tech/sky130A.tech
+# loading technology
+puts stdout "Sourcing design .magicrc for technology sky130.tech"
+tech load ~/.magic_tech/sky130.tech
 
 # set units to lambda grid 
-snap internal
+snap lambda
+
+# set sky130 standard power, ground, and substrate names
+set VDD VPWR
+set GND VGND
+set SUB VSUBS
 
 # add path to IP from catalog.  This procedure defined in the PDK script.
 catch {magic::query_mylib_ip}

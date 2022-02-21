@@ -1,14 +1,9 @@
 * SPICE3 file created from INVX1.ext - technology: sky130A
 
 .subckt INVX1 VSS VDD A Y
-M1000 Y A VSS VSS nshort w=3u l=0.15u
-+  ad=0.1772p pd=1.56u as=1.15035p ps=8.11u
-M1001 VDD A Y VDD pshort w=1.26u l=0.15u
-+  ad=1.0584p pd=9.24u as=0.7308p ps=6.2u
-M1002 Y A VDD VDD pshort w=1.26u l=0.15u
-+  ad=0p pd=0u as=0p ps=0u
-M1003 VDD A Y VDD pshort w=1.26u l=0.15u
-+  ad=0p pd=0u as=0p ps=0u
-M1004 Y A VDD VDD pshort w=1.26u l=0.15u
-+  ad=0p pd=0u as=0p ps=0u
+X0 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15035e+12p ps=8.11e+06u w=3e+06u l=150000u
+X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=7.308e+11p pd=6.2e+06u as=1.0584e+12p ps=9.24e+06u w=1.26e+06u l=150000u
+X2 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.26e+06u l=150000u
+X3 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.26e+06u l=150000u
+X4 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.26e+06u l=150000u
 .ends
