@@ -17,7 +17,7 @@
 #------------------------------------------------------------------------
 tech
   format 35
-  TECHNAME
+  sky130
 end
 
 version
@@ -4330,7 +4330,7 @@ variants (fast),(full)
  area  *nsd,*mvnsd 70110 150 "N-tap minimum area < 0.07011um^2 (nsd.10b)"
  area  *psd,*mvpsd 70110 150 "P-tap minimum area < 0.07011um^2 (psd.10b)"
 
- angles allactive 90 "Only 90 degree angles permitted on diff and tap (x.2)"
+#angles allactive 90 "Only 90 degree angles permitted on diff and tap (x.2)"
 
  variants (full)
  cifmaxwidth tap_missing_licon 0 bend_illegal "All taps must be contacted (licon.16)"
@@ -4365,7 +4365,7 @@ variants (fast),(full)
  overhang *mvpdiff,mvrpdiff mvpfet,mvpfetesd 250 "P-Diffusion overhang of pmos < %d (poly.7)"
  overhang *poly allfetsstd,allfetsspecial 130 "poly overhang of transistor < %d (poly.8)"
  overhang *poly allfetscore 110 "poly overhang of SRAM core transistor < %d (poly.8)"
- rect_only allfets "No bends in transistors (poly.11)"
+#rect_only allfets "No bends in transistors (poly.11)"
  rect_only xhrpoly,uhrpoly "No bends in poly resistors (poly.11)"
  extend  xpc/a xhrpoly,uhrpoly 2160 \
  	"poly contact extends poly resistor by < %d (licon.1c + li.5)"
@@ -4395,7 +4395,7 @@ variants (fast),(full)
 
  variants (fast),(full)
 
- angles allpoly,polyfill 90 "Only 90 degree angles permitted on poly (x.2)"
+#angles allpoly,polyfill 90 "Only 90 degree angles permitted on poly (x.2)"
 
 #--------------------------------------------------------------------
 # HVTP

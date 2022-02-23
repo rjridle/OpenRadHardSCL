@@ -1,0 +1,7 @@
+* SPICE3 file created from INVX1_21T_ms.ext - technology: sky130
+
+.subckt INVX1_21T_ms VSS VDD
+X0 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.15035e+12p ps=8.11e+06u w=3e+06u l=150000u
+X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.1e+12p ps=9.1e+06u w=2e+06u l=150000u
+X2 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.ends

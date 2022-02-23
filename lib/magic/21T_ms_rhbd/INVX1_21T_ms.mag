@@ -1,0 +1,126 @@
+magic
+tech sky130
+magscale 1 2
+timestamp 1645643281
+<< nwell >>
+rect 84 832 360 1575
+<< psubdiff >>
+rect 31 510 413 572
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 205 47
+rect 239 13 283 47
+rect 317 13 355 47
+rect 389 13 413 47
+rect 31 12 413 13
+<< nsubdiff >>
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 205 1539
+rect 239 1505 283 1539
+rect 317 1505 355 1539
+rect 389 1505 413 1539
+rect 31 868 413 930
+<< psubdiffcont >>
+rect 55 13 89 47
+rect 127 13 161 47
+rect 205 13 239 47
+rect 283 13 317 47
+rect 355 13 389 47
+<< nsubdiffcont >>
+rect 55 1505 89 1539
+rect 127 1505 161 1539
+rect 205 1505 239 1539
+rect 283 1505 317 1539
+rect 355 1505 389 1539
+<< poly >>
+rect 154 410 184 447
+<< locali >>
+rect 31 1539 413 1554
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 205 1539
+rect 239 1505 283 1539
+rect 317 1505 355 1539
+rect 389 1505 413 1539
+rect 31 1492 413 1505
+rect 108 62 142 101
+rect 301 62 335 101
+rect 31 47 413 62
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 205 47
+rect 239 13 283 47
+rect 317 13 355 47
+rect 389 13 413 47
+rect 31 0 413 13
+<< viali >>
+rect 55 1505 89 1539
+rect 127 1505 161 1539
+rect 205 1505 239 1539
+rect 283 1505 317 1539
+rect 355 1505 389 1539
+rect 55 13 89 47
+rect 127 13 161 47
+rect 205 13 239 47
+rect 283 13 317 47
+rect 355 13 389 47
+<< metal1 >>
+rect 31 1539 413 1554
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 205 1539
+rect 239 1505 283 1539
+rect 317 1505 355 1539
+rect 389 1505 413 1539
+rect 31 1492 413 1505
+rect 206 979 240 1057
+rect 131 486 165 944
+rect 131 473 146 486
+rect 205 287 239 979
+rect 31 47 413 62
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 205 47
+rect 239 13 283 47
+rect 317 13 355 47
+rect 389 13 413 47
+rect 31 0 413 13
+use poly_li1_contact_para  poly_li1_contact_para_0 pcells
+timestamp 1645049503
+transform 1 0 51 0 1 553
+box 70 379 124 465
+use li1_M1_contact_para_ext  li1_M1_contact_para_ext_0 ./pcells
+timestamp 1645050594
+transform -1 0 223 0 -1 1076
+box -23 -29 23 53
+use pmos2_2uq  pmos2_2uq_0 pcells
+timestamp 1645639204
+transform 1 0 20 0 1 1450
+box 52 -460 352 42
+use poly_li1_contact_perp  poly_li1_contact_perp_0 pcells
+timestamp 1645049645
+transform -1 0 225 0 -1 896
+box 44 399 110 481
+use nmos_top  nmos_top_0 pcells
+timestamp 1645636714
+transform -1 0 344 0 1 101
+box -1 0 246 309
+use li1_M1_contact_para_cent  li1_M1_contact_para_cent_0 pcells
+timestamp 1645050557
+transform 1 0 222 0 1 268
+box -23 -33 23 53
+use diff_ring_side  diff_ring_side_0 pcells
+timestamp 1645641539
+transform 1 0 444 0 1 0
+box -84 0 84 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1645641539
+transform 1 0 0 0 1 0
+box -84 0 84 1575
+<< labels >>
+rlabel metal1 148 740 148 740 1 A
+rlabel metal1 222 740 222 740 1 Y
+rlabel space 0 1521 0 1521 1 VDD
+rlabel space 0 30 0 30 1 VSS
+<< end >>

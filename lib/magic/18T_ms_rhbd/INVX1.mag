@@ -1,155 +1,159 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1645234719
+timestamp 1645638725
 << nwell >>
-rect -84 1352 670 1353
-rect -67 761 670 1352
-rect 16 760 670 761
-rect 72 758 670 760
+rect 84 1264 508 1353
+rect 84 941 507 1264
+rect 84 759 508 941
 << psubdiff >>
-rect 31 490 556 552
+rect 31 508 561 570
 rect 31 13 55 47
-rect 89 13 123 47
-rect 157 13 191 47
-rect 225 13 278 47
-rect 312 13 365 47
-rect 399 13 433 47
-rect 467 13 501 47
-rect 535 13 555 47
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 276 47
+rect 310 13 353 47
+rect 387 13 425 47
+rect 459 13 497 47
+rect 531 13 561 47
 << nsubdiff >>
 rect 31 1283 55 1317
-rect 89 1283 123 1317
-rect 157 1283 191 1317
-rect 225 1283 278 1317
-rect 313 1283 365 1317
-rect 399 1283 433 1317
-rect 467 1283 501 1317
-rect 535 1283 556 1317
-rect 31 795 555 857
+rect 89 1283 127 1317
+rect 161 1283 199 1317
+rect 233 1283 276 1317
+rect 310 1283 353 1317
+rect 387 1283 425 1317
+rect 459 1283 497 1317
+rect 531 1283 561 1317
+rect 31 795 561 857
 << psubdiffcont >>
 rect 55 13 89 47
-rect 123 13 157 47
-rect 191 13 225 47
-rect 278 13 312 47
-rect 365 13 399 47
-rect 433 13 467 47
-rect 501 13 535 47
+rect 127 13 161 47
+rect 199 13 233 47
+rect 276 13 310 47
+rect 353 13 387 47
+rect 425 13 459 47
+rect 497 13 531 47
 << nsubdiffcont >>
 rect 55 1283 89 1317
-rect 123 1283 157 1317
-rect 191 1283 225 1317
-rect 278 1283 313 1317
-rect 365 1283 399 1317
-rect 433 1283 467 1317
-rect 501 1283 535 1317
+rect 127 1283 161 1317
+rect 199 1283 233 1317
+rect 276 1283 310 1317
+rect 353 1283 387 1317
+rect 425 1283 459 1317
+rect 497 1283 531 1317
 << poly >>
 rect 147 418 255 448
 rect 225 403 255 418
 << locali >>
-rect 31 1317 556 1332
+rect 31 1317 561 1332
 rect 31 1283 55 1317
-rect 89 1283 123 1317
-rect 157 1283 191 1317
-rect 225 1283 278 1317
-rect 313 1283 365 1317
-rect 399 1283 433 1317
-rect 467 1283 501 1317
-rect 535 1283 556 1317
-rect 31 1270 556 1283
-rect 277 1269 311 1270
-rect 189 961 223 1007
-rect 365 961 399 1001
-rect 189 927 399 961
+rect 89 1283 127 1317
+rect 161 1283 199 1317
+rect 233 1283 276 1317
+rect 310 1283 353 1317
+rect 387 1283 425 1317
+rect 459 1283 497 1317
+rect 531 1283 561 1317
+rect 31 1270 561 1283
+rect 280 1269 314 1270
+rect 192 961 226 1007
+rect 368 961 402 1001
+rect 192 927 402 961
 rect 179 62 213 101
 rect 372 62 406 101
-rect 31 47 555 62
+rect 31 47 561 62
 rect 31 13 55 47
-rect 89 13 123 47
-rect 157 13 191 47
-rect 225 13 278 47
-rect 312 13 365 47
-rect 399 13 433 47
-rect 467 13 501 47
-rect 535 13 555 47
-rect 31 0 555 13
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 276 47
+rect 310 13 353 47
+rect 387 13 425 47
+rect 459 13 497 47
+rect 531 13 561 47
+rect 31 0 561 13
 << viali >>
 rect 55 1283 89 1317
-rect 123 1283 157 1317
-rect 191 1283 225 1317
-rect 278 1283 313 1317
-rect 365 1283 399 1317
-rect 433 1283 467 1317
-rect 501 1283 535 1317
+rect 127 1283 161 1317
+rect 199 1283 233 1317
+rect 276 1283 310 1317
+rect 353 1283 387 1317
+rect 425 1283 459 1317
+rect 497 1283 531 1317
 rect 55 13 89 47
-rect 123 13 157 47
-rect 191 13 225 47
-rect 278 13 312 47
-rect 365 13 399 47
-rect 433 13 467 47
-rect 501 13 535 47
+rect 127 13 161 47
+rect 199 13 233 47
+rect 276 13 310 47
+rect 353 13 387 47
+rect 425 13 459 47
+rect 497 13 531 47
 << metal1 >>
-rect 31 1317 556 1332
+rect 31 1317 561 1332
 rect 31 1283 55 1317
-rect 89 1283 123 1317
-rect 157 1283 191 1317
-rect 225 1283 278 1317
-rect 313 1283 365 1317
-rect 399 1283 433 1317
-rect 467 1283 501 1317
-rect 535 1283 556 1317
-rect 31 1270 556 1283
-rect 107 456 141 889
-rect 276 317 310 911
-rect 31 47 555 62
+rect 89 1283 127 1317
+rect 161 1283 199 1317
+rect 233 1283 276 1317
+rect 310 1283 353 1317
+rect 387 1283 425 1317
+rect 459 1283 497 1317
+rect 531 1283 561 1317
+rect 31 1270 561 1283
+rect 137 889 165 890
+rect 131 456 165 889
+rect 279 744 313 911
+rect 280 675 314 744
+rect 279 461 313 675
+rect 276 427 313 461
+rect 276 317 310 427
+rect 31 47 561 62
 rect 31 13 55 47
-rect 89 13 123 47
-rect 157 13 191 47
-rect 225 13 278 47
-rect 312 13 365 47
-rect 399 13 433 47
-rect 467 13 501 47
-rect 535 13 555 47
-rect 31 0 555 13
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 276 47
+rect 310 13 353 47
+rect 387 13 425 47
+rect 459 13 497 47
+rect 531 13 561 47
+rect 31 0 561 13
+use pmos4  pmos4_0 pcells
+timestamp 1645051079
+transform 1 0 94 0 1 1228
+box -36 -312 440 42
+use poly_li1_contact_para  poly_li1_contact_para_0 pcells
+timestamp 1645049503
+transform 1 0 44 0 1 481
+box 70 379 124 465
+use diff_ring_side  diff_ring_side_1 pcells
+timestamp 1645638419
+transform 1 0 0 0 1 0
+box -84 0 84 1353
+use diff_ring_side  diff_ring_side_0
+timestamp 1645638419
+transform 1 0 592 0 1 0
+box -84 0 84 1353
 use li1_M1_contact_para_cent  li1_M1_contact_para_cent_0 pcells
 timestamp 1645050557
 transform 1 0 293 0 1 264
 box -23 -33 23 53
-use nmos_top  nmos_top_0 pcells
-timestamp 1645135941
-transform -1 0 415 0 1 101
-box -1 0 246 309
 use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0 pcells
 timestamp 1645050501
-transform 1 0 293 0 1 944
+transform 1 0 296 0 1 944
 box -23 -53 49 29
-use pmos4  pmos4_0 pcells
-timestamp 1645051079
-transform 1 0 91 0 1 1228
-box -36 -312 440 42
-use diff_ring_side  diff_ring_side_1 pcells
-timestamp 1643181737
-transform 1 0 75 0 1 0
-box -159 0 9 1353
-use diff_ring_side  diff_ring_side_0
-timestamp 1643181737
-transform 1 0 661 0 1 0
-box -159 0 9 1353
+use nmos_top  nmos_top_0 pcells
+timestamp 1645636714
+transform -1 0 415 0 1 101
+box -1 0 246 309
 use poly_li1_contact_perp  poly_li1_contact_perp_0 pcells
 timestamp 1645049645
-transform -1 0 201 0 -1 885
+transform -1 0 225 0 -1 896
 box 44 399 110 481
-use poly_li1_contact_para  poly_li1_contact_para_0 pcells
-timestamp 1645049503
-transform 1 0 27 0 1 481
-box 70 379 124 465
 << labels >>
-rlabel metal1 245 31 245 31 1 VSS
-port 1 n
 rlabel metal1 253 1325 253 1325 1 VDD
 port 2 n
-rlabel metal1 121 668 121 668 1 A
+rlabel metal1 249 31 249 31 1 VSS
+port 1 n
+rlabel metal1 148 666 148 666 1 A
 port 3 n
-rlabel metal1 296 668 296 668 1 Y
+rlabel metal1 299 668 299 668 1 Y
 port 4 n
 << end >>

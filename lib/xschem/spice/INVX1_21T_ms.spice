@@ -1,0 +1,11 @@
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/21T_ms_rhbd/INVX1_21T_ms.sch
+**.subckt INVX1_21T_ms A Y
+*.ipin A
+*.opin Y
+M3 Y A VDD VDD pmos w=2u l=0.150u m=1
+M2 Y A VDD VDD pmos w=2u l=0.150u m=1
+M1 Y A GND GND nmos w=3u l=0.150u m=1
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
