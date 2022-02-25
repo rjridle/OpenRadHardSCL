@@ -1,7 +1,16 @@
-* SPICE3 file created from INVX1_21T_ms.ext - technology: sky130
+* NGSPICE file created from INVX1_21T_ms.ext - technology: sky130A
 
-.subckt INVX1_21T_ms VSS VDD
-X0 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.15035e+12p ps=8.11e+06u w=3e+06u l=150000u
-X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.1e+12p ps=9.1e+06u w=2e+06u l=150000u
-X2 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
+X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
 .ends
+
+.subckt pmos2_2uq a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.6e+11p ps=4.56e+06u w=2e+06u l=150000u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4e+11p pd=4.54e+06u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt INVX1_21T_ms A Y VDD VSS
+Xnmos_top_0 Y A VSS VSS nmos_top
+Xpmos2_2uq_0 A VDD VDD VDD Y pmos2_2uq
+.ends
+

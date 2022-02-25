@@ -1,4 +1,4 @@
-VARIANT:=18T_ms_rhbd
+VARIANT:=21T_ms_rhbd
 
 .PHONY: all magic xschem lvs purge
 
@@ -12,7 +12,7 @@ magic: clean
 	cp *.spice spice_tests/
 	mv *.spice magic/spice/${VARIANT}/
 	mv *.gds magic/gds/${VARIANT}/
-	rm *.sim *.nodes
+	rm -f *.sim *.nodes *.ext
 
 xschem: clean
 	echo "(TODO) make xschem"

@@ -61,7 +61,7 @@ sub doExt
     open (MAGIC, "|$MAGIC -dnull -noconsole $filename 1> MAGIC.LOG 2>&1 ") ;
     print MAGIC "drc off\n";
     print MAGIC "extract all\n";
-    print MAGIC "ext2spice -F -y 6 -f spice3\n";
+    print MAGIC "ext2spice -F -y 6 -f ngspice\n";
     print MAGIC "ext2sim -y 6 -R -C -o $filenamenoRC.sim\n";
     print MAGIC "cif\n";
     print MAGIC "calma\n";

@@ -1,0 +1,10 @@
+* NGSPICE file created from INVX1_21T_ms.ext - technology: sky130A
+
+.subckt INVX1_21T_ms A Y VDD GND
+X0 Y A GND GND sky130_fd_pr__nfet_01v8  w=3u l=0.15u
+X1 Y A VDD VDD sky130_fd_pr__pfet_01v8  w=2u l=0.15u M=2
+.ends
+
+XMAG A Y VDD GND INVX1_21T_ms
+
+.end

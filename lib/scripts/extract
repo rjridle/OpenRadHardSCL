@@ -1,9 +1,9 @@
 #!/bin/bash
-VARIANT=18T_ms_rhbd
+VARIANT=${1}
 
-if [ $# -gt 0 ]
+if [ $# -gt 1 ]
 then
-    FILES="magic/${VARIANT}/${1}.mag"
+    FILES="magic/${VARIANT}/${2}.mag"
     echo "Extracting 1 layout: $FILES"
 else
     FILES=$(ls magic/${VARIANT}/*.mag)
@@ -21,7 +21,7 @@ for i in ${FILES}; do
     sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel locali \2/g' $i
     awk '!(seen[$0]++ && (/gnd/ || /vdd/))' $i > tmp.sim && mv tmp.sim $i
     echo "source scripts/magic_extract.tcl" | magic -dnull -noconsole $i
-    sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel metal1 \2/g' $i
-    echo "source scripts/magic_calma.tcl;calma" | magic -dnull -noconsole $i
+    #sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel metal1 \2/g' $i
+    #echo "source scripts/magic_calma.tcl;calma" | magic -dnull -noconsole $i
 done
 

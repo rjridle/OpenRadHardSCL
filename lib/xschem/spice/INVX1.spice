@@ -1,9 +1,15 @@
-** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/INVX1.sch
-.subckt INVX1 A Y
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/21T_ms_rhbd/INV1_X1_21T_ms.sch
+.subckt INV1_X1_21T_ms A Y
 *.PININFO A:I Y:O
-M3 Y A VDD VDD pmos w=2u l=0.150u m=1
-M2 Y A VDD VDD pmos w=2u l=0.150u m=1
-M1 Y A GND GND nmos w=3u l=0.150u m=1
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 .GLOBAL GND
 .GLOBAL VDD

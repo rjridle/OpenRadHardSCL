@@ -14,12 +14,8 @@ else
     echo "Extracting xschem SPICE files: $XSCHEM_SPICE_FILES"
 fi
 
-for i,j in ${MAG_SPICE_FILES},${XSCHEM_SPICE_FILES}; do
-    echo "MAG_SPICE_FILE = $i"
-    echo "XSCHEM_SPICE_FILE = $j"
-#    netgen -noc << EOF
-#    permute transistors
-#    lvs $1 $2
-#    quit
-#    EOF
-done
+netgen -noc << EOF
+permute transistors
+lvs $MAG_SPICE_FILES $XSCHEM_SPICE_FILES
+quit
+EOF

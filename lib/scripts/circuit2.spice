@@ -1,0 +1,12 @@
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/21T_ms_rhbd/INVX1_21T_ms.sch
+** sky130_fd_pr__nfet_01v8 d g s b
+.subckt INVX1_21T_ms A Y VDD GND
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 w=3u l=0.15u 
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 w=2u l=0.15u 
+XM3 Y A VDD VDD sky130_fd_pr__pfet_01v8 w=2u l=0.15u 
+.ends INVX1_21T_ms
+
+XSCH A Y VDD GND INVX1_21T_ms
+
+.end
+
