@@ -13,13 +13,13 @@ due to the many people who have developed and continue to maintain these open
 source tools. Below is a list of all the tools used in this project, and their
 respective github repositories:
 
-* PDK: [skywater-pdk](https://github.com/google/skywater-pdk)
-* Layout, GDS, and LEF Generation: [magic](https://github.com/RTimothyEdwards/magic)
-* Schematic Generation: [xschem](https://github.com/StefanSchippers/xschem)
-* LVS: [netgen](https://github.com/RTimothyEdwards/netgen)
-* SPICE Simulator: [ngspice](https://github.com/ngspice/ngspice)
+* [skywater-pdk](https://github.com/google/skywater-pdk): PDK
+* [magic](https://github.com/RTimothyEdwards/magic): Layout, GDS, and LEF Generation
+* [xschem](https://github.com/StefanSchippers/xschem): Schematic Generation
+* [netgen](https://github.com/RTimothyEdwards/netgen): LVS
+* [ngspice](https://github.com/ngspice/ngspice): SPICE Simulator
 * Liberty Generation: Still working on finding an open source option
-* Synthesis and PnR: [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+* [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts): Synthesis and PnR
 
 ## Installation
 
