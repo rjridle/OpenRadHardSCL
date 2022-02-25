@@ -1,6 +1,63 @@
 # Open Source Radation-Hardened Standard Cell Library
 
-System on Chip Design Flow including radation hardened standard cells for
-SkyWater 130nm process.
+Completely open source system on chip design flow including radation hardened
+standard cells for the open source SkyWater 130nm process.
 
 This is currently a work in progress.
+
+## Open Source EDA Tools
+
+This design flow incorporates all open source tooling which allows anyone to go
+from layout design, all the way through to place and route. This is only possible
+due to the many people who have developed and continue to maintain these open
+source tools. Below is a list of all the tools used in this project, and their
+respective github repositories:
+
+* PDK: [skywater-pdk](https://github.com/google/skywater-pdk)
+* Layout, GDS, and LEF Generation: [magic](https://github.com/RTimothyEdwards/magic)
+* Schematic Generation: [xschem](https://github.com/StefanSchippers/xschem)
+* LVS: [netgen](https://github.com/RTimothyEdwards/netgen)
+* SPICE Simulator: [ngspice](https://github.com/ngspice/ngspice)
+* Liberty Generation: Still working on finding an open source option
+* Synthesis and PnR: [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts)
+
+## Installation
+
+All the tools used in this repository are added as submodules. As of right now,
+refer to each tools own installation guide. The end goal is to have a Makefile
+that will build, install, and configure every tool to work with this repository.
+Since most of the tools use a configuration file to setup paths, everything is
+still functional if the template configuration files are copied to the right
+directories. 
+
+After installation of the tools has been done independantly, run the following:
+
+```
+git clone --recursive https://github.com/rjridle/OpenRadHardSCL.git
+cd OpenRadHardSCL
+cp .magicrc.template ~/.magicrc
+cp .xschemrc.template ~/.xschem/xschemrc
+```
+
+**Hopefully** I haven't put in any absolute paths. If I have, that's my bad, go
+ahead and fix that yourself and maybe let me know too. **Also hopefully**, all
+the files needed for the SkyWater PDK are present and do not require going to
+[skywater-pdk](https://github.com/google/skywater-pdk) to retrieve anything.
+The decision not to make skywater-pdk a submodule and build it along with all
+the other tools is because it includes several already design standard cell
+libraries, and the installation is over 15G. All thats really needed from
+skywater-pdk is the model files for the primitive devices. 
+
+This is the current status of this project. Following are the things I'm hoping
+to add here soon:
+
+* Complete the Rad-Hard standard cells.
+* Complete the schematics for standard cells.
+* Flesh out the Makefile so that it will extract the layouts, schematics, run
+  LVS, generate LEF and Liberty files, and get setup to run the PnR flow.
+* Get PnR flow setup
+* Make a nice verilog design for PnR testing
+* A bunch more stuff
+
+
+
