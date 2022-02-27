@@ -1,0 +1,9 @@
+* NGSPICE file created from NAND2X1.ext - technology: sky130A
+
+.subckt NAND2X1 A VDD VSS Y B
+X0 VSS A nmos_top_0/a_n1_0# VSS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=0p ps=0u w=3.06e+06u l=150000u
+X1 a_229_1105# a_481_990# nmos_top_0/a_n1_0# VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X2 a_229_1105# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.5546e+12p ps=1.3685e+07u w=2e+06u l=150000u M=2
+X3 a_229_1105# a_481_990# VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+C0 VDD VSS 2.68fF
+.ends

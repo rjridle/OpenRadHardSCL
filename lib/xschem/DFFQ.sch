@@ -21,7 +21,7 @@ lab=D}
 N 200 -70 200 -60 {
 lab=D}
 N 240 -100 300 -100 {
-lab=VDD}
+lab=VCCPIN}
 N 240 -40 300 -40 {
 lab=#net1}
 N 300 150 300 160 {
@@ -36,8 +36,6 @@ N 160 -70 160 190 {
 lab=D}
 N 160 -70 200 -70 {
 lab=D}
-N -50 0 -40 0 {
-lab=CLK}
 N 300 60 380 60 {
 lab=#net2}
 N 400 -260 460 -260 {
@@ -45,39 +43,39 @@ lab=#net4}
 N 400 -200 460 -200 {
 lab=#net5}
 N 400 -340 460 -340 {
-lab=VDD}
+lab=VCCPIN}
 N 240 10 250 10 {
-lab=VDD}
+lab=VCCPIN}
 N 250 -100 250 10 {
-lab=VDD}
+lab=VCCPIN}
 N 240 -70 250 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 300 -70 310 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 310 -100 310 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 300 -100 310 -100 {
-lab=VDD}
+lab=VCCPIN}
 N 300 10 310 10 {
-lab=VDD}
+lab=VCCPIN}
 N 310 -70 310 10 {
-lab=VDD}
+lab=VCCPIN}
 N 300 110 310 110 {
-lab=GND}
+lab=VSSPIN}
 N 310 110 310 220 {
-lab=GND}
+lab=VSSPIN}
 N 300 220 310 220 {
-lab=GND}
+lab=VSSPIN}
 N 300 190 310 190 {
-lab=GND}
+lab=VSSPIN}
 N 450 -130 460 -130 {
-lab=GND}
+lab=VSSPIN}
 N 450 -130 450 -20 {
-lab=GND}
+lab=VSSPIN}
 N 450 -20 460 -20 {
-lab=GND}
+lab=VSSPIN}
 N 450 -50 460 -50 {
-lab=GND}
+lab=VSSPIN}
 N 460 -100 460 -80 {
 lab=#net6}
 N 460 -200 460 -160 {
@@ -89,11 +87,11 @@ lab=CLK_NOT}
 N 500 -230 500 -220 {
 lab=CLK_NOT}
 N 450 -230 460 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 450 -340 450 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 450 -310 460 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 440 -310 440 -300 {
 lab=#net7}
 N 440 -300 500 -300 {
@@ -101,15 +99,15 @@ lab=#net7}
 N 500 -310 500 -300 {
 lab=#net7}
 N 390 -310 400 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 390 -340 390 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 390 -340 400 -340 {
-lab=VDD}
+lab=VCCPIN}
 N 390 -230 400 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 390 -310 390 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 500 -310 590 -310 {
 lab=#net7}
 N 590 -310 590 -50 {
@@ -127,15 +125,15 @@ lab=#net8}
 N 860 -200 920 -200 {
 lab=#net9}
 N 860 -340 920 -340 {
-lab=VDD}
+lab=VCCPIN}
 N 910 -130 920 -130 {
-lab=GND}
+lab=VSSPIN}
 N 910 -130 910 -20 {
-lab=GND}
+lab=VSSPIN}
 N 910 -20 920 -20 {
-lab=GND}
+lab=VSSPIN}
 N 910 -50 920 -50 {
-lab=GND}
+lab=VSSPIN}
 N 920 -100 920 -80 {
 lab=#net10}
 N 920 -200 920 -160 {
@@ -147,11 +145,11 @@ lab=CLK}
 N 960 -230 960 -220 {
 lab=CLK}
 N 910 -230 920 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 910 -340 910 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 910 -310 920 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 900 -310 900 -300 {
 lab=#net11}
 N 900 -300 960 -300 {
@@ -159,15 +157,15 @@ lab=#net11}
 N 960 -310 960 -300 {
 lab=#net11}
 N 850 -310 860 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 850 -340 850 -310 {
-lab=VDD}
+lab=VCCPIN}
 N 850 -340 860 -340 {
-lab=VDD}
+lab=VCCPIN}
 N 850 -230 860 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 850 -310 850 -230 {
-lab=VDD}
+lab=VCCPIN}
 N 960 -310 1050 -310 {
 lab=#net11}
 N 1050 -310 1050 -50 {
@@ -191,7 +189,7 @@ lab=#net7}
 N 660 -70 660 -60 {
 lab=#net7}
 N 700 -100 760 -100 {
-lab=VDD}
+lab=VCCPIN}
 N 700 -40 760 -40 {
 lab=#net12}
 N 760 150 760 160 {
@@ -207,29 +205,29 @@ lab=#net7}
 N 620 -70 660 -70 {
 lab=#net7}
 N 700 10 710 10 {
-lab=VDD}
+lab=VCCPIN}
 N 710 -100 710 10 {
-lab=VDD}
+lab=VCCPIN}
 N 700 -70 710 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 760 -70 770 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 770 -100 770 -70 {
-lab=VDD}
+lab=VCCPIN}
 N 760 -100 770 -100 {
-lab=VDD}
+lab=VCCPIN}
 N 760 10 770 10 {
-lab=VDD}
+lab=VCCPIN}
 N 770 -70 770 10 {
-lab=VDD}
+lab=VCCPIN}
 N 760 110 770 110 {
-lab=GND}
+lab=VSSPIN}
 N 770 110 770 220 {
-lab=GND}
+lab=VSSPIN}
 N 760 220 770 220 {
-lab=GND}
+lab=VSSPIN}
 N 760 190 770 190 {
-lab=GND}
+lab=VSSPIN}
 N 590 60 620 60 {
 lab=#net7}
 N 760 60 820 60 {
@@ -238,22 +236,12 @@ N 820 -180 820 60 {
 lab=#net9}
 N 820 -180 920 -180 {
 lab=#net9}
-N 820 60 900 60 {
-lab=#net9}
 N 980 60 1050 60 {
 lab=#net11}
 N 1050 -50 1050 60 {
 lab=#net11}
 N 1050 60 1070 60 {
 lab=#net11}
-N 1150 60 1180 60 {
-lab=QN}
-N 1170 120 1180 120 {
-lab=QN}
-N 1170 60 1170 120 {
-lab=QN}
-N 1260 60 1270 60 {
-lab=Q}
 N 400 -280 400 -260 {
 lab=#net4}
 N 400 -280 460 -280 {
@@ -264,35 +252,39 @@ N 860 -280 920 -280 {
 lab=#net8}
 N 700 -40 700 -20 {
 lab=#net12}
-N 150 60 160 60 {
-lab=D}
 N 240 -40 240 -20 {
 lab=#net1}
-C {devices/ipin.sym} -50 0 0 0 {name=p1 lab=CLK}
-C {devices/lab_pin.sym} 40 0 0 1 {name=l3 sig_type=std_logic lab=CLK_NOT}
-C {devices/gnd.sym} 300 220 0 0 {name=l4 lab=GND}
+N 160 -170 180 -170 {
+lab=CLK}
+N 260 -170 280 -170 {
+lab=CLK_NOT}
+N 460 -370 460 -340 {
+lab=VCCPIN}
+N 920 -370 920 -340 {
+lab=VCCPIN}
+N 760 -130 760 -100 {
+lab=VCCPIN}
+N 300 -130 300 -100 {
+lab=VCCPIN}
+N 300 220 300 250 {
+lab=VSSPIN}
+N 460 -20 460 10 {
+lab=VSSPIN}
+N 920 -20 920 10 {
+lab=VSSPIN}
+N 760 220 760 250 {
+lab=VSSPIN}
+N 820 60 900 60 {
+lab=#net9}
+C {devices/lab_pin.sym} 280 -170 0 1 {name=l3 sig_type=std_logic lab=CLK_NOT}
 C {devices/lab_pin.sym} 260 110 0 0 {name=l5 sig_type=std_logic lab=CLK_NOT}
 C {devices/lab_pin.sym} 200 10 0 0 {name=l6 sig_type=std_logic lab=CLK}
-C {devices/vdd.sym} 300 -100 0 0 {name=l7 lab=VDD}
-C {INVX1.sym} 0 0 0 0 {name=x1}
-C {INVX1.sym} 420 60 0 0 {name=x2}
-C {devices/gnd.sym} 460 -20 0 1 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 500 -230 0 1 {name=l2 sig_type=std_logic lab=CLK_NOT}
 C {devices/lab_pin.sym} 500 -130 0 1 {name=l8 sig_type=std_logic lab=CLK}
-C {devices/vdd.sym} 460 -340 0 1 {name=l9 lab=VDD}
-C {devices/gnd.sym} 920 -20 0 1 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 960 -130 0 1 {name=l11 sig_type=std_logic lab=CLK_NOT}
 C {devices/lab_pin.sym} 960 -230 0 1 {name=l12 sig_type=std_logic lab=CLK}
-C {devices/vdd.sym} 920 -340 0 1 {name=l13 lab=VDD}
-C {devices/gnd.sym} 760 220 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} 660 10 0 0 {name=l15 sig_type=std_logic lab=CLK_NOT}
 C {devices/lab_pin.sym} 720 110 0 0 {name=l16 sig_type=std_logic lab=CLK}
-C {devices/vdd.sym} 760 -100 0 0 {name=l17 lab=VDD}
-C {INVX1.sym} 940 60 0 0 {name=x3}
-C {INVX1.sym} 1110 60 0 0 {name=x4}
-C {INVX1.sym} 1220 60 0 0 {name=x5}
-C {devices/opin.sym} 1180 120 0 0 {name=p2 lab=QN}
-C {devices/opin.sym} 1270 60 0 0 {name=p3 lab=Q}
 C {sky130_fd_pr/nfet_01v8.sym} 280 110 0 0 {name=M8
 L=0.15
 W=2
@@ -629,4 +621,24 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 150 60 0 0 {name=p4 lab=D}
+C {devices/ipin.sym} 160 -170 0 0 {name=p1 lab=CLK}
+C {devices/ipin.sym} 160 60 0 0 {name=p2 lab=D}
+C {devices/opin.sym} 1230 60 0 0 {name=p3 lab=Q}
+C {devices/lab_pin.sym} 460 -370 0 0 {name=l9 lab=VCCPIN}
+C {devices/lab_pin.sym} 300 -130 0 0 {name=l7 lab=VCCPIN}
+C {devices/lab_pin.sym} 760 -130 0 0 {name=l13 lab=VCCPIN}
+C {devices/lab_pin.sym} 920 -370 0 0 {name=l17 lab=VCCPIN}
+C {devices/lab_pin.sym} 300 250 0 0 {name=l1 lab=VSSPIN}
+C {devices/lab_pin.sym} 460 10 0 0 {name=l4 lab=VSSPIN}
+C {devices/lab_pin.sym} 760 250 0 0 {name=l10 lab=VSSPIN}
+C {devices/lab_pin.sym} 920 10 0 0 {name=l14 lab=VSSPIN}
+C {INVX1.sym} 220 -170 0 0 {name=x1 m=1
++ VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {INVX1.sym} 420 60 0 0 {name=x2 m=1
++ VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {INVX1.sym} 940 60 0 0 {name=x3 m=1
++ VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {INVX1.sym} 1110 60 0 0 {name=x4 m=1
++ VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {INVX1.sym} 1190 60 0 0 {name=x5 m=1
++ VCCPIN=VCCPIN VSSPIN=VSSPIN}

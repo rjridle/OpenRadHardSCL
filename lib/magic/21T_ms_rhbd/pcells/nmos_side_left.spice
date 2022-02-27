@@ -1,0 +1,3 @@
+* NGSPICE file created from nmos_side_left.ext - technology: sky130A
+
+X0 a_87_107# a_57_91# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u

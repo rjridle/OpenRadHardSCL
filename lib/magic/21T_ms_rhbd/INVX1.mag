@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1645727456
+timestamp 1645909608
 << nwell >>
 rect 84 832 360 1575
 << ndiff >>
@@ -96,38 +96,38 @@ rect 239 13 283 47
 rect 317 13 355 47
 rect 389 13 413 47
 rect 31 0 413 13
-use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_1 pcells
-timestamp 1645050501
-transform 0 -1 222 1 0 666
-box -23 -53 49 29
-use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0
-timestamp 1645050501
-transform 0 -1 148 1 0 740
-box -23 -53 49 29
-use poly_li1_contact  poly_li1_contact_1 pcells
-timestamp 1645652543
-transform 0 -1 148 1 0 444
-box -33 -27 33 27
-use poly_li1_contact  poly_li1_contact_0
-timestamp 1645652543
-transform 0 1 148 -1 0 987
-box -33 -27 33 27
-use pmos2_2uq  pmos2_2uq_0 pcells
-timestamp 1645639204
+use pmos2  pmos2_0 pcells
+timestamp 1645909547
 transform 1 0 19 0 1 1450
 box 52 -460 352 42
+use diff_ring_side  diff_ring_side_0 pcells
+timestamp 1645641539
+transform 1 0 444 0 1 0
+box -84 0 84 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1645641539
+transform 1 0 0 0 1 0
+box -84 0 84 1575
 use nmos_top  nmos_top_0 pcells
 timestamp 1645648650
 transform -1 0 345 0 1 101
 box -1 0 247 309
-use diff_ring_side  diff_ring_side_1 pcells
-timestamp 1645641539
-transform 1 0 0 0 1 0
-box -84 0 84 1575
-use diff_ring_side  diff_ring_side_0
-timestamp 1645641539
-transform 1 0 444 0 1 0
-box -84 0 84 1575
+use poly_li1_contact  poly_li1_contact_0 pcells
+timestamp 1645652543
+transform 0 1 148 -1 0 987
+box -33 -27 33 27
+use poly_li1_contact  poly_li1_contact_1
+timestamp 1645652543
+transform 0 -1 148 1 0 444
+box -33 -27 33 27
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0 pcells
+timestamp 1645050501
+transform 0 -1 148 1 0 740
+box -23 -53 49 29
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_1
+timestamp 1645050501
+transform 0 -1 222 1 0 666
+box -23 -53 49 29
 << labels >>
 rlabel metal1 148 740 148 740 1 A
 port 1 n

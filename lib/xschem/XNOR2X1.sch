@@ -11,67 +11,67 @@ lab=Y}
 N 380 -100 440 -100 {
 lab=#net2}
 N 380 -160 440 -160 {
-lab=#net3}
+lab=VCCPIN}
 N 160 -160 220 -160 {
-lab=#net3}
+lab=VCCPIN}
 N 120 -130 180 -130 {
-lab=#net4}
+lab=#net3}
 N 420 -130 480 -130 {
 lab=B}
 N 160 -100 220 -100 {
-lab=#net5}
+lab=#net4}
 N 160 -80 220 -80 {
-lab=#net5}
+lab=#net4}
 N 120 -50 180 -50 {
-lab=#net6}
+lab=#net5}
 N 420 -50 480 -50 {
 lab=A}
 N 160 -20 220 -20 {
 lab=Y}
 N 440 80 440 100 {
-lab=#net7}
+lab=#net6}
 N 160 160 160 180 {
-lab=#net8}
+lab=VSSPIN}
 N 640 -50 680 -50 {
 lab=B}
 N 600 -80 640 -80 {
-lab=#net3}
+lab=VCCPIN}
 N 600 -20 640 -20 {
-lab=#net4}
+lab=#net3}
 N 640 80 640 180 {
-lab=#net8}
+lab=VSSPIN}
 N -80 -50 -30 -50 {
 lab=A}
 N -40 -80 10 -80 {
-lab=#net3}
+lab=VCCPIN}
 N -40 -20 10 -20 {
-lab=#net6}
+lab=#net5}
 N -40 90 -40 180 {
-lab=#net8}
+lab=VSSPIN}
 N -40 80 -40 90 {
-lab=#net8}
+lab=VSSPIN}
 N 440 -20 440 20 {
 lab=Y}
 N 380 -20 440 -20 {
 lab=Y}
 N 440 160 440 180 {
-lab=#net8}
+lab=VSSPIN}
 N -40 -200 -40 -80 {
-lab=#net3}
+lab=VCCPIN}
 N -40 -200 610 -200 {
-lab=#net3}
+lab=VCCPIN}
 N 640 -200 640 -80 {
-lab=#net3}
+lab=VCCPIN}
 N 160 -200 160 -160 {
-lab=#net3}
+lab=VCCPIN}
 N 440 -190 440 -160 {
-lab=#net3}
+lab=VCCPIN}
 N 440 -200 440 -190 {
-lab=#net3}
+lab=VCCPIN}
 N 380 -80 440 -80 {
 lab=#net2}
 N 160 -100 160 -80 {
-lab=#net5}
+lab=#net4}
 N 380 -100 380 -80 {
 lab=#net2}
 N 160 0 440 0 {
@@ -87,7 +87,7 @@ lab=B}
 N -90 0 -80 0 {
 lab=A}
 N 610 -200 640 -200 {
-lab=#net3}
+lab=VCCPIN}
 N 440 0 470 0 {
 lab=Y}
 N 110 50 120 50 {
@@ -99,51 +99,55 @@ lab=A}
 N 480 130 490 130 {
 lab=B}
 N -40 20 10 20 {
-lab=#net6}
+lab=#net5}
 N 10 -20 10 20 {
-lab=#net6}
+lab=#net5}
 N 600 20 640 20 {
-lab=#net4}
+lab=#net3}
 N 600 -20 600 20 {
-lab=#net4}
+lab=#net3}
 N 540 0 600 0 {
-lab=#net4}
+lab=#net3}
 N 540 -180 540 0 {
-lab=#net4}
+lab=#net3}
 N 100 -180 540 -180 {
-lab=#net4}
+lab=#net3}
 N 100 -180 100 -130 {
-lab=#net4}
+lab=#net3}
 N 100 -130 120 -130 {
-lab=#net4}
+lab=#net3}
 N 100 -130 100 130 {
-lab=#net4}
+lab=#net3}
 N 100 130 120 130 {
-lab=#net4}
+lab=#net3}
 N 10 0 120 0 {
-lab=#net6}
+lab=#net5}
 N 120 -50 120 0 {
-lab=#net6}
+lab=#net5}
 N 80 0 80 200 {
-lab=#net6}
+lab=#net5}
 N 80 200 520 200 {
-lab=#net6}
+lab=#net5}
 N 520 60 520 200 {
-lab=#net6}
+lab=#net5}
 N 520 50 520 60 {
-lab=#net6}
+lab=#net5}
 N 480 50 520 50 {
-lab=#net6}
+lab=#net5}
 N -40 180 -40 240 {
-lab=#net8}
+lab=VSSPIN}
 N -40 240 640 240 {
-lab=#net8}
+lab=VSSPIN}
 N 640 180 640 240 {
-lab=#net8}
+lab=VSSPIN}
 N 440 180 440 240 {
-lab=#net8}
+lab=VSSPIN}
 N 160 180 160 240 {
-lab=#net8}
+lab=VSSPIN}
+N 160 -230 160 -200 {
+lab=VCCPIN}
+N 160 240 160 260 {
+lab=VSSPIN}
 C {sky130_fd_pr/nfet3_01v8.sym} -60 50 0 0 {name=M1
 L=0.15
 W=3
@@ -421,3 +425,5 @@ C {devices/lab_pin.sym} 490 -130 0 1 {name=l1 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 490 -50 0 1 {name=l2 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 110 50 0 0 {name=l5 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 490 130 0 1 {name=l8 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 160 -230 0 1 {name=l3 lab=VCCPIN}
+C {devices/lab_pin.sym} 160 260 0 1 {name=l4 lab=VSSPIN}

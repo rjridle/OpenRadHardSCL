@@ -1,11 +1,9 @@
-** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFF.sch
-.subckt DFF CLK QN Q D
-*.PININFO CLK:I QN:O Q:O D:I
-x1 CLK_NOT CLK INVX1
-x2 net7 net2 INVX1
-x3 net11 net9 INVX1
-x4 QN net11 INVX1
-x5 Q QN INVX1
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFQN.sch
+**.subckt DFFQN CLK QN Q D
+*.ipin CLK
+*.opin QN
+*.opin Q
+*.ipin D
 XM8 net2 CLK_NOT net3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -78,7 +76,30 @@ XM17 net9 CLK_NOT net10 GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+
 XM18 net10 net11 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
+x1 CLK_NOT CLK INVX1
+x2 net7 net2 INVX1
+x3 net11 net9 INVX1
+x4 QN net11 INVX1
+x5 Q QN INVX1
+**.ends
+
+* expanding   symbol:  INVX1.sym # of pins=2
+** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/INVX1.sym
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/INVX1.sch
+.subckt INVX1  Y A
+*.ipin A
+*.opin Y
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
 .ends
+
 .GLOBAL GND
 .GLOBAL VDD
 .end

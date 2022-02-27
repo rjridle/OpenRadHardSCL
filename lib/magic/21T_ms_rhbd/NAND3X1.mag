@@ -1,0 +1,240 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1645920277
+<< nwell >>
+rect 84 1573 880 1575
+rect 84 1556 878 1573
+rect 84 1487 941 1556
+rect 84 1145 878 1487
+rect 84 1139 220 1145
+rect 84 1105 205 1139
+rect 229 1105 263 1139
+rect 84 1102 220 1105
+rect 279 1102 878 1145
+rect 84 935 878 1102
+rect 84 934 929 935
+rect 84 859 931 934
+rect 84 832 878 859
+<< pdiffc >>
+rect 201 1105 235 1139
+rect 289 1105 323 1139
+rect 465 1105 499 1139
+rect 641 1105 675 1139
+<< psubdiff >>
+rect 31 510 931 572
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 271 47
+rect 305 13 361 47
+rect 395 46 931 47
+rect 395 13 433 46
+rect 31 12 433 13
+rect 467 12 505 46
+rect 539 12 577 46
+rect 611 12 931 46
+<< nsubdiff >>
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 199 1539
+rect 233 1505 271 1539
+rect 305 1505 361 1539
+rect 395 1505 433 1539
+rect 467 1505 505 1539
+rect 539 1505 577 1539
+rect 611 1505 931 1539
+rect 31 868 931 930
+<< psubdiffcont >>
+rect 55 13 89 47
+rect 127 13 161 47
+rect 199 13 233 47
+rect 271 13 305 47
+rect 361 13 395 47
+rect 433 12 467 46
+rect 505 12 539 46
+rect 577 12 611 46
+<< nsubdiffcont >>
+rect 55 1505 89 1539
+rect 127 1505 161 1539
+rect 199 1505 233 1539
+rect 271 1505 305 1539
+rect 361 1505 395 1539
+rect 433 1505 467 1539
+rect 505 1505 539 1539
+rect 577 1505 611 1539
+<< poly >>
+rect 175 990 247 1020
+rect 624 417 679 447
+rect 147 405 177 417
+rect 447 405 477 417
+rect 649 412 679 417
+<< locali >>
+rect 31 1539 931 1554
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 199 1539
+rect 233 1505 271 1539
+rect 305 1505 361 1539
+rect 395 1505 433 1539
+rect 467 1505 505 1539
+rect 539 1505 577 1539
+rect 611 1505 931 1539
+rect 31 1492 931 1505
+rect 201 1139 235 1162
+rect 201 1089 235 1105
+rect 289 1139 323 1157
+rect 289 1094 323 1105
+rect 465 1139 499 1157
+rect 465 1094 499 1105
+rect 641 1139 675 1157
+rect 641 1094 675 1105
+rect 289 1060 841 1094
+rect 575 986 608 1004
+rect 131 461 165 954
+rect 427 461 461 954
+rect 575 788 610 986
+rect 576 757 608 788
+rect 797 461 831 956
+rect 700 427 831 461
+rect 700 263 734 427
+rect 393 210 603 244
+rect 198 62 232 195
+rect 31 47 931 62
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 271 47
+rect 305 13 361 47
+rect 395 46 931 47
+rect 395 13 433 46
+rect 31 12 433 13
+rect 467 12 505 46
+rect 539 12 577 46
+rect 611 12 931 46
+rect 31 0 931 12
+<< viali >>
+rect 55 1505 89 1539
+rect 127 1505 161 1539
+rect 199 1505 233 1539
+rect 271 1505 305 1539
+rect 361 1505 395 1539
+rect 433 1505 467 1539
+rect 505 1505 539 1539
+rect 577 1505 611 1539
+rect 55 13 89 47
+rect 127 13 161 47
+rect 199 13 233 47
+rect 271 13 305 47
+rect 361 13 395 47
+rect 433 12 467 46
+rect 505 12 539 46
+rect 577 12 611 46
+<< metal1 >>
+rect 31 1539 931 1554
+rect 31 1505 55 1539
+rect 89 1505 127 1539
+rect 161 1505 199 1539
+rect 233 1505 271 1539
+rect 305 1505 361 1539
+rect 395 1505 433 1539
+rect 467 1505 505 1539
+rect 539 1505 577 1539
+rect 611 1505 931 1539
+rect 31 1492 931 1505
+rect 131 723 165 757
+rect 31 47 931 62
+rect 31 13 55 47
+rect 89 13 127 47
+rect 161 13 199 47
+rect 233 13 271 47
+rect 305 13 361 47
+rect 395 46 931 47
+rect 395 13 433 46
+rect 31 12 433 13
+rect 467 12 505 46
+rect 539 12 577 46
+rect 611 12 931 46
+rect 31 0 931 12
+use pmos2  pmos2_0 pcells
+timestamp 1645919226
+transform 1 0 103 0 1 1450
+box 52 -460 352 42
+use poly_li1_contact  poly_li1_contact_1 pcells
+timestamp 1645652543
+transform -1 0 148 0 -1 444
+box -33 -27 33 27
+use nmos_bottom  nmos_bottom_0 ./pcells
+timestamp 1645917848
+transform -1 0 339 0 1 103
+box 0 0 248 302
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_0 pcells
+timestamp 1645050501
+transform 0 -1 148 1 0 740
+box -23 -53 49 29
+use poly_li1_contact  poly_li1_contact_0
+timestamp 1645652543
+transform 0 1 148 -1 0 987
+box -33 -27 33 27
+use diff_ring_side  diff_ring_side_1 pcells
+timestamp 1645641539
+transform 1 0 0 0 1 0
+box -84 0 84 1575
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_1
+timestamp 1645050501
+transform 0 -1 444 1 0 740
+box -23 -53 49 29
+use poly_li1_contact  poly_li1_contact_3
+timestamp 1645652543
+transform 0 -1 444 1 0 987
+box -33 -27 33 27
+use poly_li1_contact  poly_li1_contact_2
+timestamp 1645652543
+transform -1 0 444 0 -1 444
+box -33 -27 33 27
+use pmos2  pmos2_2
+timestamp 1645919226
+transform 1 0 455 0 1 1450
+box 52 -460 352 42
+use pmos2  pmos2_1
+timestamp 1645919226
+transform 1 0 279 0 1 1450
+box 52 -460 352 42
+use nmos_side_left  nmos_side_left_0 pcells
+timestamp 1645918720
+transform 1 0 285 0 1 103
+box 0 0 248 302
+use poly_li1_contact  poly_li1_contact_5
+timestamp 1645652543
+transform 1 0 632 0 1 987
+box -33 -27 33 27
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_3
+timestamp 1645050501
+transform 0 -1 592 1 0 740
+box -23 -53 49 29
+use poly_li1_contact  poly_li1_contact_4
+timestamp 1645652543
+transform -1 0 591 0 -1 444
+box -33 -27 33 27
+use li1_M1_contact_perp_ext  li1_M1_contact_perp_ext_2
+timestamp 1645050501
+transform 0 -1 814 1 0 667
+box -23 -53 49 29
+use nmos_top  nmos_top_0 pcells
+timestamp 1645648650
+transform -1 0 840 0 1 103
+box -1 0 247 309
+use diff_ring_side  diff_ring_side_0
+timestamp 1645641539
+transform 1 0 962 0 1 0
+box -84 0 84 1575
+<< labels >>
+rlabel metal1 148 740 148 740 1 A
+port 1 n
+rlabel metal1 72 1522 72 1522 1 VDD
+port 2 n
+rlabel metal1 72 30 72 30 1 VSS
+port 3 n
+rlabel metal1 518 740 518 740 1 B
+port 4 n
+<< end >>

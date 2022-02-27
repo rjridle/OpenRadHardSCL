@@ -1,10 +1,10 @@
 v {xschem version=3.0.0 file_version=1.2 }
 G {}
-K {type=stdcell
-vhdl_stop=true
-verilog_stop=true
-format="@name @pinlist @symname"
-template="name=x1"}
+K {type=subcircuit
+format="@name @pinlist @VCCPIN @VSSPIN @symname"
+template="name=x1 VCCPIN=VCCPIN VSSPIN=VSSPIN"
+extra="VCCPIN VSSPIN"
+}
 V {}
 S {}
 E {}
@@ -16,5 +16,5 @@ L 4 -40 -0 -20 0 {}
 B 5 37.5 -2.5 42.5 2.5 {name=Y dir=out verilog_type=wire}
 B 5 -42.5 -2.5 -37.5 2.5 {name=A dir=in}
 A 4 25 0 5 180 360 {}
-T {@name} 0 15 0 0 0.2 0.2 {}
-T {@symname} 0 -25 0 0 0.2 0.2 {}
+T {@name} -20 -5 0 0 0.2 0.2 {}
+T {@symname} -10 -25 0 0 0.2 0.2 {}

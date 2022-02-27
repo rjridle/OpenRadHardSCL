@@ -8,42 +8,48 @@ N -40 -50 -40 50 {
 lab=A}
 N 0 -20 0 20 {
 lab=Y}
-N 0 80 0 100 {
-lab=GND}
-N 0 -100 0 -80 {
-lab=VDD}
 N 0 0 20 0 {
 lab=Y}
 N -60 0 -40 0 {
 lab=A}
 N -0 -50 20 -50 {
-lab=VDD}
+lab=VCCPIN}
 N -0 50 20 50 {
-lab=GND}
+lab=VSSPIN}
 N 20 50 20 80 {
-lab=GND}
-N -0 80 20 80 {
-lab=GND}
-N 0 -20 100 -20 {
-lab=Y}
+lab=VSSPIN}
 N 60 -50 60 -40 {
 lab=A}
 N -40 -40 60 -40 {
 lab=A}
 N 100 -50 110 -50 {
-lab=VDD}
+lab=VCCPIN}
 N 110 -60 110 -50 {
-lab=VDD}
+lab=VCCPIN}
 N 110 -80 110 -60 {
-lab=VDD}
+lab=VCCPIN}
 N 20 -80 20 -50 {
-lab=VDD}
-N 0 -80 20 -80 {
-lab=VDD}
-N 100 -80 110 -80 {
-lab=VDD}
-N 20 -80 100 -80 {
-lab=VDD}
+lab=VCCPIN}
+N -0 -120 -0 -80 {
+lab=VCCPIN}
+N 0 80 -0 120 {
+lab=VSSPIN}
+N 20 80 20 90 {
+lab=VSSPIN}
+N 0 90 20 90 {
+lab=VSSPIN}
+N 110 -90 110 -80 {
+lab=VCCPIN}
+N -0 -90 110 -90 {
+lab=VCCPIN}
+N 20 -90 20 -80 {
+lab=VCCPIN}
+N 100 -90 100 -80 {
+lab=VCCPIN}
+N 100 -20 100 -10 {
+lab=Y}
+N 0 -10 100 -10 {
+lab=Y}
 C {sky130_fd_pr/nfet_01v8.sym} -20 50 0 0 {name=M1
 L=0.15
 W=3
@@ -72,8 +78,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 0 100 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 0 -100 0 0 {name=l2 lab=VDD}
 C {devices/ipin.sym} -60 0 0 0 {name=p1 lab=A}
 C {devices/opin.sym} 20 0 0 0 {name=p2 lab=Y}
 C {sky130_fd_pr/pfet_01v8.sym} 80 -50 0 0 {name=M3
@@ -90,3 +94,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 0 -120 0 0 {name=l1 lab=VCCPIN}
+C {devices/lab_pin.sym} 0 120 0 0 {name=l2 lab=VSSPIN}
