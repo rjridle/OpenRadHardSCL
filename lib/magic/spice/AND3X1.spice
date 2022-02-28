@@ -1,6 +1,42 @@
 * NGSPICE file created from AND3X1.ext - technology: sky130A
 
-.subckt AND3X1 A B C Y VDD VSS
-XNAND3X1_0 VDD VSS B A C INVX1_0/A NAND3X1
-XINVX1_0 VDD VSS INVX1_0/A Y INVX1
+.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
+X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.152e+12p ps=8.19e+06u w=3e+06u l=150000u
 .ends
+
+.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
+X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
+.ends
+
+.subckt nmos_side_left a_87_107# a_57_91# a_0_0# VSUBS
+X0 a_87_107# a_57_91# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.6345e+11p pd=1.49e+06u as=1.17945e+12p ps=8.17e+06u w=3e+06u l=150000u
+.ends
+
+.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.6e+11p ps=4.56e+06u w=2e+06u l=150000u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4e+11p pd=4.54e+06u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt NAND3X1 Y A B C VCCPIN VSSPIN
+Xnmos_bottom_0 VSSPIN A nmos_bottom_0/a_0_0# VSSPIN nmos_bottom
+Xnmos_top_trim1_0 C Y li_393_210# VSSPIN nmos_top_trim1
+Xnmos_side_left_0 li_393_210# B nmos_bottom_0/a_0_0# VSSPIN nmos_side_left
+Xpmos2_0 A VCCPIN VCCPIN VCCPIN Y pmos2
+Xpmos2_1 B VCCPIN VCCPIN VCCPIN Y pmos2
+Xpmos2_2 C VCCPIN VCCPIN VCCPIN Y pmos2
+.ends
+
+.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
+X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
+.ends
+
+.subckt INVX1 Y A VCCPIN VSSPIN
+Xnmos_top_0 Y A VSSPIN VSSPIN nmos_top
+Xpmos2_0 A VCCPIN VCCPIN VCCPIN Y pmos2
+.ends
+
+.subckt AND3X1 Y A B C VCCPIN VSSPIN
+XNAND3X1_0 INVX1_0/A A B C VCCPIN VSSPIN VSSPIN NAND3X1
+XINVX1_0 Y INVX1_0/A VCCPIN VSSPIN INVX1
+.ends
+

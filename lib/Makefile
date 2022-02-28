@@ -7,7 +7,6 @@ magic: clean
 	mkdir -p magic/spice
 	mkdir -p magic/gds
 	
-	cp *.spice spice_tests/
 	mv *.spice magic/spice/
 	mv *.gds magic/gds/
 	rm -f magic/*.ext
@@ -20,6 +19,7 @@ xschem: clean
 lvs: magic xschem
 	echo "Running LVS"
 	./scripts/runlvs.sh
+	mv *.out lvs/
 
 clean:
 	rm -f magic/spice/*

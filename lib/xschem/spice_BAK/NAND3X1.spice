@@ -1,5 +1,5 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND3X1.sch
-.subckt NAND3X1 A Y B C VCCPIN VSSPIN
+.subckt NAND3X1 A Y B C
 *.PININFO A:I Y:O B:I C:I
 XM1 net2 C VSSPIN VSSPIN sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'

@@ -1,6 +1,0 @@
-* NGSPICE file created from AND3X1.ext - technology: sky130A
-
-.subckt AND3X1 A B C Y VDD VSS
-XNAND3X1_0 VDD VSS B A C INVX1_0/A NAND3X1
-XINVX1_0 VDD VSS INVX1_0/A Y INVX1
-.ends

@@ -1,7 +1,10 @@
 extract all
 
 # Hierarchical support unneeded.
-ext2spice heirarchy off
+ext2spice subcircuit on
+ext2spice subcircuit top on
+ext2spice subcircuit descend on
+ext2spice hierarchy on
 ext2spice format ngspice
 ext2spice cthresh infinite
 ext2spice rthresh infinite

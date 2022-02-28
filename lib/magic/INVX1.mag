@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646011939
+timestamp 1646036026
 << nwell >>
 rect 84 832 360 1575
 << ndiff >>
@@ -102,45 +102,45 @@ rect 239 13 283 47
 rect 317 13 355 47
 rect 389 13 413 47
 rect 31 0 413 13
-use li1_M1_contact  li1_M1_contact_0 pcells
+use li1_M1_contact  li1_M1_contact_1 pcells
 timestamp 1646004885
-transform 1 0 148 0 1 666
+transform -1 0 296 0 -1 666
 box -53 -33 29 33
-use pmos2  pmos2_0 pcells
-timestamp 1645919226
-transform 1 0 19 0 1 1450
-box 52 -460 352 42
-use poly_li1_contact  poly_li1_contact_1 pcells
-timestamp 1645652543
-transform 0 -1 148 1 0 444
-box -33 -27 33 27
-use poly_li1_contact  poly_li1_contact_0
-timestamp 1645652543
-transform 0 1 148 -1 0 987
-box -33 -27 33 27
+use diff_ring_side  diff_ring_side_0 pcells
+timestamp 1645641539
+transform 1 0 444 0 1 0
+box -84 0 84 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1645641539
+transform 1 0 0 0 1 0
+box -84 0 84 1575
 use nmos_top  nmos_top_0 pcells
 timestamp 1645648650
 transform -1 0 345 0 1 101
 box -1 0 247 309
-use diff_ring_side  diff_ring_side_1 pcells
-timestamp 1645641539
-transform 1 0 0 0 1 0
-box -84 0 84 1575
-use diff_ring_side  diff_ring_side_0
-timestamp 1645641539
-transform 1 0 444 0 1 0
-box -84 0 84 1575
-use li1_M1_contact  li1_M1_contact_1
+use poly_li1_contact  poly_li1_contact_0 pcells
+timestamp 1645652543
+transform 0 1 148 -1 0 987
+box -33 -27 33 27
+use poly_li1_contact  poly_li1_contact_1
+timestamp 1645652543
+transform 0 -1 148 1 0 444
+box -33 -27 33 27
+use pmos2  pmos2_0 pcells
+timestamp 1645919226
+transform 1 0 19 0 1 1450
+box 52 -460 352 42
+use li1_M1_contact  li1_M1_contact_0
 timestamp 1646004885
-transform -1 0 296 0 -1 666
+transform 1 0 148 0 1 666
 box -53 -33 29 33
 << labels >>
-rlabel metal1 72 1522 72 1522 1 VDD
-port 1 n
-rlabel metal1 72 30 72 30 1 VSS
-port 2 n
-rlabel metal1 148 666 148 666 1 A
-port 3 n
 rlabel metal1 296 666 296 666 1 Y
+port 1 n
+rlabel metal1 148 666 148 666 1 A
+port 2 n
+rlabel metal1 72 1522 72 1522 1 VCCPIN
+port 3 n
+rlabel metal1 72 30 72 30 1 VSSPIN
 port 4 n
 << end >>

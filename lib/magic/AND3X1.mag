@@ -1,39 +1,34 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646008330
-<< nwell >>
-rect 55 1505 89 1539
-<< locali >>
-rect 55 1505 89 1539
-rect 55 13 89 47
+timestamp 1646036512
 << metal1 >>
 rect 55 1505 89 1539
 rect 205 797 239 831
 rect 427 723 461 757
 rect 649 649 683 683
-rect 833 649 1072 683
+rect 867 649 1057 683
 rect 1241 649 1275 683
 rect 55 13 89 47
-use NAND3X1  NAND3X1_0
-timestamp 1646008269
-transform 1 0 0 0 1 0
-box -84 0 1046 1575
 use INVX1  INVX1_0
-timestamp 1646005839
+timestamp 1646036026
 transform 1 0 962 0 1 0
 box -84 0 528 1575
+use NAND3X1  NAND3X1_0
+timestamp 1646035578
+transform 1 0 0 0 1 0
+box -84 0 1046 1575
 << labels >>
-rlabel metal1 222 814 222 814 1 A
-port 1 n
-rlabel metal1 444 740 444 740 1 B
-port 2 n
-rlabel metal1 666 666 666 666 1 C
-port 3 n
 rlabel metal1 1258 666 1258 666 1 Y
+port 1 n
+rlabel metal1 222 814 222 814 1 A
+port 2 n
+rlabel metal1 444 740 444 740 1 B
+port 3 n
+rlabel metal1 666 666 666 666 1 C
 port 4 n
-rlabel metal1 72 1522 72 1522 1 VDD
+rlabel metal1 72 1522 72 1522 1 VCCPIN
 port 5 n
-rlabel metal1 72 30 72 30 1 VSS
+rlabel metal1 72 30 72 30 1 VSSPIN
 port 6 n
 << end >>

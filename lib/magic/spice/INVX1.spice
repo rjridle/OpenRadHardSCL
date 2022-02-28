@@ -1,6 +1,16 @@
 * NGSPICE file created from INVX1.ext - technology: sky130A
 
-.subckt INVX1 VDD VSS A Y
-X0 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=1.77225e+11p pd=1.565e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
-X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=-4.325e+09p pd=4.585e+06u as=1.4725e+10p ps=9.105e+06u w=2e+06u l=150000u M=2
+.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
+X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
 .ends
+
+.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.6e+11p ps=4.56e+06u w=2e+06u l=150000u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4e+11p pd=4.54e+06u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt INVX1 Y A VCCPIN VSSPIN
+Xnmos_top_0 Y A VSSPIN VSSPIN nmos_top
+Xpmos2_0 A VCCPIN VCCPIN VCCPIN Y pmos2
+.ends
+

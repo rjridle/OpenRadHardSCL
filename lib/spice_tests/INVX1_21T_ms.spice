@@ -1,6 +1,0 @@
-* NGSPICE file created from INVX1_21T_ms.ext - technology: sky130A
-
-.subckt INVX1_21T_ms A Y VDD VSS
-X0 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=1.77225e+11p pd=1.565e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
-X1 Y A VDD VDD sky130_fd_pr__pfet_01v8 ad=-4.325e+09p pd=4.585e+06u as=1.1e+12p ps=9.1e+06u w=2e+06u l=150000u M=2
-.ends
