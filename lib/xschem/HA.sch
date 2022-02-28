@@ -1,0 +1,28 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
+N 120 -40 140 -40 {
+lab=SUM}
+N 120 40 140 40 {
+lab=Cout}
+N -20 -60 -20 20 {
+lab=A}
+N -20 20 -0 20 {
+lab=A}
+N -40 -20 -40 60 {
+lab=B}
+N -40 60 0 60 {
+lab=B}
+N -60 -60 0 -60 {
+lab=A}
+N -60 -20 -0 -20 {
+lab=B}
+C {XOR2X1.sym} 60 -40 0 0 {name=x1 VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {AND2X1.sym} 60 40 0 0 {name=x2 VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {devices/ipin.sym} -60 -60 0 0 {name=p1 lab=A}
+C {devices/ipin.sym} -60 -20 0 0 {name=p2 lab=B}
+C {devices/opin.sym} 140 -40 0 0 {name=p3 lab=SUM}
+C {devices/opin.sym} 140 40 0 0 {name=p4 lab=COUT}

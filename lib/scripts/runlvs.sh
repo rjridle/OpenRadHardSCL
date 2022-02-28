@@ -1,21 +1,24 @@
 #!/bin/sh
-VARIANT=$1
-
-if [ $# -gt 1 ]
+echo "PWD: $PWD"
+echo "Args: $#"
+if [ $# -gt 0 ]
 then
-    MAG_SPICE_FILES="magic/spice/${VARIANT}/${2}.spice"
-    XSCHEM_SPICE_FILES="xschem/spice/${2}.spice"
-    echo "Extracting 1 magic SPICE file: $MAG_SPICE_FILES"
-    echo "Extracting 1 xschem SPICE file: $XSCHEM_SPICE_FILES"
+    CELL=$1
+    MAGIC_SPICE_FILE="./magic/spice/${CELL}.spice"
+    XSCHEM_SPICE_FILE="./xschem/${CELL}.spice"
+    echo "LVS: ${MAGIC_SPICE_FILE} vs. ${XSCHEM_SPICE_FILE}"
+    ./scripts/runlvs_single.sh ${MAGIC_SPICE_FILE} ${XSCHEM_SPICE_FILE} 
 else
-    MAG_SPICE_FILES=$(ls magic/spice/${VARIANT}/*.spice)
-    XSCHEM_SPICE_FILES=$(ls xschem/spice/*.spice)
-    echo "Extracting (${VARIANT}) SPICE files: $FILES"
-    echo "Extracting xschem SPICE files: $XSCHEM_SPICE_FILES"
+    CELL_FILES=$(ls ./magic/spice/*.spice)
+    echo "Running LVS on whole library:\n${CELL_FILES}"
 fi
 
-netgen -noc << EOF
-permute transistors
-lvs $MAG_SPICE_FILES $XSCHEM_SPICE_FILES
-quit
-EOF
+for file in ${CELL_FILES}; do
+    CELL_NAME=$(basename "${file}" .spice)
+    MAGIC_SPICE_FILE="./magic/spice/${CELL_NAME}.spice"
+    XSCHEM_SPICE_FILE="./xschem/${CELL_NAME}.spice"
+    echo "LVS: ${MAGIC_SPICE_FILE} vs. ${XSCHEM_SPICE_FILE}"
+    ./scripts/runlvs_single.sh ${MAGIC_SPICE_FILE} ${XSCHEM_SPICE_FILE} 
+    @echo "\n\n"
+done
+

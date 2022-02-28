@@ -1,4 +1,0 @@
-* SPICE3 file created from nmos_bottom_left.ext - technology: sky130A
-
-M1000 a_86_96# a_56_80# a_0_0# SUB nshort w=2.88u l=0.15u
-+  ad=0p pd=0u as=0p ps=0u

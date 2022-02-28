@@ -1,3 +1,0 @@
-* NGSPICE file created from nmos_top.ext - technology: sky130A
-
-X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u

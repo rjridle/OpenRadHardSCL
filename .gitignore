@@ -7,3 +7,4 @@ MAGIC.LOG
 tclIndex
 *.log
 *.out
+sky130A/libs.ref/*

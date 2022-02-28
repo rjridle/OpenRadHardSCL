@@ -1,4 +1,0 @@
-* NGSPICE file created from diff_ring_center.ext - technology: sky130A
-
-X0 nmos_top_1/a_85_108# nmos_top_1/a_55_92# nmos_top_1/a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
-X1 a_86_107# a_56_91# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
