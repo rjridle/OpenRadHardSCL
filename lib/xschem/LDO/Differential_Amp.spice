@@ -1,0 +1,46 @@
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/LDO/Differential_Amp.sch
+**.subckt Differential_Amp
+V1 MINUS 0 1.2
+V2 PLUS 0 1.3
+V3 VCC 0 1.8
+C1 DIFFOUT 0 2p m=1
+XM6 G1 G1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 G1_1 G1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 DIFFOUT PLUS Vtop VCC sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 G0 MINUS Vtop VCC sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+I0 VCC Vtop 20u
+Vmeas G0 G1 0
+.save  i(vmeas)
+Vmeas1 DIFFOUT G1_1 0
+.save  i(vmeas1)
+.save  v(diffout)
+.save  v(vtop)
+.save  v(g1)
+.save  v(plus)
+.save  v(g0)
+.save  v(vcc)
+.save  v(g1_1)
+.save  v(0)
+**** begin user architecture code
+
+.lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.control
+*op
+*save all
+*write Differential_Amp.raw
+dc V2 1 1.8 0.01
+plot v(PLUS) vs v(PLUS)
+.endc
+
+**** end user architecture code
+**.ends
+.end
