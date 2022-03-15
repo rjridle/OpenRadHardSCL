@@ -53,9 +53,9 @@ C {devices/lab_pin.sym} 140 -190 0 1 {name=l5 sig_type=std_logic lab=S}
 C {devices/gnd.sym} 80 -110 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 50 160 0 0 {name=l9 sig_type=std_logic lab=R}
 C {devices/lab_pin.sym} 170 160 0 1 {name=l10 sig_type=std_logic lab=QN}
-C {SRELATCH.sym} 110 140 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
 C {devices/lab_pin.sym} 110 80 0 0 {name=l11 sig_type=std_logic lab=E}
 C {devices/vsource.sym} 190 -70 0 0 {name=V4 value="pulse 0 1.8 0 1p 1p 5n 10n"  
 		}
 C {devices/lab_pin.sym} 250 -120 0 1 {name=l12 sig_type=std_logic lab=E}
 C {devices/gnd.sym} 190 -40 0 0 {name=l13 lab=GND}
+C {SRELATCH.sym} 110 140 0 0 {name=x1 VDD=VDD VSS=GND}

@@ -16,7 +16,7 @@ XM7 net2 PLUS net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2)
 XM10 net4 MINUS net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM11 net1 Vbias VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM11 net10 Vbias VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 XM13 Vout net5 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -25,14 +25,12 @@ XM13 Vout net5 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2)
 XM16 net7 Vbias VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-V2 PLUS GND 1
+V2 PLUS GND 1.2
 V3 VDD GND 1.8
-V1 MINUS GND 1
 .save  v(plus)
 .save  v(minus)
 .save  v(net2)
 .save  v(net4)
-.save  v(minus)
 .save  v(vout)
 .save  v(plus)
 Vmeas1 net4 net3 0
@@ -50,6 +48,12 @@ XM1 net6 Vcs net8 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) 
 .save  v(net6)
 .save  v(vbias)
 .save  v(vbias)
+R1 Vout MINUS 1k m=1
+R2 net9 GND 4k m=1
+Vmeas4 MINUS net9 0
+.save  i(vmeas4)
+Vmeas6 net10 net1 0
+.save  i(vmeas6)
 **** begin user architecture code
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
@@ -82,7 +86,7 @@ XM3 net2 net2 net6 GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2)
 XM4 net1 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-R1 net5 GND 1k m=1
+R1 net5 GND 10k m=1
 Vmeas_ref2 net4 net5 0
 .save  i(vmeas_ref2)
 Vmeas1 net6 net1 0
@@ -98,7 +102,7 @@ Vmeas_ref4 Vcs net2 0
 .save  i(vmeas_ref4)
 Vmeas_ref5 VDD net10 0
 .save  i(vmeas_ref5)
-I0 net10 net3 20u
+I0 net10 net3 0.25u
 .save  v(vbias)
 .save  v(vcs)
 .ends
@@ -112,7 +116,7 @@ I0 net10 net3 20u
 .control
 save all
 op
-write opamp_2stage.raw
+write opamp_2stage_V2.raw
 .endc
 
 

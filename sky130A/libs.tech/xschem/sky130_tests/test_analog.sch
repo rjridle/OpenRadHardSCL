@@ -86,8 +86,8 @@ place=end
 value="
 
 .options savecurrents
+.save all
 .control
-save all
 save @m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
 save @m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
 op
@@ -114,18 +114,12 @@ C {devices/lab_pin.sym} 480 -480 0 1 {name=l4 sig_type=std_logic lab=OUT2}
 C {devices/launcher.sym} 800 -210 0 0 {name=h1
 descr=Annotate 
 tclcommand="ngspice::annotate"}
-C {devices/ngspice_probe.sym} 410 -580 0 0 {name=r1}
-C {devices/ngspice_probe.sym} 410 -300 0 0 {name=r2}
-C {devices/ngspice_probe.sym} 310 -90 0 0 {name=r3}
-C {devices/ngspice_probe.sym} 150 -160 0 0 {name=r4}
 C {devices/vsource.sym} 340 -690 0 0 {name=V4 value=1.0 net_name=true}
 C {devices/gnd.sym} 340 -660 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 410 -750 0 1 {name=l15 sig_type=std_logic lab=IN2}
-C {devices/ngspice_probe.sym} 160 -440 0 0 {name=r5}
 C {devices/vsource.sym} 740 -690 0 0 {name=V5 value=1.0 net_name=true}
 C {devices/gnd.sym} 740 -660 0 0 {name=l16 lab=GND}
 C {devices/lab_pin.sym} 810 -750 0 1 {name=l17 sig_type=std_logic lab=BIAS2}
-C {devices/ngspice_probe.sym} 310 -370 0 0 {name=r6}
 C {devices/launcher.sym} 800 -100 0 0 {name=h2
 descr="View Raw file" 
 tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
@@ -155,7 +149,6 @@ C {devices/code.sym} 1050 -370 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
-** opencircuitdesign pdks install
 .lib $::SKYWATER_MODELS/sky130.lib.spice tt
 
 "

@@ -36,21 +36,19 @@ N 240 80 260 80 {
 lab=#net2}
 N 260 80 260 100 {
 lab=#net2}
-N 260 100 280 100 {
-lab=#net2}
 N 240 160 260 160 {
 lab=#net3}
 N 260 140 260 160 {
 lab=#net3}
-N 260 140 280 140 {
-lab=#net3}
+N 260 100 280 100 {}
+N 260 140 280 140 {}
 C {devices/opin.sym} 400 120 0 0 {name=p1 lab=COUT}
 C {devices/ipin.sym} -120 -60 0 0 {name=p2 lab=A}
-C {AND2X1.sym} 180 80 0 0 {name=x1 VCCPIN=VCCPIN VSSPIN=VSSPIN}
-C {XOR2X1.sym} 0 -40 0 0 {name=x2 VCCPIN=VCCPIN VSSPIN=VSSPIN}
-C {XOR2X1.sym} 180 0 0 0 {name=x3 VCCPIN=VCCPIN VSSPIN=VSSPIN}
-C {AND2X1.sym} 180 160 0 0 {name=x4 VCCPIN=VCCPIN VSSPIN=VSSPIN}
 C {devices/ipin.sym} -120 -20 0 0 {name=p3 lab=B}
 C {devices/ipin.sym} -120 20 0 0 {name=p4 lab=CIN}
-C {OR2X1.sym} 340 120 0 0 {name=x5 VCCPIN=VCCPIN VSSPIN=VSSPIN}
 C {devices/opin.sym} 240 0 0 0 {name=p5 lab=SUM}
+C {XOR2X1.sym} 0 -40 0 0 {name=x1 VDD=VDD VSS=VSS}
+C {XOR2X1.sym} 180 0 0 0 {name=x2 VDD=VDD VSS=VSS}
+C {AND2X1.sym} 180 80 0 0 {name=x3 VDD=VDD VSS=VSS}
+C {AND2X1.sym} 180 160 0 0 {name=x4 VDD=VDD VSS=VSS}
+C {OR2X1.sym} 340 120 0 0 {name=x5 VDD=VDD VSS=VSS}

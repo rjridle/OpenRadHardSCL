@@ -50,7 +50,7 @@ C {devices/lab_pin.sym} 140 -190 0 1 {name=l5 sig_type=std_logic lab=A}
 C {devices/gnd.sym} 80 -110 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 120 0 0 {name=l9 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 190 160 0 1 {name=l10 sig_type=std_logic lab=COUT}
-C {FA.sym} 130 120 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
+C {FA.sym} 130 120 0 0 {name=x1 VDD=VDD VSS=GND}
 C {devices/vsource.sym} 180 -70 0 0 {name=V4 value="pulse 0 1.8 0 1p 1p 20n 40n"  
 		}
 C {devices/lab_pin.sym} 240 -120 0 1 {name=l11 sig_type=std_logic lab=CIN}

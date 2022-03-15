@@ -44,5 +44,5 @@ C {devices/vsource.sym} 80 -140 0 0 {name=V3 value="pulse 0 1.8 0 1p 1p 5n 10n"
 C {devices/lab_pin.sym} 140 -190 0 1 {name=l5 sig_type=std_logic lab=A}
 C {devices/gnd.sym} 80 -110 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 120 0 0 {name=l9 sig_type=std_logic lab=B}
-C {HA.sym} 130 100 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
 C {devices/lab_pin.sym} 190 120 0 1 {name=l10 sig_type=std_logic lab=COUT}
+C {HA.sym} 130 100 0 0 {name=x1 VDD=VDD VSS=GND}

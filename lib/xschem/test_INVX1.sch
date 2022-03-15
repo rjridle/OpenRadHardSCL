@@ -39,4 +39,4 @@ C {devices/vsource.sym} 20 -100 0 0 {name=V1 value=1.8
 C {devices/vdd.sym} 20 -130 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 80 -70 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 20 -70 0 0 {name=l3 lab=GND}
-C {INVX1.sym} 80 10 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
+C {INVX1.sym} 80 10 0 0 {name=x1 VDD=VDD VSS=GND}

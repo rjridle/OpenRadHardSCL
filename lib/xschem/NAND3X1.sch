@@ -9,7 +9,7 @@ lab=VSSPIN}
 N 0 -20 -0 20 {
 lab=Y}
 N 0 -100 0 -80 {
-lab=VCCPIN}
+lab=VDD}
 N -0 80 0 100 {
 lab=#net1}
 N 0 160 -0 180 {
@@ -25,27 +25,27 @@ lab=VSSPIN}
 N 0 210 10 210 {
 lab=VSSPIN}
 N 0 -80 60 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 60 -80 170 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 170 -80 230 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 230 -80 340 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 340 -80 400 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 0 -80 0 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 60 -80 60 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 170 -80 170 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 230 -80 230 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 340 -80 340 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 400 -80 400 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 190 -50 190 -40 {
 lab=B}
 N 130 -40 190 -40 {
@@ -224,5 +224,5 @@ C {devices/lab_pin.sym} 120 -50 0 0 {name=l7 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 290 -50 0 0 {name=l8 sig_type=std_logic lab=C}
 C {devices/ipin.sym} -130 30 0 0 {name=p3 lab=B}
 C {devices/ipin.sym} -130 60 0 0 {name=p4 lab=C}
-C {devices/lab_pin.sym} 0 -100 0 0 {name=l2 lab=VCCPIN}
-C {devices/lab_pin.sym} 0 260 0 0 {name=l3 lab=VSSPIN}
+C {devices/lab_pin.sym} 0 -100 0 0 {name=l2 lab=VDD}
+C {devices/lab_pin.sym} 0 260 0 0 {name=l3 lab=VSS}

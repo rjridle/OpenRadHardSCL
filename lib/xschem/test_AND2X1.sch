@@ -44,4 +44,4 @@ C {devices/vsource.sym} 80 -140 0 0 {name=V3 value="pwl 0n 0 10n 0 10.1n 1.8 20n
 C {devices/lab_pin.sym} 140 -190 0 1 {name=l5 sig_type=std_logic lab=A}
 C {devices/gnd.sym} 80 -110 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 40 120 0 0 {name=l9 sig_type=std_logic lab=B}
-C {AND2X1.sym} 100 100 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
+C {AND2X1.sym} 100 100 0 0 {name=x1 VDD=VDD VSS=GND}

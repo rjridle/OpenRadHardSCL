@@ -1,0 +1,42 @@
+* NGSPICE file created from AND2X1.ext - technology: sky130A
+
+.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
+X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
+.ends
+
+.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.6e+11p ps=4.56e+06u w=2e+06u l=150000u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4e+11p pd=4.54e+06u as=0p ps=0u w=2e+06u l=150000u
+.ends
+
+.subckt invx1_pcell VSSPIN VCCPIN a_154_410# a_205_1105#
+Xnmos_top_0 a_205_1105# a_154_410# VSSPIN VSSPIN nmos_top
+Xpmos2_0 a_154_410# VCCPIN VCCPIN VCCPIN a_205_1105# pmos2
+.ends
+
+.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
+X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.152e+12p ps=8.19e+06u w=3e+06u l=150000u
+.ends
+
+.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
+X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772e+11p pd=1.56e+06u as=1.15725e+12p ps=8.12e+06u w=3e+06u l=150000u
+.ends
+
+.subckt nand2x1_pcell VSSPIN VCCPIN a_229_1105# a_168_403# a_362_410#
+Xnmos_bottom_0 VSSPIN a_168_403# nmos_bottom_0/a_0_0# VSSPIN nmos_bottom
+Xnmos_top_trim1_0 a_362_410# a_229_1105# nmos_bottom_0/a_0_0# VSSPIN nmos_top_trim1
+Xpmos2_0 a_168_403# VCCPIN VCCPIN VCCPIN a_229_1105# pmos2
+Xpmos2_1 a_362_410# VCCPIN VCCPIN VCCPIN a_229_1105# pmos2
+.ends
+
+.subckt and2x1_pcell VSSPIN VCCPIN nand2x1_pcell_0/a_362_410# invx1_pcell_0/a_205_1105#
++ nand2x1_pcell_0/a_168_403#
+Xinvx1_pcell_0 VSSPIN VCCPIN m1_547_649# invx1_pcell_0/a_205_1105# invx1_pcell
+Xnand2x1_pcell_0 VSSPIN VCCPIN m1_547_649# nand2x1_pcell_0/a_168_403# nand2x1_pcell_0/a_362_410#
++ nand2x1_pcell
+.ends
+
+.subckt AND2X1 Y A B VCCPIN VSSPIN
+Xand2x1_pcell_0 VSSPIN VCCPIN B Y A and2x1_pcell
+.ends
+

@@ -28,5 +28,5 @@ C {devices/ipin.sym} -60 -60 0 0 {name=p1 lab=S}
 C {devices/ipin.sym} -60 100 0 0 {name=p2 lab=R}
 C {devices/opin.sym} 80 -40 0 0 {name=p3 lab=QN}
 C {devices/opin.sym} 80 80 0 0 {name=p4 lab=Q}
-C {NOR2X1.sym} 0 80 0 0 {name=x1 VCCPIN=VCCPIN VSSPIN=VSSPIN}
-C {NOR2X1.sym} 0 -40 0 0 {name=x2 VCCPIN=VCCPIN VSSPIN=VSSPIN}
+C {NOR2X1.sym} 0 -40 0 0 {name=x1 VDD=VDD VSS=VSS}
+C {NOR2X1.sym} 0 80 0 0 {name=x2 VDD=VDD VSS=VSS}

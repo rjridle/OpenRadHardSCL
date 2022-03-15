@@ -20,7 +20,7 @@ XM3 net2 net2 net6 GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2)
 XM4 net1 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-R1 net5 GND 1k m=1
+R1 net5 GND 10k m=1
 Vmeas_ref2 net4 net5 0
 .save  i(vmeas_ref2)
 Vmeas1 net6 net1 0

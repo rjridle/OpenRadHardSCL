@@ -161,7 +161,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/res.sym} -160 420 0 0 {name=R1
-value=1k
+value=10k
 footprint=1206
 device=resistor
 m=1}

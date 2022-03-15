@@ -55,5 +55,5 @@ C {devices/vsource.sym} 80 -230 0 0 {name=V4 value="pulse 0 1.8 0 1p 1p 5ns 10ns
 		}
 C {devices/lab_pin.sym} 140 -280 0 1 {name=l10 sig_type=std_logic lab=A}
 C {devices/gnd.sym} 80 -200 0 0 {name=l11 lab=GND}
-C {NAND3X1.sym} 100 100 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
+C {NAND3X1.sym} 100 100 0 0 {name=x1 VDD=VDD VSS=GND}
 C {devices/lab_pin.sym} 40 120 0 0 {name=l12 sig_type=std_logic lab=C}

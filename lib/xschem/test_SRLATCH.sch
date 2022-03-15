@@ -46,5 +46,5 @@ C {devices/vsource.sym} 80 -140 0 0 {name=V3 value="pwl 0n 0 5n 0 5.1n 1.8 10n 1
 C {devices/lab_pin.sym} 140 -190 0 1 {name=l5 sig_type=std_logic lab=S}
 C {devices/gnd.sym} 80 -110 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 40 120 0 0 {name=l9 sig_type=std_logic lab=R}
-C {SRLATCH.sym} 100 100 0 0 {name=x1 VCCPIN=VDD VSSPIN=GND}
+C {SRLATCH.sym} 100 100 0 0 {name=x1 VDD=VDD VSS=GND}
 C {devices/lab_pin.sym} 160 120 0 1 {name=l10 sig_type=std_logic lab=QN}

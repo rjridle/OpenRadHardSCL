@@ -1,23 +1,34 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1646036512
+timestamp 1647328358
 << metal1 >>
 rect 55 1505 89 1539
 rect 205 797 239 831
 rect 427 723 461 757
 rect 649 649 683 683
-rect 867 649 1057 683
 rect 1241 649 1275 683
 rect 55 13 89 47
-use INVX1  INVX1_0
-timestamp 1646036026
-transform 1 0 962 0 1 0
-box -84 0 528 1575
-use NAND3X1  NAND3X1_0
-timestamp 1646035578
+use and3x1_pcell  and3x1_pcell_0 pcells
+timestamp 1647328294
 transform 1 0 0 0 1 0
-box -84 0 1046 1575
+box -84 0 1490 1575
+use li1_M1_contact  li1_M1_contact_1 pcells
+timestamp 1646004885
+transform 1 0 666 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1646004885
+transform -1 0 1258 0 -1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1646004885
+transform 1 0 222 0 1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1646004885
+transform 1 0 444 0 1 740
+box -53 -33 29 33
 << labels >>
 rlabel metal1 1258 666 1258 666 1 Y
 port 1 n
@@ -27,8 +38,8 @@ rlabel metal1 444 740 444 740 1 B
 port 3 n
 rlabel metal1 666 666 666 666 1 C
 port 4 n
-rlabel metal1 72 1522 72 1522 1 VCCPIN
+rlabel metal1 72 1522 72 1522 1 VDD
 port 5 n
-rlabel metal1 72 30 72 30 1 VSSPIN
+rlabel metal1 72 30 72 30 1 VSS
 port 6 n
 << end >>

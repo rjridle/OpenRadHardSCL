@@ -13,7 +13,7 @@ lab=Y}
 N -60 0 -40 0 {
 lab=A}
 N -0 -50 20 -50 {
-lab=VCCPIN}
+lab=VDD}
 N -0 50 20 50 {
 lab=VSSPIN}
 N 20 50 20 80 {
@@ -23,15 +23,15 @@ lab=A}
 N -40 -40 60 -40 {
 lab=A}
 N 100 -50 110 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 110 -60 110 -50 {
-lab=VCCPIN}
+lab=VDD}
 N 110 -80 110 -60 {
-lab=VCCPIN}
+lab=VDD}
 N 20 -80 20 -50 {
-lab=VCCPIN}
+lab=VDD}
 N -0 -120 -0 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 0 80 -0 120 {
 lab=VSSPIN}
 N 20 80 20 90 {
@@ -39,13 +39,13 @@ lab=VSSPIN}
 N 0 90 20 90 {
 lab=VSSPIN}
 N 110 -90 110 -80 {
-lab=VCCPIN}
+lab=VDD}
 N -0 -90 110 -90 {
-lab=VCCPIN}
+lab=VDD}
 N 20 -90 20 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 100 -90 100 -80 {
-lab=VCCPIN}
+lab=VDD}
 N 100 -20 100 -10 {
 lab=Y}
 N 0 -10 100 -10 {
@@ -94,5 +94,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 0 -120 0 0 {name=l1 lab=VCCPIN}
-C {devices/lab_pin.sym} 0 120 0 0 {name=l2 lab=VSSPIN}
+C {devices/lab_pin.sym} 0 -120 0 0 {name=l1 lab=VDD}
+C {devices/lab_pin.sym} 0 120 0 0 {name=l2 lab=VSS}

@@ -7,6 +7,7 @@ magic: clean
 	mkdir -p magic/spice
 	mkdir -p magic/gds
 	
+	cp *.spice magic/spice_tests/
 	mv *.spice magic/spice/
 	mv *.gds magic/gds/
 	rm -f magic/*.ext
