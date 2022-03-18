@@ -60,12 +60,17 @@ transform 1 0 0 0 1 0
 box -84 0 2304 1575
 << labels >>
 rlabel metal1 72 1522 72 1522 1 VDD
-port 4 n
+port 1 n
 rlabel metal1 72 30 72 30 1 VSS
-port 5 n
+port 2 n
 rlabel metal1 55 1505 89 1539 1 VDD
+port 3 n
 rlabel metal1 55 13 89 47 1 VSS
+port 4 n
 rlabel metal1 2055 575 2089 609 1 B
+port 5 n
 rlabel metal1 1611 649 1645 683 1 Y
+port 6 n
 rlabel metal1 131 871 165 905 1 A
+port 7 n
 << end >>

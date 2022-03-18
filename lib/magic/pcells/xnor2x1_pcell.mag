@@ -404,5 +404,7 @@ transform 1 0 1924 0 1 814
 box -53 -33 29 33
 << labels >>
 rlabel metal1 55 1505 89 1539 1 VDD
+port 1 n
 rlabel metal1 55 13 89 47 1 VSS
+port 2 n
 << end >>

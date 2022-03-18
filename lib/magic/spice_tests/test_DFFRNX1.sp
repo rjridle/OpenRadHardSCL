@@ -1,9 +1,10 @@
-** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/test_DFFX1.sch
-**.subckt test_DFFX1
-V2 D GND pwl 0n 1.8 10n 1.8 10.1n 0 20n 0 20.1n 1.8 27n 1.8 27.1n 0 34n 0 34.1n 1.8
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/test_DFFRNX1.sch
+**.subckt test_DFFRNX1
+V2 D GND pwl 0n 1.8 9.9n 1.8 10n 0 19.9n 0 20n 1.8
 V1 VDD GND 1.8
 V3 CLK GND pulse 0 1.8 0 1p 1p 5n 10n
-x1 Q QN D CLK VDD GND DFFX1
+V4 RN GND pwl 0n 1.8 25.1n 1.8 26n 0
+x1 Q QN D CLK RN VDD GND DFFRNX1
 **** begin user architecture code
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
@@ -12,19 +13,20 @@ x1 Q QN D CLK VDD GND DFFX1
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  DFFX1.sym # of pins=4
-** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFX1.sym
-** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFX1.sch
-.subckt DFFX1  Q QN D CLK  VDD  VSS
-*.ipin CLK
+* expanding   symbol:  DFFRNX1.sym # of pins=5
+** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFRNX1.sym
+** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFRNX1.sch
+.subckt DFFRNX1  Q QN D CLK RN  VDD  VSS
 *.ipin D
 *.opin QN
+*.ipin RN
+*.ipin CLK
 *.opin Q
-x1 net2 net3 CLK net1 VDD VSS NAND3X1
-x2 net1 net2 D VDD VSS NAND2X1
-x3 net4 net1 net3 VDD VSS NAND2X1
-x4 net3 net4 CLK VDD VSS NAND2X1
-x5 QN net2 Q VDD VSS NAND2X1
+x2 net4 net1 RN D VDD VSS NAND3X1
+x1 net1 net3 CLK net4 VDD VSS NAND3X1
+x3 net2 net4 net3 VDD VSS NAND2X1
+x4 net3 net2 CLK RN VDD VSS NAND3X1
+x5 QN net1 RN Q VDD VSS NAND3X1
 x6 Q QN net3 VDD VSS NAND2X1
 .ends
 
@@ -100,8 +102,11 @@ XM6 net1 B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W
 
 
 .control
-tran 0.01n 45n
-plot CLK D Q QN
+tran 0.01n 40n
+plot CLK D Q
+plot CLK
+plot D
+plot Q
 .endc
 
 

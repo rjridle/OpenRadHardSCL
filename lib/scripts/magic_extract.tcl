@@ -9,7 +9,6 @@ ext2spice format ngspice
 ext2spice cthresh infinite
 ext2spice rthresh infinite
 ext2spice renumber off
-ext2spice scale off
 ext2spice merge aggressive
 ext2spice global on
 ext2spice -B -F -f ngspice -J flat
