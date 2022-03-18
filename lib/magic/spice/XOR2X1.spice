@@ -1,0 +1,47 @@
+* NGSPICE file created from XOR2X1.ext - technology: sky130A
+
+.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
+X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.152p ps=8.19u w=3u l=0.15u
+.ends
+
+.subckt pmos2_1 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=5.6p ps=4.56u w=2u l=0.15u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4p pd=4.54u as=0p ps=0u w=2u l=0.15u
+.ends
+
+.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
+X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
+.ends
+
+.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
+X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
+.ends
+
+.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
+X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=5.6p ps=4.56u w=2u l=0.15u
+X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4p pd=4.54u as=0p ps=0u w=2u l=0.15u
+.ends
+
+.subckt invx1_pcell VSS VDD a_154_410# a_205_1105#
+Xnmos_top_0 a_205_1105# a_154_410# VSS VSS nmos_top
+Xpmos2_0 a_154_410# VDD VDD VDD a_205_1105# pmos2
+.ends
+
+.subckt xor2X1_pcell VDD VSS a_806_410# li_871_847# invx1_pcell_0/a_154_410# a_1278_403#
++ m1_315_797# invx1_pcell_1/a_205_1105# a_1472_410# m1_981_649#
+Xnmos_bottom_0 VSS a_612_403# nmos_bottom_0/a_0_0# VSS nmos_bottom
+Xnmos_bottom_1 VSS a_1278_403# nmos_bottom_1/a_0_0# VSS nmos_bottom
+Xpmos2_1_0 a_612_403# a_761_1377# a_761_1377# VDD VDD pmos2_1
+Xnmos_top_trim1_1 a_1472_410# m1_981_649# nmos_bottom_1/a_0_0# VSS nmos_top_trim1
+Xpmos2_1_1 li_871_847# a_761_1377# a_761_1377# VDD m1_981_649# pmos2_1
+Xnmos_top_trim1_0 a_806_410# m1_981_649# nmos_bottom_0/a_0_0# VSS nmos_top_trim1
+Xpmos2_1_2 a_1278_403# a_1427_1377# a_1427_1377# VDD VDD pmos2_1
+Xpmos2_1_3 m1_315_797# a_1427_1377# a_1427_1377# VDD m1_981_649# pmos2_1
+Xinvx1_pcell_0 VSS VDD invx1_pcell_0/a_154_410# m1_315_797# invx1_pcell
+Xinvx1_pcell_1 VSS VDD a_612_403# invx1_pcell_1/a_205_1105# invx1_pcell
+.ends
+
+.subckt XOR2X1 VDD VSS B Y A
+Xxor2X1_pcell_0 VDD VSS li_797_551# A A B li_797_551# B A Y xor2X1_pcell
+.ends
+
