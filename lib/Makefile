@@ -3,7 +3,7 @@
 all: clean magic xschem lvs
 
 magic: clean
-	./scripts/extract
+	cd scripts && ./extract
 	mkdir -p magic/spice
 	mkdir -p magic/gds
 	

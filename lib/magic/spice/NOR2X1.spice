@@ -1,12 +1,8 @@
-* HSPICE file created from tmp.ext - technology: sky130A
+* SPICE3 file created from NOR2X1.ext - technology: sky130A
 
-.option scale=5000u
-
-.subckt tmp A B Y VDD VSS
-X0 a_131_1051 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=11600 ps=458 w=400 l=30 M=2
-X1 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=14176 pd=624 as=77676 ps=2588 w=598 l=30
-X2 a_131_1051 B Y VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=11600 ps=458 w=400 l=30 M=2
-X3 Y B VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+.subckt NOR2X1 A B Y VDD VSS
+X0 a_131_1051# A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5.8p ps=4.58u w=2u l=0.15u M=2
+X1 Y A VSS VSS sky130_fd_pr__nfet_01v8 ad=3.582p pd=3.15u as=1.9366p ps=1.294u w=3u l=0.15u
+X2 a_131_1051# B Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5.8p ps=4.58u w=2u l=0.15u M=2
+X3 Y B VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 .ends
-
-** hspice subcircuit dictionary
