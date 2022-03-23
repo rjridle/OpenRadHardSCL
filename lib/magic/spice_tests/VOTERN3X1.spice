@@ -1,0 +1,22 @@
+* HSPICE file created from tmp.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt tmp YN C B A VDD VSS
+X0 VSS a_343_412 a_778_102 VSS sky130_fd_pr__nfet_01v8 ad=21264 pd=936 as=0 ps=0 w=598 l=30
+X1 VSS A a_112_102 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X2 YN a_343_412 a_112_102 VSS sky130_fd_pr__nfet_01v8 ad=21264 pd=936 as=0 ps=0 w=598 l=30
+X3 VSS a_1028_194 a_1444_102 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X4 a_217_1052 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=33600 ps=1368 w=400 l=30 M=2
+X5 a_217_1052 B a_881_1052 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X6 YN a_1028_194 a_778_102 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=30
+X7 a_881_1052 A YN VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=23200 ps=916 w=400 l=30 M=2
+X8 a_217_1052 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X9 a_217_1052 C a_881_1052 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X10 YN C a_881_1052 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X11 YN A a_1444_102 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+C0 A VDD 2.19fF
+C1 a_217_1052 VDD 3.12fF
+.ends
+
+** hspice subcircuit dictionary

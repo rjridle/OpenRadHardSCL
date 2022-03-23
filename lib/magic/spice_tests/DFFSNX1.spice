@@ -1,44 +1,45 @@
-* NGSPICE file created from DFFSNX1.ext - technology: sky130A
+* HSPICE file created from tmp.ext - technology: sky130A
 
-.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
-X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.152p ps=8.19u w=3u l=0.15u
+.option scale=5000u
+
+.subckt tmp CLK SN Q QN D VDD VSS
+X0 VDD a_217_1051 a_1905_1051 VDD sky130_fd_pr__pfet_01v8 ad=236400 pd=9582 as=0 ps=0 w=400 l=30 M=2
+X1 a_343_411 a_217_1051 VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X2 a_1265_990 CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X3 VDD a_343_411 QN VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=23200 ps=916 w=400 l=30 M=2
+X4 VSS CLK a_2702_101 VSS sky130_fd_pr__nfet_01v8 ad=42528 pd=1872 as=0 ps=0 w=598 l=30
+X5 a_1265_990 a_1905_1051 a_2702_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X6 VDD a_1905_1051 a_1265_990 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X7 a_343_411 a_1265_990 VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X8 VDD a_1265_990 a_1905_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X9 a_1905_1051 SN a_2000_210 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X10 VDD a_1265_990 Q VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=34800 ps=1374 w=400 l=30 M=2
+X11 Q QN a_3628_210 VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
+X12 VDD D a_217_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X13 VDD SN a_1905_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X14 a_343_411 a_1265_990 a_1038_210 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X15 VDD SN Q VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X16 VDD QN Q VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X17 a_3628_210 a_1265_990 a_3347_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=30
+X18 VDD a_343_411 a_217_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X19 VDD CLK a_343_411 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X20 QN Q VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X21 VSS a_343_411 a_4330_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X22 QN Q a_4330_101 VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
+X23 a_1038_210 a_217_1051 a_757_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=30
+X24 VSS CLK a_757_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X25 VSS D a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X26 a_217_1051 a_343_411 a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X27 a_2000_210 a_1265_990 a_1719_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=600 l=30
+X28 VSS SN a_3347_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X29 VSS a_217_1051 a_1719_103 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+C0 a_343_411 VDD 3.15fF
+C1 VDD CLK 2.46fF
+C2 QN VDD 2.15fF
+C3 a_1905_1051 VDD 2.83fF
+C4 a_217_1051 VDD 2.51fF
+C5 a_1265_990 VDD 2.71fF
+C6 Q VDD 2.83fF
 .ends
 
-.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
-X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
-.ends
-
-.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
-X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=5.6p ps=4.56u w=2u l=0.15u
-X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4p pd=4.54u as=0p ps=0u w=2u l=0.15u
-.ends
-
-.subckt nand2x1_pcell VSS VDD a_229_1105# a_168_403# a_362_410#
-Xnmos_bottom_0 VSS a_168_403# nmos_bottom_0/a_0_0# VSS nmos_bottom
-Xnmos_top_trim1_0 a_362_410# a_229_1105# nmos_bottom_0/a_0_0# VSS nmos_top_trim1
-Xpmos2_0 a_168_403# VDD VDD VDD a_229_1105# pmos2
-Xpmos2_1 a_362_410# VDD VDD VDD a_229_1105# pmos2
-.ends
-
-.subckt nmos_side_left a_87_107# a_57_91# a_0_0# VSUBS
-X0 a_87_107# a_57_91# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.6345p pd=1.49u as=1.17945p ps=8.17u w=3u l=0.15u
-.ends
-
-.subckt nand3x1_pcell VSS VDD a_289_1105# a_147_405# a_447_405# li_649_477# a_31_510#
-Xnmos_bottom_0 VSS a_147_405# nmos_bottom_0/a_0_0# VSS nmos_bottom
-Xnmos_top_trim1_0 li_649_477# a_289_1105# li_393_210# VSS nmos_top_trim1
-Xnmos_side_left_0 li_393_210# a_447_405# nmos_bottom_0/a_0_0# VSS nmos_side_left
-Xpmos2_0 a_147_405# VDD VDD VDD a_289_1105# pmos2
-Xpmos2_1 a_447_405# VDD VDD VDD a_289_1105# pmos2
-Xpmos2_2 li_649_477# VDD VDD VDD a_289_1105# pmos2
-.ends
-
-.subckt DFFSNX1 CLK SN Q QN D VDD VSS
-Xnand2x1_pcell_5 VSS VDD m1_537_797# D m1_406_575# nand2x1_pcell
-Xnand3x1_pcell_0 VSS VDD m1_406_575# m1_907_871# m1_537_797# m1_1351_723# VSS nand3x1_pcell
-Xnand3x1_pcell_1 VSS VDD Q m1_2313_797# m1_1351_723# QN VSS nand3x1_pcell
-Xnand3x1_pcell_2 VSS VDD m1_2461_649# m1_537_797# m1_1351_723# m1_2313_797# VSS nand3x1_pcell
-Xnand2x1_pcell_0 VSS VDD m1_1351_723# m1_907_871# m1_2461_649# nand2x1_pcell
-Xnand2x1_pcell_1 VSS VDD QN m1_406_575# Q nand2x1_pcell
-.ends
-
+** hspice subcircuit dictionary

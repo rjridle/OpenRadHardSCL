@@ -29,9 +29,4 @@ use nor2x1_pcell  nor2x1_pcell_0
 timestamp 1647327768
 transform 1 0 0 0 1 0
 box -84 0 750 1575
-<< labels >>
-rlabel metal1 72 30 72 30 1 VSS
-port 1 n
-rlabel metal1 72 1522 72 1522 1 VDD
-port 2 n
 << end >>

@@ -1,5 +1,5 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/AND2X1.sch
-**.subckt AND2X1 A B Y VCCPIN VSSPIN VDD VSS VDD VSS VDD VSS VDD VSS VDD VSS VDD VSS
+**.subckt AND2X1 A B Y VCCPIN VSSPIN VDD VSS VDD VSS VDD VSS VDD VSS VDD VSS VDD VSS VDD VSS
 *.ipin A
 *.ipin B
 *.opin Y

@@ -1,4 +1,5 @@
 #!/bin/bash
+cp -rf ../magic/* .
 
 if [ $# -gt 0 ]
 then
@@ -6,6 +7,7 @@ then
     echo "Extracting 1 layout: $FILES"
 else
     FILES=$(ls magic/*.mag)
+    cp $FILES .
     echo "Extracting VARIANT layouts:\n $FILES"
 fi
 
@@ -24,6 +26,8 @@ for i in ${PCELLS}; do
 done
 
 for i in ${FILES}; do
+    export CELLNAME="$(basename $i .mag)"
+    echo "CELLNAME=$CELLNAME"
     sed -i 's/rlabel polycont\|rlabel poly\|rlabel viali\|rlabel nsubdiffcont\|rlabel psubdiffcont/rlabel locali/g' $i
     sed -i 's/rlabel locali/rlabel metal1/g' $i
     sed -i '/^port.*$/d' $i
@@ -34,7 +38,12 @@ for i in ${FILES}; do
     sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel locali \2/g' $i
     awk '!(seen[$0]++ && (/gnd/ || /vdd/))' $i > tmp.sim && mv tmp.sim $i
 
-    echo "source scripts/magic_extract.tcl" | magic -dnull -noconsole $i
+    cp $i tmp.mag
+    echo "source scripts/test_magic_extract.tcl" | magic -dnull -noconsole tmp.mag
+    #mv ${CELLNAME}_flat.spice ${CELLNAME}.spice
+    #mv ${CELLNAME}_flat.gds ${CELLNAME}.gds
+    #mv ${CELLNAME}_flat.ext ${CELLNAME}.ext
+    #sed -i -e "s/_flat//g" ${CELLNAME}.spice
 
     #sed -i 's/\(^.*locali\|^.*metal1\|^.*cont\|^.*viali\) \(.* gnd\|.* vdd$\)/rlabel metal1 \2/g' $i
     #echo "source scripts/magic_calma.tcl;calma" | magic -dnull -noconsole $i

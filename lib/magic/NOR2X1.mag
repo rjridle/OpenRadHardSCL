@@ -8,22 +8,22 @@ rect 205 797 239 831
 rect 353 723 387 757
 rect 500 723 534 757
 rect 55 13 89 47
-use nor2x1_pcell  nor2x1_pcell_0 pcells
-timestamp 1647327768
-transform 1 0 0 0 1 0
-box -84 0 750 1575
-use li1_M1_contact  li1_M1_contact_0 pcells
+use li1_M1_contact  li1_M1_contact_2 pcells
 timestamp 1646004885
-transform 1 0 222 0 1 814
+transform -1 0 517 0 -1 740
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_1
 timestamp 1646004885
 transform 1 0 370 0 1 740
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_2
+use li1_M1_contact  li1_M1_contact_0
 timestamp 1646004885
-transform -1 0 517 0 -1 740
+transform 1 0 222 0 1 814
 box -53 -33 29 33
+use nor2x1_pcell  nor2x1_pcell_0 pcells
+timestamp 1647327768
+transform 1 0 0 0 1 0
+box -84 0 750 1575
 << labels >>
 rlabel metal1 205 797 239 831 1 A
 port 1 n

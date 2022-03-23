@@ -10,8 +10,7 @@ magic: clean
 	cp *.spice magic/spice_tests/
 	mv *.spice magic/spice/
 	mv *.gds magic/gds/
-	rm -f magic/*.ext
-	rm -f magic/pcells/*.ext
+	rm -f *.ext
 
 xschem: clean
 	echo "(TODO) make xschem"

@@ -14,7 +14,7 @@ N 230 -170 230 -130 {
 lab=RN}
 N 230 -170 290 -170 {
 lab=RN}
-C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 1.8 10n 1.8 10.1n 0 20n 0 20.1n 1.8 27n 1.8 27.1n 0 34n 0 34.1n 1.8"}
+C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 1.8 9.9n 1.8 10n 0 19.9n 0 20n 1.8"}
 C {devices/lab_pin.sym} 120 -100 0 1 {name=l18 sig_type=std_logic lab=D}
 C {devices/vsource.sym} 0 -30 0 0 {name=V1 value=1.8
 		}
@@ -26,7 +26,8 @@ only_toplevel=true
 place=end
 value="
 .control
-tran 0.01n 45n
+tran 0.01n 40n
+plot CLK D Q
 plot CLK
 plot D
 plot Q
@@ -48,6 +49,6 @@ C {devices/lab_pin.sym} 130 60 0 1 {name=l3 sig_type=std_logic lab=Q}
 C {devices/lab_pin.sym} 130 100 0 1 {name=l4 sig_type=std_logic lab=QN}
 C {devices/lab_pin.sym} 290 -170 0 1 {name=l5 sig_type=std_logic lab=RN}
 C {devices/gnd.sym} 230 -70 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 230 -100 0 0 {name=V4 value="pwl 0n 1.8"}
+C {devices/vsource.sym} 230 -100 0 0 {name=V4 value="pwl 0n 1.8 25.1n 1.8 26n 0"}
 C {devices/lab_pin.sym} 70 140 0 1 {name=l7 sig_type=std_logic lab=RN}
 C {DFFRNX1.sym} 70 80 0 0 {name=x1 VDD=VDD VSS=GND}

@@ -1,26 +1,12 @@
-* NGSPICE file created from NAND2X1.ext - technology: sky130A
+* HSPICE file created from tmp.ext - technology: sky130A
 
-.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
-X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.152p ps=8.19u w=3u l=0.15u
+.option scale=5000u
+
+.subckt tmp A B Y VDD VSS
+X0 VDD A Y VDD sky130_fd_pr__pfet_01v8 ad=33600 pd=1368 as=23200 ps=916 w=400 l=30 M=2
+X1 VDD B Y VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X2 VSS A a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
+X3 Y B a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
 .ends
 
-.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
-X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
-.ends
-
-.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
-X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=5.6p ps=4.56u w=2u l=0.15u
-X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4p pd=4.54u as=0p ps=0u w=2u l=0.15u
-.ends
-
-.subckt nand2x1_pcell VSS VDD a_229_1105# a_168_403# a_362_410#
-Xnmos_bottom_0 VSS a_168_403# nmos_bottom_0/a_0_0# VSS nmos_bottom
-Xnmos_top_trim1_0 a_362_410# a_229_1105# nmos_bottom_0/a_0_0# VSS nmos_top_trim1
-Xpmos2_0 a_168_403# VDD VDD VDD a_229_1105# pmos2
-Xpmos2_1 a_362_410# VDD VDD VDD a_229_1105# pmos2
-.ends
-
-.subckt NAND2X1 A B Y VDD VSS
-Xnand2x_pcell_0 VSS VDD Y A B nand2x1_pcell
-.ends
-
+** hspice subcircuit dictionary

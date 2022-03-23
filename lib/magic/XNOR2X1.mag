@@ -12,30 +12,30 @@ rect 131 649 1501 683
 rect 1350 575 2028 609
 rect 2055 575 2089 609
 rect 55 13 89 47
-use xnor2x1_pcell  xnor2x1_pcell_0 pcells
-timestamp 1647336328
-transform 1 0 0 0 1 0
-box -84 0 2304 1575
-use li1_M1_contact  li1_M1_contact_5 pcells
+use li1_M1_contact  li1_M1_contact_3 pcells
 timestamp 1646004885
-transform -1 0 1332 0 -1 592
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1646004885
-transform 1 0 2072 0 1 592
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_8
-timestamp 1646004885
-transform 1 0 1554 0 1 666
+transform 1 0 888 0 1 666
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_1
 timestamp 1646004885
 transform -1 0 148 0 -1 666
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_3
+use li1_M1_contact  li1_M1_contact_8
 timestamp 1646004885
-transform 1 0 888 0 1 666
+transform 1 0 1554 0 1 666
 box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1646004885
+transform 1 0 2072 0 1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_5
+timestamp 1646004885
+transform -1 0 1332 0 -1 592
+box -53 -33 29 33
+use xnor2x1_pcell  xnor2x1_pcell_0 pcells
+timestamp 1647336328
+transform 1 0 0 0 1 0
+box -84 0 2304 1575
 << labels >>
 rlabel metal1 72 1522 72 1522 1 VDD
 port 1 n

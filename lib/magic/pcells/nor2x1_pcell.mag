@@ -187,9 +187,4 @@ use diff_ring_side  diff_ring_side_0
 timestamp 1646086970
 transform 1 0 666 0 1 0
 box -84 0 84 1575
-<< labels >>
-rlabel metal1 55 1505 89 1539 1 VDD
-port 1 n
-rlabel metal1 55 13 89 47 1 VSS
-port 2 n
 << end >>

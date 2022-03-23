@@ -1,42 +1,15 @@
-* NGSPICE file created from AND2X1.ext - technology: sky130A
+* HSPICE file created from tmp.ext - technology: sky130A
 
-.subckt nmos_top a_85_108# a_55_92# a_n1_0# VSUBS
-X0 a_85_108# a_55_92# a_n1_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
+.option scale=5000u
+
+.subckt tmp Y A B VDD VSS
+X0 VDD A a_217_1051 VDD sky130_fd_pr__pfet_01v8 ad=55600 pd=2278 as=0 ps=0 w=400 l=30 M=2
+X1 Y a_217_1051 VDD VDD sky130_fd_pr__pfet_01v8 ad=11600 pd=458 as=0 ps=0 w=400 l=30 M=2
+X2 VDD B a_217_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
+X3 VSS A a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=53378 pd=1936 as=0 ps=0 w=598 l=30
+X4 a_217_1051 B a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+X5 Y a_217_1051 VSS VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
+C0 VDD a_217_1051 2.25fF
 .ends
 
-.subckt pmos2 a_144_n460# a_262_n399# a_88_n399# w_52_n435# a_174_n399#
-X0 a_174_n399# a_144_n460# a_88_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=5.6p ps=4.56u w=2u l=0.15u
-X1 a_262_n399# a_144_n460# a_174_n399# w_52_n435# sky130_fd_pr__pfet_01v8 ad=5.4p pd=4.54u as=0p ps=0u w=2u l=0.15u
-.ends
-
-.subckt invx1_pcell VSS VDD a_154_410# a_205_1105#
-Xnmos_top_0 a_205_1105# a_154_410# VSS VSS nmos_top
-Xpmos2_0 a_154_410# VDD VDD VDD a_205_1105# pmos2
-.ends
-
-.subckt nmos_bottom a_86_101# a_56_85# a_0_0# VSUBS
-X0 a_86_101# a_56_85# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.152p ps=8.19u w=3u l=0.15u
-.ends
-
-.subckt nmos_top_trim1 a_56_92# a_86_108# a_0_0# VSUBS
-X0 a_86_108# a_56_92# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=1.772p pd=1.56u as=1.15725p ps=8.12u w=3u l=0.15u
-.ends
-
-.subckt nand2x1_pcell VSS VDD a_229_1105# a_168_403# a_362_410#
-Xnmos_bottom_0 VSS a_168_403# nmos_bottom_0/a_0_0# VSS nmos_bottom
-Xnmos_top_trim1_0 a_362_410# a_229_1105# nmos_bottom_0/a_0_0# VSS nmos_top_trim1
-Xpmos2_0 a_168_403# VDD VDD VDD a_229_1105# pmos2
-Xpmos2_1 a_362_410# VDD VDD VDD a_229_1105# pmos2
-.ends
-
-.subckt and2x1_pcell VSS VDD nand2x1_pcell_0/a_362_410# invx1_pcell_0/a_205_1105#
-+ nand2x1_pcell_0/a_168_403#
-Xinvx1_pcell_0 VSS VDD m1_547_649# invx1_pcell_0/a_205_1105# invx1_pcell
-Xnand2x1_pcell_0 VSS VDD m1_547_649# nand2x1_pcell_0/a_168_403# nand2x1_pcell_0/a_362_410#
-+ nand2x1_pcell
-.ends
-
-.subckt AND2X1 Y A B VDD VSS
-Xand2x1_pcell_0 VSS VDD B Y A and2x1_pcell
-.ends
-
+** hspice subcircuit dictionary

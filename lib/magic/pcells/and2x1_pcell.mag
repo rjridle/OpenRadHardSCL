@@ -29,9 +29,4 @@ use li1_M1_contact  li1_M1_contact_1
 timestamp 1646004885
 transform 1 0 814 0 1 666
 box -53 -33 29 33
-<< labels >>
-rlabel metal1 72 30 72 30 1 VSS
-port 1 n
-rlabel metal1 72 1522 72 1522 1 VDD
-port 2 n
 << end >>
