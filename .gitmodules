@@ -17,6 +17,8 @@
 [submodule "tools/xschem-gaw"]
 	path = tools/xschem-gaw
 	url = git@github.com:StefanSchippers/xschem-gaw.git
+    ignore = dirty
 [submodule "pnr/OpenROAD-flow-scripts"]
 	path = pnr/OpenROAD-flow-scripts
 	url = git@github.com:The-OpenROAD-Project/OpenROAD-flow-scripts.git
+    ignore = dirty

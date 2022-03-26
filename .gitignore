@@ -7,4 +7,7 @@ MAGIC.LOG
 tclIndex
 *.log
 *.out
-sky130A/libs.ref/*
+lib/xschem/bsim4v5.out
+lib/xschem/LDO
+lib/lvs/*
+char/*
