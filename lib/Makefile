@@ -22,6 +22,7 @@ lvs: magic xschem
 	rm -f ./lvs/*.out
 	./scripts/runlvs.sh
 	mv *.out ./lvs/
+	grep -nri 'circuits match' lvs/*.out > lvs/lvs_report.log
 
 clean:
 	rm -f magic/spice/*

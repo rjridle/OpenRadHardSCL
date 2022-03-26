@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648064740
+timestamp 1648326997
 << nwell >>
 rect 55 1505 89 1539
 << psubdiffcont >>
@@ -12,19 +12,25 @@ rect 55 1505 89 1539
 rect 55 1505 89 1539
 rect 55 13 89 47
 << metal1 >>
-rect 649 871 683 905
-rect 699 871 4017 905
-rect 1203 797 5006 831
-rect 461 723 4267 757
+rect 426 871 4265 905
+rect 1660 797 5490 831
+rect 716 723 4024 757
 rect 4531 723 5591 757
 rect 5607 723 5641 757
-rect 1611 649 3291 683
-rect 4645 649 5211 683
+rect 1384 649 3291 683
+rect 4645 649 4989 683
 rect 205 575 239 609
 rect 831 576 2174 610
-rect 2757 575 3499 609
-rect 2573 501 2607 535
-rect 2609 501 5434 535
+rect 2757 575 3055 609
+rect 2351 501 5210 535
+use li1_M1_contact  li1_M1_contact_1 pcells
+timestamp 1648061256
+transform -1 0 666 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform -1 0 444 0 -1 888
+box -53 -33 29 33
 use nand3x1_pcell  nand3x1_pcell_1 pcells
 timestamp 1648064657
 transform 1 0 962 0 1 0
@@ -33,21 +39,25 @@ use nand3x1_pcell  nand3x1_pcell_0
 timestamp 1648064657
 transform 1 0 0 0 1 0
 box -84 0 1046 1575
-use li1_M1_contact  li1_M1_contact_3 pcells
+use li1_M1_contact  li1_M1_contact_3
 timestamp 1648061256
 transform -1 0 814 0 -1 593
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_2
-timestamp 1648061256
-transform -1 0 666 0 -1 888
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform -1 0 444 0 -1 740
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform 1 0 222 0 1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_4
+timestamp 1648061256
+transform -1 0 1627 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_6
+timestamp 1648061256
+transform -1 0 1406 0 -1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_5
+timestamp 1648061256
+transform -1 0 1184 0 -1 593
 box -53 -33 29 33
 use nand3x1_pcell  nand3x1_pcell_2
 timestamp 1648064657
@@ -61,17 +71,17 @@ use li1_M1_contact  li1_M1_contact_7
 timestamp 1648061256
 transform -1 0 1776 0 -1 740
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_6
+use li1_M1_contact  li1_M1_contact_17
 timestamp 1648061256
-transform -1 0 1628 0 -1 666
+transform 1 0 3108 0 1 592
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_5
+use li1_M1_contact  li1_M1_contact_9
 timestamp 1648061256
-transform -1 0 1406 0 -1 593
+transform 1 0 2590 0 1 814
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_4
+use li1_M1_contact  li1_M1_contact_10
 timestamp 1648061256
-transform -1 0 1183 0 -1 814
+transform -1 0 2368 0 -1 519
 box -53 -33 29 33
 use nand3x1_pcell  nand3x1_pcell_3
 timestamp 1648064657
@@ -81,58 +91,46 @@ use li1_M1_contact  li1_M1_contact_16
 timestamp 1648061256
 transform 1 0 3330 0 1 666
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_12
-timestamp 1648061256
-transform -1 0 3108 0 -1 888
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform -1 0 2738 0 -1 592
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_10
+use li1_M1_contact  li1_M1_contact_12
 timestamp 1648061256
-transform -1 0 2590 0 -1 519
+transform -1 0 3552 0 -1 888
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_9
+use li1_M1_contact  li1_M1_contact_19
 timestamp 1648061256
-transform 1 0 2368 0 1 814
+transform 1 0 4070 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_18
+timestamp 1648061256
+transform 1 0 4292 0 1 888
 box -53 -33 29 33
 use nand3x1_pcell  nand3x1_pcell_4
 timestamp 1648064657
 transform 1 0 3848 0 1 0
 box -84 0 1046 1575
-use li1_M1_contact  li1_M1_contact_19
-timestamp 1648061256
-transform 1 0 4292 0 1 740
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_18
-timestamp 1648061256
-transform 1 0 4070 0 1 888
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_17
-timestamp 1648061256
-transform 1 0 3552 0 1 592
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_13
 timestamp 1648061256
 transform -1 0 3700 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_20
+timestamp 1648061256
+transform 1 0 5476 0 1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_21
+timestamp 1648061256
+transform 1 0 5032 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_22
+timestamp 1648061256
+transform 1 0 5254 0 1 518
 box -53 -33 29 33
 use nand3x1_pcell  nand3x1_pcell_5
 timestamp 1648064657
 transform 1 0 4810 0 1 0
 box -84 0 1046 1575
-use li1_M1_contact  li1_M1_contact_22
-timestamp 1648061256
-transform 1 0 5476 0 1 518
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_21
-timestamp 1648061256
-transform 1 0 5254 0 1 666
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_20
-timestamp 1648061256
-transform 1 0 5032 0 1 814
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_15
 timestamp 1648061256
 transform -1 0 4662 0 -1 666
@@ -152,14 +150,11 @@ rlabel metal1 4645 649 4679 683 1 QN
 port 2 n
 rlabel metal1 205 575 239 609 1 D
 port 3 n
-rlabel metal1 1611 649 1645 683 1 CLK
-port 4 n
-rlabel metal1 2573 501 2607 535 1 SN
-port 5 n
-rlabel metal1 649 871 683 905 1 RN
-port 6 n
 rlabel metal1 55 1505 89 1539 1 VDD
 port 7 n
 rlabel metal1 55 13 89 47 1 VSS
 port 8 n
+rlabel metal1 427 871 461 905 1 RN
+rlabel metal1 1389 649 1423 683 1 CLK
+rlabel metal1 2351 502 2385 536 1 SN
 << end >>

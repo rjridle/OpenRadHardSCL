@@ -3,21 +3,28 @@ G {}
 K {type=subcircuit
 format="@name @pinlist @VDD @VSS @symname"
 template="name=x1 VDD=VDD VSS=VSS"
-extra="VDD VSS"
-}
+extra="VDD VSS"}
 V {}
 S {}
 E {}
-L 4 -50 -20 -30 -20 {}
-L 4 -50 20 -30 20 {}
-L 4 50 -20 70 -20 {}
-L 4 -30 10 -20 20 {}
-L 4 -30 30 -20 20 {}
-B 5 -52.5 -22.5 -47.5 -17.5 {name=D dir=in }
-B 5 -52.5 17.5 -47.5 22.5 {name=CLK dir=in }
-B 5 67.5 -22.5 72.5 -17.5 {name=QN dir=out }
-P 4 5 -30 40 50 40 50 -40 -30 -40 -30 40 {}
-T {@symname} -43 -56 0 0 0.3 0.3 {}
-T {@name} -15 -2 0 0 0.2 0.2 {}
-T {D} -25 -24 0 0 0.2 0.2 {}
-T {QN} 45 -24 0 1 0.2 0.2 {}
+L 4 -60 -20 -40 -20 {}
+L 4 0 -60 0 -50 {}
+L 4 40 -20 60 -20 {}
+L 4 -40 10 -30 20 {}
+L 4 -40 30 -30 20 {}
+L 4 -60 20 -40 20 {}
+L 4 0 50 0 60 {}
+L 4 -0 -50 0 -40 {}
+L 4 0 40 0 50 {}
+B 5 57.5 -22.5 62.5 -17.5 {name=QN dir=out verilog_type=wire}
+B 5 -62.5 -22.5 -57.5 -17.5 {name=D0 dir=in verilog_type=wire}
+B 5 -62.5 17.5 -57.5 22.5 {name=CLK dir=in verilog_type=wire}
+B 5 -2.5 -62.5 2.5 -57.5 {name=D1 dir=in verilog_type=wire}
+B 5 -2.5 57.5 2.5 62.5 {name=D2 dir=in verilog_type=wire}
+P 4 5 -40 40 40 40 40 -40 -40 -40 -40 40 {}
+T {QN} 35 -25 0 1 0.2 0.2 {}
+T {D0} -35 -25 0 0 0.2 0.2 {}
+T {D1} -5 -25 2 1 0.2 0.2 {}
+T {@name} -21.25 -5 0 0 0.2 0.2 {}
+T {@symname} 8.75 -55 0 0 0.2 0.2 {}
+T {D2} -5 25 0 0 0.2 0.2 {}
