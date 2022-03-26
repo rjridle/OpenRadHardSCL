@@ -1,21 +1,18 @@
-* HSPICE file created from tmp.ext - technology: sky130A
+* SPICE3 file created from XOR2X1.ext - technology: sky130A
 
-.option scale=5000u
-
-.subckt tmp B Y A VDD VSS
-X0 a_575_1051 A Y VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=23200 ps=916 w=400 l=30 M=2
-X1 VDD a_612_186 B VDD sky130_fd_pr__pfet_01v8 ad=67200 pd=2736 as=11600 ps=458 w=400 l=30 M=2
-X2 VSS B a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=106756 pd=3872 as=0 ps=0 w=598 l=30
-X3 Y A a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=14176 pd=624 as=0 ps=0 w=598 l=30
-X4 a_1241_1051 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
-X5 a_184_209 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
-X6 VSS a_612_186 a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
-X7 B a_612_186 VSS VSS sky130_fd_pr__nfet_01v8 ad=7088 pd=312 as=0 ps=0 w=598 l=30
-X8 a_1241_1051 a_184_209 Y VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
-X9 Y a_184_209 a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
-X10 VDD a_612_186 a_575_1051 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=400 l=30 M=2
-X11 a_184_209 A VSS VSS sky130_fd_pr__nfet_01v8 ad=0 pd=0 as=0 ps=0 w=598 l=30
+.subckt XOR2X1 Y A B VDD VSS
+X0 B a_612_185 VDD VDD sky130_fd_pr__pfet_01v8 ad=5.8e+11p pd=4.58e+06u as=3.36e+12p ps=2.736e+07u w=2e+06u l=150000u M=2
+X1 a_185_209 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X2 VSS a_612_185 a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=2.6398e+12p pd=1.934e+07u as=0p ps=0u w=3e+06u l=150000u
+X3 a_185_209 A VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X4 a_575_1051 A Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.16e+12p ps=9.16e+06u w=2e+06u l=150000u M=2
+X5 Y A a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=3.582e+11p pd=3.14e+06u as=0p ps=0u w=3e+06u l=150000u
+X6 a_1241_1051 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X7 a_1241_1051 a_185_209 Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X8 Y a_185_209 a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X9 VDD a_612_185 a_575_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X10 B a_612_185 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.791e+11p pd=1.57e+06u as=0p ps=0u w=3e+06u l=150000u
+X11 VSS B a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
 C0 A VDD 2.02fF
+C1 VDD VSS 4.20fF
 .ends
-
-** hspice subcircuit dictionary

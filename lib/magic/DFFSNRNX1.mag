@@ -146,17 +146,17 @@ timestamp 1648061256
 transform 1 0 5624 0 1 740
 box -53 -33 29 33
 << labels >>
-rlabel metal1 649 871 683 905 1 RN
-port 1 n
-rlabel metal1 1611 649 1645 683 1 CLK
-port 2 n
-rlabel metal1 2573 501 2607 535 1 SN
-port 3 n
 rlabel metal1 5607 723 5641 757 1 Q
-port 4 n
+port 1 n
 rlabel metal1 4645 649 4679 683 1 QN
-port 5 n
+port 2 n
 rlabel metal1 205 575 239 609 1 D
+port 3 n
+rlabel metal1 1611 649 1645 683 1 CLK
+port 4 n
+rlabel metal1 2573 501 2607 535 1 SN
+port 5 n
+rlabel metal1 649 871 683 905 1 RN
 port 6 n
 rlabel metal1 55 1505 89 1539 1 VDD
 port 7 n

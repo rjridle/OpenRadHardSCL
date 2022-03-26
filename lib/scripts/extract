@@ -1,11 +1,7 @@
 #!/bin/bash
-rm -rf magic
-rm ../magic/spice/*
-rm ../magic/gds/*
-rm ../magic/flatten/*
-
 mkdir -p magic
 
+rm -rf magic/*
 cp -rf ../magic/*.mag magic/
 cp -rf ../magic/pcells magic/
 
@@ -33,6 +29,7 @@ for i in ${PCELLS}; do
 done
 
 for i in ${FILES}; do
+    echo "FILE PATH = $i"
     export CELLNAME="$(basename $i .mag)"
     echo "CELLNAME=$CELLNAME"
     sed -i 's/rlabel polycont\|rlabel poly\|rlabel viali\|rlabel nsubdiffcont\|rlabel psubdiffcont/rlabel locali/g' $i

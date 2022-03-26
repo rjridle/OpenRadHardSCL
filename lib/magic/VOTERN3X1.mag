@@ -20,14 +20,14 @@ box -53 -33 29 33
 << labels >>
 rlabel metal1 1833 797 1867 831 1 YN
 port 1 n
-rlabel metal1 1167 797 1201 831 1 C
+rlabel metal1 131 871 165 905 1 A
 port 2 n
 rlabel metal1 353 797 387 831 1 B
 port 3 n
-rlabel metal1 131 871 165 905 1 A
+rlabel metal1 1167 797 1201 831 1 C
 port 4 n
-rlabel metal1 55 13 89 47 1 VSS
-port 5 n
 rlabel metal1 55 1505 89 1539 1 VDD
+port 5 n
+rlabel metal1 55 13 89 47 1 VSS
 port 6 n
 << end >>

@@ -1,0 +1,16 @@
+* SPICE3 file created from AOA4X1.ext - technology: sky130A
+
+.subckt AOA4X1 Y A B C D VDD VSS
+X0 VDD C a_223_1051 VDD sky130_fd_pr__pfet_01v8 ad=3.36e+12p pd=2.736e+07u as=0p ps=0u w=2e+06u l=150000u M=2
+X1 VDD D a_399_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X2 a_388_209 B a_108_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X3 VSS A a_388_209 VSS sky130_fd_pr__nfet_01v8 ad=1.499e+12p pd=1.124e+07u as=0p ps=0u w=3e+06u l=150000u
+X4 VDD a_692_209 Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5.8e+11p ps=4.58e+06u w=2e+06u l=150000u M=2
+X5 a_399_1051 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X6 a_859_1051 A a_399_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u M=2
+X7 VSS C a_108_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X8 a_692_209 D a_388_209 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X9 Y a_692_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.791e+11p pd=1.57e+06u as=0p ps=0u w=3e+06u l=150000u
+C0 VDD a_399_1051 2.06fF
+C1 VDD VSS 3.03fF
+.ends

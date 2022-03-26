@@ -1,25 +1,27 @@
 .PHONY: all magic xschem lvs
 
+RUN_DIR=$(PWD)
+
 all: clean magic xschem lvs
 
 magic: clean
-	cd scripts && ./extract
 	mkdir -p magic/spice
 	mkdir -p magic/gds
+	cd scripts && ./extract
 	
-	cp *.spice magic/spice_tests/
-	mv *.spice magic/spice/
-	mv *.gds magic/gds/
-	rm -f *.ext
-
 xschem: clean
 	echo "(TODO) make xschem"
 	#-@cd xschem && ./scripts/extract_all
 
 lvs: magic xschem
 	echo "Running LVS"
+	mkdir -p ./lvs/magic
+	mkdir -p ./lvs/xschem
+	rm -f ./lvs/magic/*
+	rm -f ./lvs/xschem/*
+	rm -f ./lvs/*.out
 	./scripts/runlvs.sh
-	mv *.out lvs/
+	mv *.out ./lvs/
 
 clean:
 	rm -f magic/spice/*

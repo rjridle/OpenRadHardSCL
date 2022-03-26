@@ -1,0 +1,52 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1648232441
+<< metal1 >>
+rect 55 1505 89 1539
+rect 871 797 905 831
+rect 1463 797 1497 831
+rect 649 723 683 757
+rect 353 649 387 683
+rect 205 575 239 609
+rect 55 13 89 47
+use li1_M1_contact  li1_M1_contact_4 pcells
+timestamp 1648061256
+transform -1 0 1480 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1648061256
+transform 1 0 888 0 1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform 1 0 666 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_1
+timestamp 1648061256
+transform 1 0 370 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform 1 0 222 0 1 592
+box -53 -33 29 33
+use aoa4x1_pcell  aoa4x1_pcell_0 pcells
+timestamp 1648232089
+transform 1 0 0 0 1 0
+box -84 0 1712 1575
+<< labels >>
+rlabel metal1 1463 797 1497 831 1 Y
+port 1 n
+rlabel metal1 871 797 905 831 1 A
+port 2 n
+rlabel metal1 353 649 387 683 1 B
+port 3 n
+rlabel metal1 205 575 239 609 1 C
+port 4 n
+rlabel metal1 649 723 683 757 1 D
+port 5 n
+rlabel metal1 55 1505 89 1539 1 VDD
+port 6 n
+rlabel metal1 55 13 89 47 1 VSS
+port 7 n
+<< end >>

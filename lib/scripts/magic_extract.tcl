@@ -1,7 +1,7 @@
 extract all
 
 # Hierarchical support unneeded.
-ext2spice -m
+ext2spice -m -t#
 gds
 
 #ext2sim labels on

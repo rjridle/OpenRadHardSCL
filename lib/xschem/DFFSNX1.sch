@@ -72,19 +72,21 @@ N -50 -190 -30 -190 {
 lab=D}
 N -50 190 -30 190 {
 lab=CLK}
-C {NAND3X1.sym} 30 60 0 0 {name=x1 VDD=VDD VSS=VSS}
-C {NAND2X1.sym} 30 170 0 0 {name=x2 VDD=VDD VSS=VSS}
-C {NAND3X1.sym} 30 -50 0 0 {name=x3 VDD=VDD VSS=VSS}
-C {NAND2X1.sym} 30 -170 0 0 {name=x4 VDD=VDD VSS=VSS}
-C {NAND2X1.sym} 250 -30 0 0 {name=x5 VDD=VDD VSS=VSS}
-C {NAND3X1.sym} 250 90 0 0 {name=x6 VDD=VDD VSS=VSS}
-C {devices/ipin.sym} -120 -190 0 0 {name=p1 lab=D}
-C {devices/opin.sym} 330 -30 0 0 {name=p2 lab=QN}
-C {devices/ipin.sym} -120 -150 0 0 {name=p3 lab=SN}
-C {devices/ipin.sym} -120 -110 0 0 {name=p4 lab=CLK}
+N 180 90 190 90 {
+lab=SN}
 C {devices/lab_pin.sym} -50 -190 0 0 {name=l1 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} -50 -50 0 0 {name=l2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -50 60 0 0 {name=l3 sig_type=std_logic lab=SN}
 C {devices/lab_pin.sym} -50 190 0 0 {name=l4 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 190 90 0 0 {name=l5 sig_type=std_logic lab=SN}
-C {devices/opin.sym} 330 90 0 0 {name=p5 lab=Q}
+C {devices/lab_pin.sym} 180 90 0 0 {name=l5 sig_type=std_logic lab=SN}
+C {devices/opin.sym} 330 90 0 0 {name=p1 lab=Q}
+C {devices/opin.sym} 330 -30 0 0 {name=p2 lab=QN}
+C {devices/ipin.sym} -110 -140 0 0 {name=p3 lab=D}
+C {devices/ipin.sym} -110 -100 0 0 {name=p4 lab=CLK}
+C {devices/ipin.sym} -110 -60 0 0 {name=p5 lab=SN}
+C {NAND2X1.sym} 30 -170 0 0 {name=x1 VDD=VDD VSS=VSS}
+C {NAND3X1.sym} 30 -50 0 0 {name=x2 VDD=VDD VSS=VSS}
+C {NAND3X1.sym} 30 60 0 0 {name=x3 VDD=VDD VSS=VSS}
+C {NAND2X1.sym} 30 170 0 0 {name=x4 VDD=VDD VSS=VSS}
+C {NAND3X1.sym} 250 90 0 0 {name=x5 VDD=VDD VSS=VSS}
+C {NAND2X1.sym} 250 -30 0 0 {name=x6 VDD=VDD VSS=VSS}
