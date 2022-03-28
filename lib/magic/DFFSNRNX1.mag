@@ -150,11 +150,14 @@ rlabel metal1 4645 649 4679 683 1 QN
 port 2 n
 rlabel metal1 205 575 239 609 1 D
 port 3 n
+rlabel metal1 1389 649 1423 683 1 CLK
+port 4 n
+rlabel metal1 2351 502 2385 536 1 SN
+port 5 n
+rlabel metal1 427 871 461 905 1 RN
+port 6 n
 rlabel metal1 55 1505 89 1539 1 VDD
 port 7 n
 rlabel metal1 55 13 89 47 1 VSS
 port 8 n
-rlabel metal1 427 871 461 905 1 RN
-rlabel metal1 1389 649 1423 683 1 CLK
-rlabel metal1 2351 502 2385 536 1 SN
 << end >>

@@ -1,0 +1,82 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1648490579
+<< nwell >>
+rect 55 1505 89 1539
+<< psubdiffcont >>
+rect 55 13 89 47
+<< nsubdiffcont >>
+rect 55 1505 89 1539
+<< viali >>
+rect 55 1505 89 1539
+rect 55 13 89 47
+<< metal1 >>
+rect 3349 945 14064 979
+rect 427 797 461 831
+rect 2427 797 4795 831
+rect 6691 797 9075 831
+rect 11931 797 13313 831
+rect 15153 797 15187 831
+rect 1302 575 9908 609
+rect 7639 501 13039 535
+use dffqx1_pcell  dffqx1_pcell_0 pcells
+timestamp 1648395941
+transform 1 0 0 0 1 0
+box -84 0 4376 1575
+use dffqx1_pcell  dffqx1_pcell_1
+timestamp 1648395941
+transform 1 0 4292 0 1 0
+box -84 0 4376 1575
+use li1_M1_contact  li1_M1_contact_1 pcells
+timestamp 1648061256
+transform -1 0 4144 0 -1 962
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform -1 0 3330 0 -1 962
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1648061256
+transform 1 0 8436 0 1 518
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_4
+timestamp 1648061256
+transform -1 0 7622 0 -1 518
+box -53 -33 29 33
+use dffqx1_pcell  dffqx1_pcell_2
+timestamp 1648395941
+transform 1 0 8584 0 1 0
+box -84 0 4376 1575
+use li1_M1_contact  li1_M1_contact_15
+timestamp 1648061256
+transform -1 0 12728 0 1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_13
+timestamp 1648061256
+transform -1 0 11914 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform 1 0 14060 0 -1 962
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_16
+timestamp 1648061256
+transform -1 0 15170 0 -1 814
+box -53 -33 29 33
+use voter3x1_pcell  voter3x1_pcell_0 pcells
+timestamp 1648490579
+transform 1 0 12876 0 1 0
+box -84 0 2526 1575
+<< labels >>
+rlabel metal1 15153 797 15187 831 1 Q
+port 1 n
+rlabel metal1 1316 575 1350 609 1 D
+port 2 n
+rlabel metal1 427 797 461 831 1 CLK
+port 3 n
+rlabel metal1 72 1522 72 1522 1 VDD
+port 4 n
+rlabel metal1 72 30 72 30 1 VSS
+port 5 n
+<< end >>

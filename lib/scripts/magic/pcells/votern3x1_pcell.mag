@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648327731
+timestamp 1648406277
 << nwell >>
 rect 84 1554 582 1575
 rect 31 1492 582 1554
@@ -516,54 +516,54 @@ use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
 transform 0 -1 1183 -1 0 445
 box -32 -28 34 26
-use li1_M1_contact  li1_M1_contact_14
-timestamp 1648061256
-transform 1 0 1480 0 1 518
-box -53 -33 29 33
-use nmos_top_trim2  nmos_top_trim2_2
-timestamp 1648066397
-transform -1 0 1886 0 1 101
-box 0 0 248 309
-use nmos_bottom  nmos_bottom_2
-timestamp 1648062456
-transform -1 0 1692 0 1 101
-box 0 0 248 302
-use li1_M1_contact  li1_M1_contact_2
-timestamp 1648061256
-transform 1 0 1762 0 1 264
-box -53 -33 29 33
-use poly_li1_contact  poly_li1_contact_11
-timestamp 1648060378
-transform 0 -1 1701 -1 0 445
-box -32 -28 34 26
 use poly_li1_contact  poly_li1_contact_10
 timestamp 1648060378
 transform 0 -1 1479 -1 0 445
 box -32 -28 34 26
-use li1_M1_contact  li1_M1_contact_16
-timestamp 1648061256
-transform 1 0 1702 0 1 814
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_13
-timestamp 1648061256
-transform 1 0 1480 0 1 888
-box -53 -33 29 33
-use pmos2_1  pmos2_1_4
-timestamp 1647326732
-transform 1 0 1375 0 1 1450
-box 52 -460 352 37
-use pmos2_1  pmos2_1_5
-timestamp 1647326732
-transform 1 0 1551 0 1 1450
-box 52 -460 352 37
-use poly_li1_contact  poly_li1_contact_8
+use poly_li1_contact  poly_li1_contact_11
 timestamp 1648060378
-transform 0 1 1481 -1 0 988
+transform 0 -1 1701 -1 0 445
 box -32 -28 34 26
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform 1 0 1762 0 1 264
+box -53 -33 29 33
+use nmos_bottom  nmos_bottom_2
+timestamp 1648062456
+transform -1 0 1692 0 1 101
+box 0 0 248 302
+use nmos_top_trim2  nmos_top_trim2_2
+timestamp 1648066397
+transform -1 0 1886 0 1 101
+box 0 0 248 309
+use li1_M1_contact  li1_M1_contact_14
+timestamp 1648061256
+transform 1 0 1480 0 1 518
+box -53 -33 29 33
 use poly_li1_contact  poly_li1_contact_9
 timestamp 1648060378
 transform 0 1 1707 -1 0 988
 box -32 -28 34 26
+use poly_li1_contact  poly_li1_contact_8
+timestamp 1648060378
+transform 0 1 1481 -1 0 988
+box -32 -28 34 26
+use pmos2_1  pmos2_1_5
+timestamp 1647326732
+transform 1 0 1551 0 1 1450
+box 52 -460 352 37
+use pmos2_1  pmos2_1_4
+timestamp 1647326732
+transform 1 0 1375 0 1 1450
+box 52 -460 352 37
+use li1_M1_contact  li1_M1_contact_13
+timestamp 1648061256
+transform 1 0 1480 0 1 888
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_16
+timestamp 1648061256
+transform 1 0 1702 0 1 814
+box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_5
 timestamp 1648061256
 transform 1 0 1490 0 1 1088

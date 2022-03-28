@@ -36,8 +36,8 @@ Cell List:
 
     - AND2X1
     - AND3X1
-    - (TODO) AO3X2
-    - (TODO) AOA4X1
+    - AO3X2
+    - AOA4X1
     - (TODO) AOAI4X1
     - (TODO) AOI3X2
     - DFFX1
@@ -53,12 +53,12 @@ Cell List:
     - (TODO) OA4X1
     - (TODO) OAI4X1
     - OR2X1
-    - (TODO) TMRDFFX1
-    - (TODO) TMRDFFRNX1
-    - (TODO) TMRDFFSNX1
-    - (TODO) TMRDFFSNRNX1
+    - TMRDFFX1
+    - TMRDFFRNX1
+    - TMRDFFSNX1
+    - TMRDFFSNRNX1
     - (TODO) TRIBUFX1
-    - (TODO) VOTER3X1
-    - (TODO) VOTERN3X1
+    - VOTER3X1
+    - VOTERN3X1
     - XNOR2X1
     - XOR2X1

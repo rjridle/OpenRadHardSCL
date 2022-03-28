@@ -31,13 +31,13 @@ X26 VSS a_1905_1050 a_2702_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=
 X27 a_217_1050 a_343_411 a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X28 VDD CLK a_1265_989 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X29 a_2000_210 SN a_1719_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 QN VDD 3.35fF
-C1 a_1905_1050 VDD 2.82fF
-C2 a_217_1050 VDD 2.55fF
-C3 a_1265_989 VDD 2.72fF
-C4 Q VDD 2.82fF
-C5 a_343_411 VDD 3.14fF
-C6 a_1265_989 SN 2.44fF
-C7 VDD CLK 2.35fF
+C0 a_1905_1050 VDD 2.82fF
+C1 a_217_1050 VDD 2.55fF
+C2 a_1265_989 VDD 2.72fF
+C3 Q VDD 2.82fF
+C4 a_343_411 VDD 3.14fF
+C5 a_1265_989 SN 2.44fF
+C6 VDD CLK 2.35fF
+C7 QN VDD 3.35fF
 C8 VDD VSS 7.98fF
 .ends

@@ -30,7 +30,8 @@ N 0 90 20 90 {
 lab=VSS}
 N 20 -90 20 -80 {
 lab=VDD}
-N 0 -90 20 -90 {}
+N 0 -90 20 -90 {
+lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} -20 50 0 0 {name=M1
 L=0.15
 W=3

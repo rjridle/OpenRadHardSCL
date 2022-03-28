@@ -275,7 +275,7 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 100 400 0 0 {name=l13 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 260 320 0 0 {name=l14 sig_type=std_logic lab=A}
-C {sky130_fd_pr/nfet_01v8.sym} 290 400 0 0 {name=M18
+C {sky130_fd_pr/nfet_01v8.sym} 290 400 0 0 {name=M11
 L=0.15
 W=3
 nf=1 
@@ -289,7 +289,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 290 320 0 0 {name=M19
+C {sky130_fd_pr/nfet_01v8.sym} 290 320 0 0 {name=M12
 L=0.15
 W=3
 nf=1 

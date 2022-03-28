@@ -58,10 +58,6 @@ N -80 -190 -80 80 {
 lab=#net3}
 N -80 80 -30 80 {
 lab=#net3}
-C {devices/ipin.sym} -120 -190 0 0 {name=p1 lab=D}
-C {devices/opin.sym} 340 -150 0 0 {name=p2 lab=QN}
-C {devices/ipin.sym} -120 -150 0 0 {name=p3 lab=RN}
-C {devices/ipin.sym} -120 -110 0 0 {name=p4 lab=CLK}
 C {devices/lab_pin.sym} -30 -170 0 0 {name=l2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -30 190 0 0 {name=p6 lab=RN}
 C {devices/lab_pin.sym} -30 170 0 0 {name=l4 sig_type=std_logic lab=CLK}
@@ -74,3 +70,7 @@ C {NAND2X1.sym} 30 60 0 0 {name=x3 VDD=VDD VSS=VSS}
 C {NAND3X1.sym} 30 170 0 0 {name=x4 VDD=VDD VSS=VSS}
 C {NAND3X1.sym} 250 -150 0 0 {name=x5 VDD=VDD VSS=VSS}
 C {NAND2X1.sym} 250 150 0 0 {name=x6 VDD=VDD VSS=VSS}
+C {devices/opin.sym} 340 -150 0 0 {name=p1 lab=QN}
+C {devices/ipin.sym} -120 -160 0 0 {name=p2 lab=D}
+C {devices/ipin.sym} -120 -130 0 0 {name=p3 lab=CLK}
+C {devices/ipin.sym} -120 -100 0 0 {name=p4 lab=RN}

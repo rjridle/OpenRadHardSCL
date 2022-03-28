@@ -24,6 +24,12 @@ N 70 140 70 150 {
 lab=D2}
 N 70 150 80 150 {
 lab=D2}
+N 130 60 140 60 {
+lab=QN}
+N 0 60 10 60 {
+lab=D0}
+N 0 100 10 100 {
+lab=CLK}
 C {devices/lab_pin.sym} 260 -210 0 1 {name=l18 sig_type=std_logic lab=D0}
 C {devices/vsource.sym} 0 -70 0 0 {name=V1 value=1.8
 		}
@@ -34,8 +40,8 @@ C {devices/code_shown.sym} -170 0 0 0 {name=NGSPICE
 only_toplevel=true
 place=end
 value="
-.save all
 .tran 0.1n 100n
+.save all
 "}
 C {devices/code.sym} -180 -160 0 0 {name=TT_MODELS
 only_toplevel=true
@@ -47,16 +53,16 @@ value="
 C {devices/vsource.sym} 60 -70 0 0 {name=V3 value="pulse 0 1.8 0 1p 1p 5n 10n"}
 C {devices/gnd.sym} 60 -40 0 0 {name=l22 lab=GND}
 C {devices/lab_pin.sym} 80 -130 0 1 {name=l23 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 10 60 0 0 {name=l1 sig_type=std_logic lab=D0}
-C {devices/lab_pin.sym} 10 100 0 0 {name=l2 sig_type=std_logic lab=CLK}
-C {devices/lab_pin.sym} 130 60 0 1 {name=l3 sig_type=std_logic lab=QN}
-C {devices/vsource.sym} 240 -150 0 0 {name=V4 value="pulse 0 1.8 1n 1p 1p 10n 20n"}
+C {devices/lab_pin.sym} 0 60 0 0 {name=l1 sig_type=std_logic lab=D0}
+C {devices/lab_pin.sym} 0 100 0 0 {name=l2 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 140 60 0 1 {name=l3 sig_type=std_logic lab=QN}
+C {devices/vsource.sym} 240 -150 0 0 {name=V4 value="pulse 0 1.8 5n 1p 1p 10n 20n"}
 C {devices/lab_pin.sym} 260 -90 0 1 {name=l5 sig_type=std_logic lab=D1}
 C {devices/gnd.sym} 240 0 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 240 -30 0 0 {name=V2 value="pulse 0 1.8 1n 1p 1p 20n 40n"}
+C {devices/vsource.sym} 240 -30 0 0 {name=V2 value="pulse 0 1.8 5n 1p 1p 20n 40n"}
 C {devices/lab_pin.sym} 260 30 0 1 {name=l7 sig_type=std_logic lab=D2}
 C {devices/gnd.sym} 240 120 0 0 {name=l8 lab=GND}
-C {devices/vsource.sym} 240 90 0 0 {name=V5 value="pulse 0 1.8 1n 1p 1p 40n 80n"}
-C {TMRDFFQNX1.sym} 70 80 0 0 {name=x1 VDD=VDD VSS=GND}
+C {devices/vsource.sym} 240 90 0 0 {name=V5 value="pulse 0 1.8 5n 1p 1p 40n 80n"}
 C {devices/lab_pin.sym} 80 10 0 1 {name=l9 sig_type=std_logic lab=D1}
 C {devices/lab_pin.sym} 80 150 0 1 {name=l10 sig_type=std_logic lab=D2}
+C {TMRDFFQNX1.sym} 70 80 0 0 {name=x1 VDD=VDD VSS=GND}

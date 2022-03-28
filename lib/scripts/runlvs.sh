@@ -8,6 +8,9 @@ then
     XSCHEM_SPICE_FILE="./lvs/xschem/${CELL}.spice"
     echo "${CELL} LVS: Magic(${MAGIC_SPICE_FILE}) vs. XSCHEM(${XSCHEM_SPICE_FILE})"
     sed -i "/^.subckt $CELL.*VDD.* VSS.*$/! s/.subckt $CELL.*$/& VDD VSS/" ${XSCHEM_SPICE_FILE}
+    sed -i "s/L=0.15/L=0.15u/g" ${XSCHEM_SPICE_FILE}
+    sed -i "s/W=3/W=3u/g" ${XSCHEM_SPICE_FILE}
+    sed -i "s/W=2/W=2u/g" ${XSCHEM_SPICE_FILE}
     sed -i "s/^C.*$//g" ${MAGIC_SPICE_FILE}
     ./scripts/runlvs_single.sh ${MAGIC_SPICE_FILE} ${XSCHEM_SPICE_FILE} 
 else
@@ -23,6 +26,9 @@ for file in ${CELL_FILES}; do
     XSCHEM_SPICE_FILE="./lvs/xschem/${CELL_NAME}.spice"
     echo "${CELL} LVS: Magic(${MAGIC_SPICE_FILE}) vs. XSCHEM(${XSCHEM_SPICE_FILE})"
     sed -i "/^.subckt $CELL.*VDD.* VSS.*$/! s/.subckt $CELL.*$/& VDD VSS/" ${XSCHEM_SPICE_FILE}
+    sed -i "s/L=0.15/L=0.15u/g" ${XSCHEM_SPICE_FILE}
+    sed -i "s/W=3/W=3u/g" ${XSCHEM_SPICE_FILE}
+    sed -i "s/W=2/W=2u/g" ${XSCHEM_SPICE_FILE}
     sed -i "s/^C.*$//g" ${MAGIC_SPICE_FILE}
     ./scripts/runlvs_single.sh ${MAGIC_SPICE_FILE} ${XSCHEM_SPICE_FILE} 
     echo "\n\n"

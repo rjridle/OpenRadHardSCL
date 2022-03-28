@@ -19,7 +19,7 @@ lab=A}
 N 90 -50 100 -50 {
 lab=B}
 N 90 50 100 50 {
-lab=#net2}
+lab=B}
 N 90 130 100 130 {
 lab=A}
 N 0 -110 0 -80 {
@@ -72,7 +72,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 120 -50 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8.sym} 120 -50 0 0 {name=M2
 L=0.15
 W=2
 nf=1
@@ -86,7 +86,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 120 130 0 0 {name=M6
+C {sky130_fd_pr/nfet_01v8.sym} 120 130 0 0 {name=M3
 L=0.15
 W=3
 nf=1 

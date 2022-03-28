@@ -10,13 +10,13 @@ N 60 -100 120 -100 {
 lab=D}
 N 60 -220 60 -190 { lab=CLK}
 N 60 -220 130 -220 { lab=CLK}
-N 230 -170 230 -130 {
+N 190 50 190 90 {
 lab=SN}
-N 230 -170 290 -170 {
+N 190 50 250 50 {
 lab=SN}
-N 340 -240 340 -200 {
+N 230 -80 230 -40 {
 lab=RN}
-N 340 -240 400 -240 {
+N 230 -80 290 -80 {
 lab=RN}
 C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 0 19.9n 0 20n 1.8"}
 C {devices/lab_pin.sym} 120 -100 0 1 {name=l18 sig_type=std_logic lab=D}
@@ -46,12 +46,12 @@ C {devices/lab_pin.sym} 10 80 0 0 {name=l1 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 10 120 0 0 {name=l2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 130 80 0 1 {name=l3 sig_type=std_logic lab=Q}
 C {devices/lab_pin.sym} 130 120 0 1 {name=l4 sig_type=std_logic lab=QN}
-C {devices/lab_pin.sym} 290 -170 0 1 {name=l5 sig_type=std_logic lab=SN}
-C {devices/gnd.sym} 230 -70 0 0 {name=l6 lab=GND}
-C {devices/vsource.sym} 230 -100 0 0 {name=V4 value="pwl 0n 1.8 6n 1.8 6.1 0 9.8n 0 9.9n 1.8"}
+C {devices/lab_pin.sym} 250 50 0 1 {name=l5 sig_type=std_logic lab=SN}
+C {devices/gnd.sym} 190 150 0 0 {name=l6 lab=GND}
+C {devices/vsource.sym} 190 120 0 0 {name=V4 value="pwl 0n 1.8 6n 1.8 6.1 0 9.8n 0 9.9n 1.8"}
 C {devices/lab_pin.sym} 70 40 0 0 {name=l7 sig_type=std_logic lab=SN}
-C {devices/lab_pin.sym} 400 -240 0 1 {name=l8 sig_type=std_logic lab=RN}
-C {devices/gnd.sym} 340 -140 0 0 {name=l9 lab=GND}
-C {devices/vsource.sym} 340 -170 0 0 {name=V5 value="pwl 0n 1.8 23n 1.8 23.1n 0 26n 0 26.1n 1.8"}
+C {devices/lab_pin.sym} 290 -80 0 1 {name=l8 sig_type=std_logic lab=RN}
+C {devices/gnd.sym} 230 20 0 0 {name=l9 lab=GND}
+C {devices/vsource.sym} 230 -10 0 0 {name=V5 value="pwl 0n 1.8 23n 1.8 23.1n 0 26n 0 26.1n 1.8"}
 C {DFFSNRNX1.sym} 70 100 0 0 {name=x1 VDD=VDD VSS=GND}
 C {devices/lab_pin.sym} 70 160 0 1 {name=l10 sig_type=std_logic lab=RN}

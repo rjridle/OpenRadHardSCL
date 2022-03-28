@@ -1,6 +1,6 @@
 * SPICE3 file created from DFFSNRNX1.ext - technology: sky130A
 
-.subckt DFFSNRNX1 Q QN D RN CLK SN VDD VSS
+.subckt DFFSNRNX1 Q QN D CLK SN RN VDD VSS
 X0 a_599_989 CLK VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.356p ps=1.0956u w=2u l=0.15u M=2
 X1 VSS a_599_989 a_3939_103 VSS sky130_fd_pr__nfet_01v8 ad=1.0746p pd=9.42u as=0p ps=0u w=3u l=0.15u
 X2 VDD a_277_1050 a_2201_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2

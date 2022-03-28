@@ -1,5 +1,5 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/INVX1.sch
-.subckt INVX1 Y A VDD VSS
+.subckt INVX1 Y A
 *.PININFO Y:O A:I
 XM1 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
