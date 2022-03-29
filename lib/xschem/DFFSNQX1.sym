@@ -16,7 +16,7 @@ v {xschem version=3.0.0 file_version=1.2
 
 }
 G {}
-K {type=stdcell
+K {type=subcircuit
 vhdl_stop=true
 verilog_stop=true
 format="@name @pinlist @VDD @VSS @symname"

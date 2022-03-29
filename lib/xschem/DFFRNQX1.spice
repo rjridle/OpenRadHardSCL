@@ -1,7 +1,7 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFRNQX1.sch
 .subckt DFFRNQX1 Q D CLK RN
 *.PININFO Q:O D:I CLK:I RN:I
-x2 net4 net1 RN D VDD VSS NAND3X1
+x2 net4 net1 D RN VDD VSS NAND3X1
 x1 net1 net3 CLK net4 VDD VSS NAND3X1
 x3 net2 net4 net3 VDD VSS NAND2X1
 x4 net3 net2 CLK RN VDD VSS NAND3X1

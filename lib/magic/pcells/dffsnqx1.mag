@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648500820
+timestamp 1648501217
 << nwell >>
 rect 55 1505 89 1539
 << psubdiffcont >>
@@ -17,8 +17,6 @@ rect 55 13 89 47
 rect 1093 945 2952 979
 rect 406 871 4398 905
 rect 1351 797 3926 831
-rect 4053 797 4087 831
-rect 4123 797 4569 831
 rect 537 501 1822 535
 rect 2461 501 2771 535
 rect 2055 427 3704 461
@@ -98,10 +96,6 @@ use li1_M1_contact  li1_M1_contact_19
 timestamp 1648061256
 transform 1 0 4440 0 1 888
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_6
-timestamp 1648061256
-transform -1 0 4070 0 -1 814
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform 1 0 3922 0 1 814
@@ -114,19 +108,12 @@ use nand2x1_pcell  nand2x1_pcell_1
 timestamp 1648064633
 transform 1 0 4218 0 1 0
 box -84 0 750 1575
-use li1_M1_contact  li1_M1_contact_7
-timestamp 1648061256
-transform 1 0 4588 0 1 814
-box -53 -33 29 33
 << labels >>
 rlabel space 4719 342 4753 1103 1 Q
-port 1 n
 rlabel space 3461 461 3495 969 1 Q
-port 2 n
 rlabel space 205 461 239 969 1 D
-port 3 n
 rlabel space 2043 427 3704 461 1 SN
-port 4 n
 rlabel space 1081 945 2952 979 1 CLK
-port 5 n
+rlabel space 4053 344 4087 1094 1 QN
+rlabel space 4571 461 4605 969 1 QN
 << end >>

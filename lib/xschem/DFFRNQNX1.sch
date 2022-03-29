@@ -62,8 +62,8 @@ C {devices/lab_pin.sym} -30 -170 0 0 {name=l2 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -30 190 0 0 {name=p6 lab=RN}
 C {devices/lab_pin.sym} -30 170 0 0 {name=l4 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} 190 -150 0 0 {name=p7 lab=RN}
-C {devices/lab_pin.sym} -30 -50 0 0 {name=p8 lab=RN}
-C {devices/lab_pin.sym} -30 -30 0 0 {name=l3 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -30 -30 0 0 {name=p8 lab=RN}
+C {devices/lab_pin.sym} -30 -50 0 0 {name=l3 sig_type=std_logic lab=D}
 C {NAND3X1.sym} 30 -170 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {NAND3X1.sym} 30 -50 0 0 {name=x2 VDD=VDD VSS=VSS}
 C {NAND2X1.sym} 30 60 0 0 {name=x3 VDD=VDD VSS=VSS}
