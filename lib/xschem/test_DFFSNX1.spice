@@ -1,7 +1,6 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/test_DFFSNX1.sch
-.subckt test_DFFSNX1
-
-V2 D GND pwl 0n 0 5ns 0 5.1ns 1.8 10n 1.8 10.1n 0 22n 0 22.1n 1.8 27n 1.8 27.1n 0 34n 0 34.1n 1.8
+**.subckt test_DFFSNX1
+V2 D GND pwl 0n 0 6n 0 6.1n 1.8 16n 1.8 16.1n 0 22n 0 22.1n 1.8 32n 1.8 32.1n 0
 V1 VDD GND 1.8
 V3 CLK GND pulse 0 1.8 0 1p 1p 5n 10n
 V4 SN GND pwl 0n 1.8 33ns 1.8 33.1ns 0
@@ -12,13 +11,17 @@ x1 Q QN D CLK SN VDD GND DFFSNX1
 
 
 **** end user architecture code
-.ends
+**.ends
 
 * expanding   symbol:  DFFSNX1.sym # of pins=5
 ** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFSNX1.sym
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/DFFSNX1.sch
 .subckt DFFSNX1  Q QN D CLK SN  VDD  VSS
-*.PININFO Q:O QN:O D:I CLK:I SN:I
+*.opin Q
+*.opin QN
+*.ipin D
+*.ipin CLK
+*.ipin SN
 x1 net1 D net2 VDD VSS NAND2X1
 x2 net2 net1 CLK net4 VDD VSS NAND3X1
 x3 net3 net1 SN net4 VDD VSS NAND3X1
@@ -32,17 +35,19 @@ x6 QN net2 Q VDD VSS NAND2X1
 ** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND2X1.sym
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND2X1.sch
 .subckt NAND2X1  Y A B  VDD  VSS
-*.PININFO Y:O A:I B:I
+*.opin Y
+*.ipin A
+*.ipin B
 XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=2 m=2
 XM5 Y B net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM3 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=2 m=2
-XM6 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM3 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
 .ends
@@ -52,7 +57,10 @@ XM6 net1 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W
 ** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND3X1.sym
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND3X1.sch
 .subckt NAND3X1  Y A B C  VDD  VSS
-*.PININFO Y:O A:I B:I C:I
+*.opin Y
+*.ipin A
+*.ipin B
+*.ipin C
 XM1 net2 A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
@@ -65,10 +73,10 @@ XM3 net1 B net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * 
 XM4 Y C net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1
-XM6 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM5 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=2 m=2
-XM8 Y C VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM6 Y C VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=2 m=2
 .ends

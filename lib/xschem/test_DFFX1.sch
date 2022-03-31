@@ -10,7 +10,7 @@ N 60 -100 120 -100 {
 lab=D}
 N 60 -220 60 -190 { lab=CLK}
 N 60 -220 130 -220 { lab=CLK}
-C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 1.8 10n 1.8 10.1n 0 20n 0 20.1n 1.8 27n 1.8 27.1n 0 34n 0 34.1n 1.8"}
+C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 1.8 6ns 1.8 6.1ns 0 12n 0 12.1n 1.8 22n 1.8 22.1n 0 27n 0 27.1n 1.8 34n 1.8 34.1n 0"}
 C {devices/lab_pin.sym} 120 -100 0 1 {name=l18 sig_type=std_logic lab=D}
 C {devices/vsource.sym} 0 -30 0 0 {name=V1 value=1.8
 		}

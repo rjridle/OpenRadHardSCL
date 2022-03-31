@@ -1,6 +1,6 @@
 * SPICE3 file created from DFFRNQX1.ext - technology: sky130A
 
-.subckt DFFRNQX1 D CLK RN Q VDD VSS
+.subckt DFFRNQX1 Q D CLK RN VDD VSS
 X0 a_599_989 D VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.24p ps=1.004u w=2u l=0.15u M=2
 X1 VDD CLK a_277_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X2 VDD a_599_989 a_2141_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
@@ -33,15 +33,14 @@ X28 VSS a_2141_1050 a_2681_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=
 X29 a_3924_210 RN a_3643_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X30 VSS a_277_1050 a_1053_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X31 a_2962_210 CLK a_2681_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 a_2141_1050 VDD 2.17fF
-C1 a_147_187 CLK 3.42fF
-C2 a_599_989 VDD 3.11fF
-C3 a_277_1050 VDD 5.96fF
-C4 a_147_187 VDD 3.49fF
-C5 Q VDD 2.12fF
-C6 a_3829_1050 VDD 2.84fF
-C7 RN a_147_187 3.21fF
-C8 a_277_1050 CLK 2.82fF
+C0 a_147_187 a_277_1050 3.69fF
+C1 a_599_989 a_277_1050 2.02fF
+C2 a_3829_1050 VDD 2.82fF
+C3 a_2141_1050 VDD 2.17fF
+C4 Q VDD 2.14fF
+C5 a_277_1050 VDD 3.23fF
+C6 a_147_187 VDD 7.74fF
+C7 a_599_989 VDD 3.11fF
+C8 CLK a_147_187 3.44fF
 C9 VDD VSS 8.51fF
-C10 a_147_187 VSS 2.26fF **FLOATING
 .ends

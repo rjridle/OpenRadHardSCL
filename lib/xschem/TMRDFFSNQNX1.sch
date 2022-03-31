@@ -4,28 +4,28 @@ K {}
 V {}
 S {}
 E {}
-N 40 20 80 20 {
-lab=#net1}
-N 0 0 80 0 {
-lab=#net2}
-N 40 20 40 130 {
-lab=#net1}
 N 0 130 40 130 {
 lab=#net1}
-N 0 -130 40 -130 {
-lab=#net3}
-N 40 -130 40 -20 {
-lab=#net3}
-N 40 -20 80 -20 {
-lab=#net3}
 N 200 0 230 0 {
 lab=QN}
-N -60 80 -60 90 {}
-N -60 80 -50 80 {}
-N -60 -50 -60 -40 {}
-N -60 -50 -50 -50 {}
-N -60 -180 -60 -170 {}
-N -60 -180 -50 -180 {}
+N -60 80 -60 90 {
+lab=SN}
+N -60 80 -50 80 {
+lab=SN}
+N -60 -50 -60 -40 {
+lab=SN}
+N -60 -50 -50 -50 {
+lab=SN}
+N -60 -180 -60 -170 {
+lab=SN}
+N -60 -180 -50 -180 {
+lab=SN}
+N 0 -130 20 -130 {}
+N 40 20 40 130 {}
+N 40 20 80 20 {}
+N 0 0 80 0 {}
+N 20 -130 20 -20 {}
+N 20 -20 80 -20 {}
 C {VOTERN3X1.sym} 140 0 0 0 {name=x4 VDD=VDD VSS=VSS}
 C {DFFSNQX1.sym} -60 -110 0 0 {name=x1 VDD=VDD VSS=VSS}
 C {DFFSNQX1.sym} -60 20 0 0 {name=x2 VDD=VDD VSS=VSS}
@@ -38,8 +38,8 @@ C {devices/lab_pin.sym} -50 -180 0 1 {name=l1 sig_type=std_logic lab=SN}
 C {devices/lab_pin.sym} -50 -50 0 1 {name=l2 sig_type=std_logic lab=SN}
 C {devices/lab_pin.sym} -50 80 0 1 {name=l3 sig_type=std_logic lab=SN}
 C {devices/lab_pin.sym} -120 -130 0 0 {name=l4 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} -120 0 0 0 {name=l5 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} -120 130 0 0 {name=l6 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} -120 -90 0 0 {name=l7 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -120 40 0 0 {name=l8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -120 170 0 0 {name=l9 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} -120 0 0 0 {name=l5 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -120 130 0 0 {name=l6 sig_type=std_logic lab=D}

@@ -55,13 +55,13 @@ C {devices/lab_pin.sym} -70 90 0 0 {name=l4 sig_type=std_logic lab=RN}
 C {devices/lab_pin.sym} -70 -80 0 0 {name=l5 sig_type=std_logic lab=RN}
 C {devices/lab_pin.sym} -70 260 0 0 {name=l6 sig_type=std_logic lab=RN}
 C {devices/lab_pin.sym} -120 -170 0 0 {name=l7 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} -120 0 0 0 {name=l8 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} -120 170 0 0 {name=l9 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} -120 -130 0 0 {name=l10 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -120 40 0 0 {name=l11 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -120 210 0 0 {name=l12 sig_type=std_logic lab=CLK}
 C {devices/opin.sym} 230 0 0 0 {name=p1 lab=QN}
-C {devices/ipin.sym} -210 -170 0 0 {name=p2 lab=D}
-C {devices/ipin.sym} -210 -140 0 0 {name=p3 lab=CLK}
-C {devices/ipin.sym} -210 -110 0 0 {name=p4 lab=SN}
-C {devices/ipin.sym} -210 -80 0 0 {name=p5 lab=RN}
+C {devices/ipin.sym} -190 -50 0 0 {name=p2 lab=D}
+C {devices/ipin.sym} -190 -20 0 0 {name=p3 lab=CLK}
+C {devices/ipin.sym} -190 10 0 0 {name=p4 lab=SN}
+C {devices/ipin.sym} -190 40 0 0 {name=p5 lab=RN}
+C {devices/lab_pin.sym} -120 0 0 0 {name=l8 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} -120 170 0 0 {name=l9 sig_type=std_logic lab=D}

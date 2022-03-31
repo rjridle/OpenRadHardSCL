@@ -14,7 +14,7 @@ N 230 -170 230 -130 {
 lab=SN}
 N 230 -170 290 -170 {
 lab=SN}
-C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 0 5ns 0 5.1ns 1.8 10n 1.8 10.1n 0 22n 0 22.1n 1.8 27n 1.8 27.1n 0 34n 0 34.1n 1.8"}
+C {devices/vsource.sym} 60 -30 0 0 {name=V2 value="pwl 0n 0 6n 0 6.1n 1.8 16n 1.8 16.1n 0 22n 0 22.1n 1.8 32n 1.8 32.1n 0"}
 C {devices/lab_pin.sym} 120 -100 0 1 {name=l18 sig_type=std_logic lab=D}
 C {devices/vsource.sym} 0 -30 0 0 {name=V1 value=1.8
 		}

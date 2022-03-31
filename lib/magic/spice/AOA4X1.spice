@@ -1,16 +1,21 @@
 * SPICE3 file created from AOA4X1.ext - technology: sky130A
 
 .subckt AOA4X1 Y A B C D VDD VSS
-X0 VDD C a_223_1051 VDD sky130_fd_pr__pfet_01v8 ad=3.36p pd=2.736u as=0p ps=0u w=2u l=0.15u M=2
-X1 VDD D a_399_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
-X2 a_388_209 B a_108_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-X3 VSS A a_388_209 VSS sky130_fd_pr__nfet_01v8 ad=1.499p pd=1.124u as=0p ps=0u w=3u l=0.15u
-X4 VDD a_692_209 Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5.8p ps=4.58u w=2u l=0.15u M=2
-X5 a_399_1051 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
-X6 a_859_1051 A a_399_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
-X7 VSS C a_108_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-X8 a_692_209 D a_388_209 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-X9 Y a_692_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.791p pd=1.57u as=0p ps=0u w=3u l=0.15u
-C0 VDD a_399_1051 2.06fF
-C1 VDD VSS 3.03fF
+X0 VDD A a_217_1050 VDD sky130_fd_pr__pfet_01v8 ad=5.04p pd=4.104u as=0p ps=0u w=2u l=0.15u M=2
+X1 VDD a_217_1050 a_797_1051 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X2 Y a_1549_1050 VDD VDD sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=0p ps=0u w=2u l=0.15u M=2
+X3 VDD B a_217_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X4 VDD a_864_209 a_1549_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X5 a_797_1051 C a_864_209 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X6 VSS A a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=3.4356p pd=2.418u as=0p ps=0u w=3u l=0.15u
+X7 a_864_209 a_217_1050 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+X8 VSS a_864_209 a_1444_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+X9 VDD D a_1549_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X10 a_1549_1050 D a_1444_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+X11 Y a_1549_1050 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.791p pd=1.57u as=0p ps=0u w=3u l=0.15u
+X12 a_217_1050 B a_112_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+X13 a_864_209 C VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+C0 VDD a_1549_1050 2.24fF
+C1 VDD a_217_1050 2.17fF
+C2 VDD VSS 4.29fF
 .ends

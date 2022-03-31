@@ -24,8 +24,6 @@ N -50 320 -40 320 {
 lab=A}
 N -50 400 -40 400 {
 lab=B}
-N 350 240 380 240 {
-lab=YN}
 N 0 80 0 120 {
 lab=#net3}
 N -50 50 -40 50 {
@@ -94,8 +92,6 @@ N 250 180 250 200 {
 lab=YN}
 N 150 200 150 260 {
 lab=YN}
-N 150 240 350 240 {
-lab=YN}
 N -0 150 10 150 {
 lab=VDD}
 N 10 50 10 150 {
@@ -122,6 +118,8 @@ N 260 -90 260 -50 {
 lab=VDD}
 N 250 -90 260 -90 {
 lab=VDD}
+N 150 230 350 230 {
+lab=YN}
 C {sky130_fd_pr/pfet_01v8.sym} -20 -50 0 0 {name=M2
 L=0.15
 W=2
@@ -304,7 +302,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 260 400 0 0 {name=l15 sig_type=std_logic lab=C}
-C {devices/opin.sym} 380 240 0 0 {name=p1 lab=YN}
-C {devices/ipin.sym} -50 200 0 0 {name=p2 lab=A}
-C {devices/ipin.sym} -50 230 0 0 {name=p3 lab=B}
-C {devices/ipin.sym} -50 260 0 0 {name=p4 lab=C}
+C {devices/opin.sym} 350 230 0 0 {name=p1 lab=YN}
+C {devices/ipin.sym} -120 190 0 0 {name=p2 lab=A}
+C {devices/ipin.sym} -120 220 0 0 {name=p3 lab=B}
+C {devices/ipin.sym} -120 250 0 0 {name=p4 lab=C}

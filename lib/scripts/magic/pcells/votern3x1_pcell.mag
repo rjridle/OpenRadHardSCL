@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648406277
+timestamp 1648740297
 << nwell >>
 rect 84 1554 582 1575
 rect 31 1492 582 1554
@@ -221,12 +221,10 @@ rect 1561 1071 1867 1105
 rect 131 461 165 988
 rect 353 954 361 988
 rect 353 467 387 954
-rect 871 847 905 954
-rect 871 477 905 485
 rect 353 461 357 467
+rect 871 458 905 954
 rect 1167 461 1201 988
-rect 1463 847 1497 954
-rect 1463 477 1497 486
+rect 1463 451 1497 954
 rect 1685 461 1719 1020
 rect 1833 374 1867 1071
 rect 1745 340 1867 374
@@ -353,11 +351,9 @@ rect 1943 1505 1967 1539
 rect 1363 1492 1967 1505
 rect 475 1071 799 1105
 rect 1135 1071 1466 1105
-rect 166 871 905 905
-rect 1201 871 1453 905
-rect 389 797 1690 831
-rect 132 501 844 535
-rect 1201 501 1453 535
+rect 166 945 905 979
+rect 389 871 1690 905
+rect 1201 427 1453 461
 rect 449 247 1744 281
 rect 31 47 635 62
 rect 31 13 55 47
@@ -392,9 +388,9 @@ rect 1799 13 1837 47
 rect 1871 13 1909 47
 rect 1943 13 1967 47
 rect 1363 0 1967 13
-use li1_M1_contact  li1_M1_contact_9
+use li1_M1_contact  li1_M1_contact_15
 timestamp 1648061256
-transform -1 0 148 0 1 518
+transform -1 0 148 0 1 962
 box -53 -33 29 33
 use diff_ring_side  diff_ring_side_1
 timestamp 1648063806
@@ -408,10 +404,6 @@ use poly_li1_contact  poly_li1_contact_5
 timestamp 1648060378
 transform 0 1 149 -1 0 445
 box -32 -28 34 26
-use li1_M1_contact  li1_M1_contact_15
-timestamp 1648061256
-transform -1 0 148 0 1 888
-box -53 -33 29 33
 use nmos_bottom  nmos_bottom_0
 timestamp 1648062456
 transform -1 0 360 0 1 101
@@ -422,7 +414,7 @@ transform 1 0 43 0 1 1450
 box 52 -460 352 37
 use li1_M1_contact  li1_M1_contact_6
 timestamp 1648061256
-transform -1 0 370 0 1 814
+transform -1 0 370 0 1 888
 box -53 -33 29 33
 use poly_li1_contact  poly_li1_contact_3
 timestamp 1648060378
@@ -464,13 +456,9 @@ use pmos2_1  pmos2_1_3
 timestamp 1647326732
 transform -1 0 1113 0 1 1450
 box 52 -460 352 37
-use li1_M1_contact  li1_M1_contact_10
-timestamp 1648061256
-transform 1 0 888 0 1 518
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_8
 timestamp 1648061256
-transform 1 0 888 0 1 888
+transform 1 0 888 0 1 962
 box -53 -33 29 33
 use poly_li1_contact  poly_li1_contact_7
 timestamp 1648060378
@@ -498,11 +486,7 @@ transform -1 0 1289 0 1 1450
 box 52 -460 352 37
 use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
-transform -1 0 1184 0 1 518
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_12
-timestamp 1648061256
-transform -1 0 1184 0 1 888
+transform -1 0 1184 0 1 444
 box -53 -33 29 33
 use diff_ring_side  diff_ring_side_3
 timestamp 1648063806
@@ -516,6 +500,10 @@ use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
 transform 0 -1 1183 -1 0 445
 box -32 -28 34 26
+use li1_M1_contact  li1_M1_contact_14
+timestamp 1648061256
+transform 1 0 1480 0 1 444
+box -53 -33 29 33
 use poly_li1_contact  poly_li1_contact_10
 timestamp 1648060378
 transform 0 -1 1479 -1 0 445
@@ -536,9 +524,9 @@ use nmos_top_trim2  nmos_top_trim2_2
 timestamp 1648066397
 transform -1 0 1886 0 1 101
 box 0 0 248 309
-use li1_M1_contact  li1_M1_contact_14
+use li1_M1_contact  li1_M1_contact_16
 timestamp 1648061256
-transform 1 0 1480 0 1 518
+transform 1 0 1702 0 1 888
 box -53 -33 29 33
 use poly_li1_contact  poly_li1_contact_9
 timestamp 1648060378
@@ -556,14 +544,6 @@ use pmos2_1  pmos2_1_4
 timestamp 1647326732
 transform 1 0 1375 0 1 1450
 box 52 -460 352 37
-use li1_M1_contact  li1_M1_contact_13
-timestamp 1648061256
-transform 1 0 1480 0 1 888
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_16
-timestamp 1648061256
-transform 1 0 1702 0 1 814
-box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_5
 timestamp 1648061256
 transform 1 0 1490 0 1 1088
@@ -573,22 +553,20 @@ timestamp 1648063806
 transform 1 0 1998 0 1 0
 box -84 0 84 1575
 << labels >>
-rlabel metal1 131 461 165 988 1 B
-port 1 n
-rlabel space 132 501 871 535 1 B
-port 2 n
 rlabel space 353 461 387 970 1 A
+port 1 n
+rlabel metal1 131 461 165 988 1 B
+port 2 n
+rlabel space 871 458 905 970 1 B
 port 3 n
-rlabel metal1 1167 461 1201 988 1 C
-port 4 n
 rlabel metal1 1685 461 1719 1020 1 A
+port 4 n
+rlabel metal1 1167 461 1201 988 1 C
 port 5 n
-rlabel space 387 797 1690 831 1 A
+rlabel space 1463 513 1497 970 1 C
 port 6 n
-rlabel space 1201 871 1463 905 1 C
+rlabel metal1 1833 340 1867 1105 1 YN
 port 7 n
-rlabel space 1201 501 1463 535 1 C
+rlabel space 1201 427 1463 461 1 C
 port 8 n
-rlabel space 165 871 917 905 1 B
-port 9 n
 << end >>
