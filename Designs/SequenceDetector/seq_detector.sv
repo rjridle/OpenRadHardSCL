@@ -14,8 +14,8 @@ module seq_detector(
 );
 
   // Creating new type for states
-  typedef enum logic [2:0]
-  {S0=3'b000, S1=3'b001, S2=3'b010, S3=3'b011, S4=3'b100} state_type;
+  typedef enum logic [1:0]
+  {S0=3'b00, S1=3'b01, S2=3'b10, S3=3'b11} state_type;
 
   // Insansiating a current_state and next_state of type state_type
   state_type CURRENT_STATE, NEXT_STATE;

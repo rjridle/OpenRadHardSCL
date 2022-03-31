@@ -14,18 +14,22 @@
 # //
 # do seq_detector.do
 # QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
-# Start time: 15:41:17 on Mar 15,2022
+# Start time: 16:32:31 on Mar 31,2022
 # vlog -reportprogress 300 seq_detector_tb.sv seq_detector.sv 
 # -- Compiling module tb
 # ** Warning: seq_detector_tb.sv(34): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # -- Compiling module seq_detector
+# ** Warning: seq_detector.sv(18): (vlog-2999) Enum literal 'S0' width (3) must match enum's width(2).
+# ** Warning: seq_detector.sv(18): (vlog-2999) Enum literal 'S1' width (3) must match enum's width(2).
+# ** Warning: seq_detector.sv(18): (vlog-2999) Enum literal 'S2' width (3) must match enum's width(2).
+# ** Warning: seq_detector.sv(18): (vlog-2999) Enum literal 'S3' width (3) must match enum's width(2).
 # 
 # Top level modules:
 # 	tb
-# End time: 15:41:18 on Mar 15,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 16:32:31 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 5
 # vsim -voptargs="+acc" work.tb 
-# Start time: 15:41:18 on Mar 15,2022
+# Start time: 16:32:31 on Mar 31,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: seq_detector_tb.sv(34): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
 # ** Note: (vopt-143) Recognized 1 FSM in module "seq_detector(fast)".
@@ -40,5 +44,5 @@
 # ** Note: $stop    : seq_detector_tb.sv(65)
 #    Time: 200012 ns  Iteration: 0  Instance: /tb
 # Break in Module tb at seq_detector_tb.sv line 65
-# End time: 15:41:30 on Mar 15,2022, Elapsed time: 0:00:12
+# End time: 16:32:38 on Mar 31,2022, Elapsed time: 0:00:07
 # Errors: 0, Warnings: 1
