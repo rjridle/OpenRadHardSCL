@@ -1,0 +1,44 @@
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do seq_detector.do
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 15:41:17 on Mar 15,2022
+# vlog -reportprogress 300 seq_detector_tb.sv seq_detector.sv 
+# -- Compiling module tb
+# ** Warning: seq_detector_tb.sv(34): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module seq_detector
+# 
+# Top level modules:
+# 	tb
+# End time: 15:41:18 on Mar 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.tb 
+# Start time: 15:41:18 on Mar 15,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: seq_detector_tb.sv(34): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Note: (vopt-143) Recognized 1 FSM in module "seq_detector(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.seq_detector(fast)
+# .main_pane.list.interior.cs.body
+# .main_pane.wave.interior.cs.body.pw.wf
+# [PASSED]       10000
+# [FAILED]           0
+# ** Note: $stop    : seq_detector_tb.sv(65)
+#    Time: 200012 ns  Iteration: 0  Instance: /tb
+# Break in Module tb at seq_detector_tb.sv line 65
+# End time: 15:41:30 on Mar 15,2022, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
