@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648751728
+timestamp 1648838905
 << nwell >>
 rect -84 832 2304 1575
 << nmos >>
@@ -1889,21 +1889,4 @@ rlabel metal1 55 1505 89 1539 1 VDD
 port 4 n
 rlabel metal1 55 13 89 47 1 VSS
 port 5 n
-rlabel space 131 461 165 969 1 xnor2x1_pcell_0/A
-rlabel space 279 427 313 979 1 xnor2x1_pcell_0/A_b
-rlabel space 2055 461 2089 969 1 xnor2x1_pcell_0/B
-rlabel space 1907 427 1941 979 1 xnor2x1_pcell_0/B_b
-rlabel space 649 461 683 970 1 xnor2x1_pcell_0/A
-rlabel space 871 461 905 625 1 xnor2x1_pcell_0/B
-rlabel metal1 945 341 979 1105 1 xnor2x1_pcell_0/Y
-rlabel space 979 723 1611 757 1 xnor2x1_pcell_0/Y
-rlabel metal1 1611 341 1645 1105 1 xnor2x1_pcell_0/Y
-rlabel space 313 501 1537 535 1 xnor2x1_pcell_0/A_b
-rlabel space 1537 461 1571 970 1 xnor2x1_pcell_0/A_b
-rlabel space 905 797 2055 831 1 xnor2x1_pcell_0/B
-rlabel space 871 831 905 970 1 xnor2x1_pcell_0/B
-rlabel space 1349 871 1907 905 1 xnor2x1_pcell_0/B_b
-rlabel nwell 1315 905 1349 970 1 xnor2x1_pcell_0/B_b
-rlabel space 1315 461 1349 649 1 xnor2x1_pcell_0/B
-rlabel space 1349 649 2055 683 1 xnor2x1_pcell_0/B
 << end >>

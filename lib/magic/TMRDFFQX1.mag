@@ -114,6 +114,6 @@ rlabel metal1 72 1522 72 1522 1 VDD
 port 4 n
 rlabel metal1 72 30 72 30 1 VSS
 port 5 n
-rlabel space 15153 797 15187 831 1 Q
+rlabel metal1 15153 797 15187 831 1 Q
 port 1 n
 << end >>

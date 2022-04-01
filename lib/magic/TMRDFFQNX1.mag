@@ -106,7 +106,7 @@ timestamp 1648061256
 transform 1 0 14060 0 -1 666
 box -53 -33 29 33
 << labels >>
-rlabel space 14709 797 14743 831 1 QN
+rlabel metal1 14709 797 14743 831 1 QN
 port 1 n
 rlabel metal1 1315 427 1349 461 1 D
 port 2 n

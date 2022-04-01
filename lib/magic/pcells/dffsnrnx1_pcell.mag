@@ -110,13 +110,4 @@ use nand3x1_pcell  nand3x1_pcell_5
 timestamp 1648064657
 transform 1 0 4810 0 1 0
 box -84 0 1046 1575
-<< labels >>
-rlabel space 205 461 239 969 1 D
-rlabel space 5607 344 5641 1094 1 Q
-rlabel space 4497 461 4531 986 1 Q
-rlabel space 2345 427 5237 461 1 SN
-rlabel metal1 1377 945 3313 979 1 CLK
-rlabel space 415 501 4275 535 1 RN
-rlabel space 4645 344 4679 1094 1 QN
-rlabel space 5015 461 5049 969 1 QN
 << end >>

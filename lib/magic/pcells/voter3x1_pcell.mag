@@ -20,6 +20,4 @@ use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform 1 0 2146 0 1 814
 box -53 -33 29 33
-<< labels >>
-rlabel space 2277 427 2311 979 1 Y
 << end >>

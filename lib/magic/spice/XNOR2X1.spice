@@ -1,6 +1,6 @@
 * SPICE3 file created from XNOR2X1.ext - technology: sky130A
 
-.subckt XNOR2X1 Y A B VSS VDD
+.subckt XNOR2X1 Y A B VDD VSS
 X0 a_806_193 B VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3.36p ps=2.736u w=2u l=0.15u M=2
 X1 a_185_209 A VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X2 VSS A a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=2.6398p pd=1.934u as=0p ps=0u w=3u l=0.15u

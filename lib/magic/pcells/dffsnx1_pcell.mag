@@ -106,12 +106,4 @@ use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform 1 0 4588 0 1 814
 box -53 -33 29 33
-<< labels >>
-rlabel space 205 461 239 969 1 D
-rlabel space 1081 945 2952 979 1 CLK
-rlabel space 2043 501 4381 535 1 SN
-rlabel space 4719 344 4753 1094 1 Q
-rlabel space 4127 461 4161 969 1 QN
-rlabel space 3757 342 3791 1103 1 QN
-rlabel space 3609 461 3643 969 1 Q
 << end >>

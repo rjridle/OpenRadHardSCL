@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648751726
+timestamp 1648838903
 << nwell >>
 rect -84 832 19842 1575
 << nmos >>
@@ -14579,37 +14579,4 @@ rlabel metal1 55 1505 89 1539 1 VDD
 port 6 n
 rlabel metal1 55 13 89 47 1 VSS
 port 7 n
-rlabel space 205 461 239 969 1 dffsnrnx1_pcell_0/D
-rlabel space 5607 344 5641 1094 1 dffsnrnx1_pcell_0/Q
-rlabel space 4497 461 4531 986 1 dffsnrnx1_pcell_0/Q
-rlabel space 2345 427 5237 461 1 dffsnrnx1_pcell_0/SN
-rlabel metal1 1377 945 3313 979 1 dffsnrnx1_pcell_0/CLK
-rlabel space 415 501 4275 535 1 dffsnrnx1_pcell_0/RN
-rlabel space 4645 344 4679 1094 1 dffsnrnx1_pcell_0/QN
-rlabel space 5015 461 5049 969 1 dffsnrnx1_pcell_0/QN
-rlabel space 5977 461 6011 969 1 dffsnrnx1_pcell_1/D
-rlabel space 11379 344 11413 1094 1 dffsnrnx1_pcell_1/Q
-rlabel space 10269 461 10303 986 1 dffsnrnx1_pcell_1/Q
-rlabel space 8117 427 11009 461 1 dffsnrnx1_pcell_1/SN
-rlabel metal1 7149 945 9085 979 1 dffsnrnx1_pcell_1/CLK
-rlabel space 6187 501 10047 535 1 dffsnrnx1_pcell_1/RN
-rlabel space 10417 344 10451 1094 1 dffsnrnx1_pcell_1/QN
-rlabel space 10787 461 10821 969 1 dffsnrnx1_pcell_1/QN
-rlabel space 11749 461 11783 969 1 dffsnrnx1_pcell_2/D
-rlabel space 17151 344 17185 1094 1 dffsnrnx1_pcell_2/Q
-rlabel space 16041 461 16075 986 1 dffsnrnx1_pcell_2/Q
-rlabel space 13889 427 16781 461 1 dffsnrnx1_pcell_2/SN
-rlabel metal1 12921 945 14857 979 1 dffsnrnx1_pcell_2/CLK
-rlabel space 11959 501 15819 535 1 dffsnrnx1_pcell_2/RN
-rlabel space 16189 344 16223 1094 1 dffsnrnx1_pcell_2/QN
-rlabel space 16559 461 16593 969 1 dffsnrnx1_pcell_2/QN
-rlabel space 19593 427 19627 979 1 voter3x1_pcell_0/Y
-rlabel space 17669 461 17703 970 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 17447 461 17481 988 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel space 18187 458 18221 970 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel metal1 19001 461 19035 1020 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 18483 461 18517 988 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel space 18779 513 18813 970 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel metal1 19149 340 19183 1105 1 voter3x1_pcell_0/votern3x1_pcell_0/YN
-rlabel space 18517 427 18779 461 1 voter3x1_pcell_0/votern3x1_pcell_0/C
 << end >>

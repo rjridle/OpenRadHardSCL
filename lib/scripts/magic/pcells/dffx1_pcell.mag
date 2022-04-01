@@ -96,17 +96,4 @@ use nand2x1_pcell  nand2x1_pcell_4
 timestamp 1648064633
 transform 1 0 3626 0 1 0
 box -84 0 750 1575
-<< labels >>
-rlabel space 4127 342 4161 1103 1 Q
-port 1 n
-rlabel space 3313 461 3347 969 1 Q
-port 2 n
-rlabel space 1315 461 1349 969 1 D
-port 3 n
-rlabel space 415 945 2651 979 1 CLK
-port 4 n
-rlabel space 3461 342 3495 1103 1 QN
-port 5 n
-rlabel space 3831 461 3865 969 1 QN
-port 6 n
 << end >>

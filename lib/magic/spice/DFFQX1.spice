@@ -27,13 +27,13 @@ X22 a_147_187 CLK a_2406_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u
 X23 VSS a_3177_1050 a_3738_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X24 VSS a_277_1050 a_1074_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X25 a_1845_1050 a_147_187 a_1740_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 a_147_187 VDD 6.38fF
+C0 a_277_1050 a_147_187 3.03fF
 C1 a_3177_1050 VDD 2.20fF
-C2 a_147_187 CLK 3.16fF
-C3 a_1845_1050 VDD 2.20fF
-C4 Q VDD 2.20fF
-C5 a_147_187 a_277_1050 3.03fF
-C6 a_599_989 VDD 2.47fF
-C7 a_277_1050 VDD 3.17fF
+C2 a_277_1050 VDD 3.17fF
+C3 VDD Q 2.20fF
+C4 VDD a_1845_1050 2.20fF
+C5 a_147_187 VDD 6.38fF
+C6 a_147_187 CLK 3.16fF
+C7 a_599_989 VDD 2.47fF
 C8 VDD VSS 6.91fF
 .ends

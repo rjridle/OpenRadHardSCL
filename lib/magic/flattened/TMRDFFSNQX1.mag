@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648751725
+timestamp 1648838902
 << nwell >>
 rect -84 832 17178 1575
 << nmos >>
@@ -12889,34 +12889,4 @@ rlabel metal1 72 1522 72 1522 1 VDD
 port 5 n
 rlabel metal1 72 30 72 30 1 VSS
 port 6 n
-rlabel space 205 461 239 969 1 dffsnx1_pcell_0/D
-rlabel space 1081 945 2952 979 1 dffsnx1_pcell_0/CLK
-rlabel space 2043 501 4381 535 1 dffsnx1_pcell_0/SN
-rlabel space 4719 344 4753 1094 1 dffsnx1_pcell_0/Q
-rlabel space 4127 461 4161 969 1 dffsnx1_pcell_0/QN
-rlabel space 3757 342 3791 1103 1 dffsnx1_pcell_0/QN
-rlabel space 3609 461 3643 969 1 dffsnx1_pcell_0/Q
-rlabel space 5089 461 5123 969 1 dffsnx1_pcell_1/D
-rlabel space 5965 945 7836 979 1 dffsnx1_pcell_1/CLK
-rlabel space 6927 501 9265 535 1 dffsnx1_pcell_1/SN
-rlabel space 9603 344 9637 1094 1 dffsnx1_pcell_1/Q
-rlabel space 9011 461 9045 969 1 dffsnx1_pcell_1/QN
-rlabel space 8641 342 8675 1103 1 dffsnx1_pcell_1/QN
-rlabel space 8493 461 8527 969 1 dffsnx1_pcell_1/Q
-rlabel space 9973 461 10007 969 1 dffsnx1_pcell_2/D
-rlabel space 10849 945 12720 979 1 dffsnx1_pcell_2/CLK
-rlabel space 11811 501 14149 535 1 dffsnx1_pcell_2/SN
-rlabel space 14487 344 14521 1094 1 dffsnx1_pcell_2/Q
-rlabel space 13895 461 13929 969 1 dffsnx1_pcell_2/QN
-rlabel space 13525 342 13559 1103 1 dffsnx1_pcell_2/QN
-rlabel space 13377 461 13411 969 1 dffsnx1_pcell_2/Q
-rlabel space 16929 427 16963 979 1 voter3x1_pcell_0/Y
-rlabel space 15005 461 15039 970 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 14783 461 14817 988 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel space 15523 458 15557 970 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel metal1 16337 461 16371 1020 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 15819 461 15853 988 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel space 16115 513 16149 970 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel metal1 16485 340 16519 1105 1 voter3x1_pcell_0/votern3x1_pcell_0/YN
-rlabel space 15853 427 16115 461 1 voter3x1_pcell_0/votern3x1_pcell_0/C
 << end >>

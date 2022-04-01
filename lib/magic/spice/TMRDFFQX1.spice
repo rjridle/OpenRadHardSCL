@@ -1,6 +1,6 @@
 * SPICE3 file created from TMRDFFQX1.ext - technology: sky130A
 
-.subckt TMRDFFQX1 D CLK VDD VSS
+.subckt TMRDFFQX1 D CLK Q VDD VSS
 X0 VDD a_8731_187 a_8861_1050 VDD sky130_fd_pr__pfet_01v8 ad=3.476p pd=2.8276u as=0p ps=0u w=2u l=0.15u M=2
 X1 a_3177_1050 a_277_1050 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X2 VDD a_1845_1050 a_147_187 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
@@ -35,7 +35,7 @@ X30 a_4569_1050 a_4891_989 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=
 X31 a_13757_1051 a_3303_411 a_13268_209 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X32 VDD a_9183_989 a_10429_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X33 VDD a_147_187 a_3303_411 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
-X34 a_15059_209 a_13268_209 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
+X34 Q a_13268_209 VDD VDD sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=0p ps=0u w=2u l=0.15u M=2
 X35 VDD a_4569_1050 a_7469_1050 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X36 a_1845_1050 a_147_187 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X37 a_8861_1050 a_9183_989 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
@@ -71,7 +71,7 @@ X66 VSS a_10429_1050 a_10990_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p p
 X67 VSS a_4439_187 a_4383_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X68 a_7595_411 a_4439_187 a_8030_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X69 VSS a_599_989 a_1740_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-X70 a_15059_209 a_13268_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
+X70 Q a_13268_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=1.791p pd=1.57u as=0p ps=0u w=3u l=0.15u
 X71 VSS a_4569_1050 a_5366_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X72 a_372_210 CLK a_91_103 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X73 a_4891_989 a_4569_1050 VDD VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
@@ -93,34 +93,34 @@ X88 VSS a_277_1050 a_1074_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0
 X89 a_1845_1050 a_147_187 a_1740_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X90 VSS a_11761_1050 a_12322_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X91 a_4891_989 D a_5366_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 VDD a_7469_1050 2.23fF
-C1 a_8731_187 CLK 3.48fF
-C2 VDD CLK 7.71fF
-C3 VDD a_4439_187 6.38fF
-C4 a_4569_1050 VDD 3.17fF
-C5 VDD a_3177_1050 2.23fF
-C6 a_8731_187 VDD 6.38fF
-C7 VDD a_4891_989 2.47fF
-C8 VDD a_1845_1050 2.20fF
-C9 a_7595_411 a_3303_411 2.82fF
-C10 CLK a_147_187 4.74fF
-C11 a_6137_1050 VDD 2.20fF
-C12 VDD a_3303_411 2.90fF
-C13 a_11761_1050 VDD 2.49fF
-C14 a_7595_411 VDD 4.12fF
-C15 a_10429_1050 VDD 2.20fF
-C16 VDD a_277_1050 3.17fF
-C17 a_8731_187 a_8861_1050 3.03fF
-C18 a_599_989 VDD 2.47fF
-C19 VDD a_9183_989 2.47fF
-C20 D a_7595_411 2.81fF
-C21 VDD a_13093_1051 3.14fF
-C22 VDD a_147_187 6.38fF
-C23 VDD a_8861_1050 3.17fF
-C24 VDD a_11887_411 3.38fF
-C25 a_4439_187 CLK 5.09fF
-C26 a_277_1050 a_147_187 3.03fF
-C27 a_4569_1050 a_4439_187 3.03fF
+C0 VDD a_147_187 6.38fF
+C1 VDD a_4439_187 6.38fF
+C2 VDD a_4891_989 2.47fF
+C3 VDD a_277_1050 3.17fF
+C4 CLK a_8731_187 3.48fF
+C5 a_4569_1050 VDD 3.17fF
+C6 a_8861_1050 a_8731_187 3.03fF
+C7 CLK a_147_187 4.74fF
+C8 CLK a_4439_187 5.09fF
+C9 VDD a_7469_1050 2.23fF
+C10 VDD a_13093_1051 3.14fF
+C11 VDD a_599_989 2.47fF
+C12 VDD a_7595_411 4.12fF
+C13 a_3303_411 a_7595_411 2.82fF
+C14 VDD a_6137_1050 2.20fF
+C15 VDD a_11761_1050 2.49fF
+C16 D a_7595_411 2.81fF
+C17 VDD a_3303_411 2.90fF
+C18 VDD a_10429_1050 2.20fF
+C19 a_277_1050 a_147_187 3.03fF
+C20 a_4569_1050 a_4439_187 3.03fF
+C21 VDD a_11887_411 3.38fF
+C22 VDD a_3177_1050 2.23fF
+C23 CLK VDD 7.71fF
+C24 VDD a_1845_1050 2.20fF
+C25 VDD a_8861_1050 3.17fF
+C26 a_9183_989 VDD 2.47fF
+C27 VDD a_8731_187 6.38fF
 C28 VDD VSS 24.49fF
 C29 a_7595_411 VSS 2.31fF **FLOATING
 C30 a_3303_411 VSS 4.95fF **FLOATING

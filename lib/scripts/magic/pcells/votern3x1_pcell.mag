@@ -552,21 +552,4 @@ use diff_ring_side  diff_ring_side_0
 timestamp 1648063806
 transform 1 0 1998 0 1 0
 box -84 0 84 1575
-<< labels >>
-rlabel space 353 461 387 970 1 A
-port 1 n
-rlabel metal1 131 461 165 988 1 B
-port 2 n
-rlabel space 871 458 905 970 1 B
-port 3 n
-rlabel metal1 1685 461 1719 1020 1 A
-port 4 n
-rlabel metal1 1167 461 1201 988 1 C
-port 5 n
-rlabel space 1463 513 1497 970 1 C
-port 6 n
-rlabel metal1 1833 340 1867 1105 1 YN
-port 7 n
-rlabel space 1201 427 1463 461 1 C
-port 8 n
 << end >>

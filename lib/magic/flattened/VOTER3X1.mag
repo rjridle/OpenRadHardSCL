@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648751727
+timestamp 1648838904
 << nwell >>
 rect -84 832 2526 1575
 << nmos >>
@@ -2032,13 +2032,4 @@ rlabel metal1 55 1505 89 1539 1 VDD
 port 5 n
 rlabel metal1 55 13 89 47 1 VSS
 port 6 n
-rlabel space 2277 427 2311 979 1 voter3x1_pcell_0/Y
-rlabel space 353 461 387 970 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 131 461 165 988 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel space 871 458 905 970 1 voter3x1_pcell_0/votern3x1_pcell_0/B
-rlabel metal1 1685 461 1719 1020 1 voter3x1_pcell_0/votern3x1_pcell_0/A
-rlabel metal1 1167 461 1201 988 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel space 1463 513 1497 970 1 voter3x1_pcell_0/votern3x1_pcell_0/C
-rlabel metal1 1833 340 1867 1105 1 voter3x1_pcell_0/votern3x1_pcell_0/YN
-rlabel space 1201 427 1463 461 1 voter3x1_pcell_0/votern3x1_pcell_0/C
 << end >>
