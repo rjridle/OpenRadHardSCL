@@ -1,37 +1,22 @@
 ** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/test_NAND3X1.sch
 **.subckt test_NAND3X1
-V2 C GND pulse 0 1.8 0 1p 1p 20ns 40ns
 V1 VDD GND 1.8
-V3 B GND pulse 0 1.8 0 1p 1p 10ns 20ns
-V4 A GND pulse 0 1.8 0 1p 1p 5ns 10ns
+V2 A GND pwl 0n 1.8 1n 1.8 1.01n 0 2n 0 2.01n 1.8
+V3 B GND pwl 0n 1.8 1n 1.8 1.01n 0 2n 0 2.01n 1.8
+V4 C GND pwl 0n 1.8 1n 1.8 1.01n 0 2n 0 2.01n 1.8
+
 x1 Y A B C GND VDD NAND3X1
 **** begin user architecture code
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.inc ../spice/NAND3X1.spice
-
-
-**** end user architecture code
-**.ends
-
-* expanding   symbol:  NAND3X1.sym # of pins=4
-** sym_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND3X1.sym
-** sch_path: /home/rjridle/OpenRadHardSCL/lib/xschem/NAND3X1.sch
-
-.GLOBAL VDD
-.GLOBAL GND
-**** begin user architecture code
-
+.inc NAND3X1.spice
 
 .control
-save all
 tran 0.01n 90n
-plot A B C Y
-plot A Y
-plot B Y
-plot C Y
+meas tran trise TRIG v(Y) VAL=0.18 RISE=1 TARG v(Y) VAL=1.68 RISE=1
+meas tran tfall TRIG v(Y) VAL=1.68 FALL=1 TARG v(Y) VAL=0.18 FALL=1
+run
 .endc
-
 
 **** end user architecture code
 .end

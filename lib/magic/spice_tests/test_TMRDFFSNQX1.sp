@@ -10,7 +10,7 @@ x1 Q D0 D1 D2 CLK SN VDD GND TMRDFFSNQX1
 **** begin user architecture code
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.inc ../spice/TMRDFFSNQX1.spice
+.inc TMRDFFSNQX1.spice
 
 .tran 0.1n 170n
 .save all

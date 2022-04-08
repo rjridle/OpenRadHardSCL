@@ -7,7 +7,6 @@ x1 Y A VDD GND INVX1
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-
 **** end user architecture code
 **.ends
 
@@ -29,13 +28,7 @@ XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf
 .GLOBAL GND
 **** begin user architecture code
 
+.save all
+.tran 0.01n 30n
 
-.control
-save all
-tran 0.01n 30n
-plot A Y VDD
-.endc
-
-
-**** end user architecture code
 .end

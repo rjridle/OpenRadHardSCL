@@ -8,18 +8,14 @@ V1 VDD GND 1.8
 x1 Y A B C VDD GND AO3X1
 
 **** begin user architecture code
-.inc ../spice/MUX2X1.spice
-.param mc_mm_switch=0
-.param mc_pr_switch=0
+.lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.inc MUX2X1.spice
 
-.inc /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/parameters/lod.spice
-.inc /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/parameters/invariant.spice
-
-.inc /home/rjridle/OpenRadHardSCL/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
-
-.inc /home/rjridle/OpenRadHardSCL/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
-
-.tran 0.01n 90n
-.save all
+.control
+tran 0.01n 90n
+meas tran trise TRIG v(Y) VAL=0.18 RISE=1 TARG v(Y) VAL=1.68 RISE=1
+meas tran tfall TRIG v(Y) VAL=1.68 FALL=1 TARG v(Y) VAL=0.18 FALL=1
+run
+.endc
 
 .end

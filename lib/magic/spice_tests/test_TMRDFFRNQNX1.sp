@@ -10,7 +10,7 @@ V6 RN GND pwl 0n 1.8 82n 1.8 82.1n 0
 **** begin user architecture code
 
 .lib /home/rjridle/OpenRadHardSCL/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.inc ../spice/TMRDFFRNQNX1.spice
+.inc TMRDFFRNQNX1.spice
 
 .tran 0.1n 170n
 .save all

@@ -11,3 +11,6 @@ lib/xschem/bsim4v5.out
 lib/xschem/LDO
 lib/lvs/*
 char/*
+work/*
+transcript
+vsim.wlf

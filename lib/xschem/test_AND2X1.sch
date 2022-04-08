@@ -17,11 +17,8 @@ C {devices/code_shown.sym} -120 50 0 0 {name=NGSPICE
 only_toplevel=true
 place=end
 value="
-.control
-save all
-tran 0.01n 50n
-plot A B Y
-.endc
+.save all
+.tran 0.01n 50n
 "}
 C {devices/code.sym} -130 -110 0 0 {name=TT_MODELS
 only_toplevel=true
