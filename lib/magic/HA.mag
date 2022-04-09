@@ -1,0 +1,57 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1649526487
+<< locali >>
+rect 1907 773 1941 855
+<< metal1 >>
+rect 55 1505 89 1539
+rect 205 871 239 905
+rect 241 871 1277 905
+rect 1941 871 2451 905
+rect 353 723 1903 757
+rect 2721 723 2755 757
+rect 945 575 979 609
+rect 55 13 89 47
+use and2x1_pcell  and2x1_pcell_0 pcells
+timestamp 1648064711
+transform 1 0 0 0 1 0
+box -84 0 1194 1575
+use xor2X1_pcell  xor2X1_pcell_0 pcells
+timestamp 1648314317
+transform 1 0 1110 0 1 0
+box -84 0 2304 1575
+use li1_M1_contact  li1_M1_contact_1 pcells
+timestamp 1648061256
+transform -1 0 222 0 -1 888
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform -1 0 370 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1648061256
+transform -1 0 1924 0 -1 888
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform 1 0 1924 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_4
+timestamp 1648061256
+transform 1 0 962 0 1 592
+box -53 -33 29 33
+<< labels >>
+rlabel metal1 2721 723 2755 757 1 SUM
+port 1 n
+rlabel metal1 945 575 979 609 1 COUT
+port 2 n
+rlabel metal1 205 871 239 905 1 A
+port 3 n
+rlabel metal1 353 723 387 757 1 B
+port 4 n
+rlabel metal1 55 1505 89 1539 1 VDD
+port 5 n
+rlabel metal1 55 13 89 47 1 VSS
+port 6 n
+<< end >>
