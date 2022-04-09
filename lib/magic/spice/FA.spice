@@ -43,14 +43,14 @@ X38 VSS CIN a_4552_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u 
 X39 VSS a_836_209 a_2776_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X40 a_2405_209 a_836_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X41 VSS a_807_990 a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 B VDD 3.94fF
-C1 A a_836_209 3.32fF
-C2 VDD a_5767_1050 2.27fF
-C3 VDD CIN 2.13fF
-C4 B a_807_990 2.21fF
-C5 VDD a_836_209 2.62fF
-C6 VDD a_4657_1050 2.27fF
-C7 a_3027_990 CIN 2.21fF
+C0 A a_836_209 3.32fF
+C1 VDD a_5767_1050 2.27fF
+C2 VDD CIN 2.13fF
+C3 B a_807_990 2.21fF
+C4 VDD a_836_209 2.62fF
+C5 VDD a_4657_1050 2.27fF
+C6 a_3027_990 CIN 2.21fF
+C7 B VDD 3.94fF
 C8 VDD VSS 13.21fF
 C9 a_836_209 VSS 2.60fF **FLOATING
 .ends

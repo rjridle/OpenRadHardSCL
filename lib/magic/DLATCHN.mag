@@ -1,0 +1,116 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1649543964
+<< metal1 >>
+rect 55 1505 89 1539
+rect 131 797 165 831
+rect 167 797 1891 831
+rect 2533 797 3670 831
+rect 315 723 642 757
+rect 1425 723 2855 757
+rect 3051 723 3812 757
+rect 3165 649 3518 683
+rect -313 575 -279 609
+rect -129 575 1741 609
+rect 55 13 89 47
+use li1_M1_contact  li1_M1_contact_5 pcells
+timestamp 1648061256
+transform 1 0 666 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1648061256
+transform -1 0 296 0 -1 740
+box -53 -33 29 33
+use and2x1_pcell  and2x1_pcell_0 pcells
+timestamp 1648064711
+transform 1 0 444 0 1 0
+box -84 0 1194 1575
+use invx1_pcell  invx1_pcell_0 pcells
+timestamp 1648064504
+transform 1 0 0 0 1 0
+box -84 0 528 1575
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform -1 0 814 0 -1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform -1 0 148 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_6
+timestamp 1648061256
+transform -1 0 1406 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_4
+timestamp 1648061256
+transform 1 0 1924 0 1 814
+box -53 -33 29 33
+use and2x1_pcell  and2x1_pcell_1
+timestamp 1648064711
+transform 1 0 1554 0 1 0
+box -84 0 1194 1575
+use li1_M1_contact  li1_M1_contact_1
+timestamp 1648061256
+transform 1 0 1776 0 1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_13
+timestamp 1648061256
+transform -1 0 3182 0 -1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_12
+timestamp 1648061256
+transform 1 0 3552 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_11
+timestamp 1648061256
+transform -1 0 3034 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_9
+timestamp 1648061256
+transform -1 0 2516 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_8
+timestamp 1648061256
+transform 1 0 3700 0 1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_7
+timestamp 1648061256
+transform 1 0 2886 0 1 740
+box -53 -33 29 33
+use nor2x1_pcell  nor2x1_pcell_0 pcells
+timestamp 1648066477
+transform 1 0 2664 0 1 0
+box -84 0 750 1575
+use nor2x1_pcell  nor2x1_pcell_1
+timestamp 1648066477
+transform 1 0 3330 0 1 0
+box -84 0 750 1575
+use li1_M1_contact  li1_M1_contact_10
+timestamp 1648061256
+transform 1 0 3848 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_15
+timestamp 1648061256
+transform 1 0 -296 0 1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_14
+timestamp 1648061256
+transform -1 0 -148 0 -1 592
+box -53 -33 29 33
+use invx1_pcell  invx1_pcell_1
+timestamp 1648064504
+transform 1 0 -444 0 1 0
+box -84 0 528 1575
+<< labels >>
+rlabel metal1 3165 649 3199 683 1 Q
+port 1 n
+rlabel metal1 131 797 165 831 1 D
+port 2 n
+rlabel metal1 -313 575 -279 609 1 GATE_N
+port 3 n
+rlabel metal1 55 1505 89 1539 1 VDD
+port 4 n
+rlabel metal1 55 13 89 47 1 VSS
+port 5 n
+<< end >>
