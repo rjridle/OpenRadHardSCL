@@ -10759,6 +10759,166 @@ END OR2X1
 
 
 
+MACRO TIEHI
+  CLASS BLOCK ;
+  FOREIGN TIEHI ;
+  ORIGIN 0.420 0.075 ;
+  SIZE 3.060 BY 7.950 ;
+  PIN Y
+    ANTENNADIFFAREA 0.580000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.025 3.905 1.195 7.250 ;
+      LAYER mcon ;
+        RECT 1.025 3.985 1.195 4.155 ;
+      LAYER met1 ;
+        RECT 0.995 4.155 1.225 4.185 ;
+        RECT 0.965 3.985 1.375 4.155 ;
+        RECT 0.995 3.955 1.225 3.985 ;
+    END
+  END Y
+  PIN VDD
+    ANTENNAGATEAREA 0.427250 ;
+    ANTENNADIFFAREA 4.096900 ;
+    PORT
+      LAYER nwell ;
+        RECT -0.420 4.160 2.640 7.875 ;
+      LAYER li1 ;
+        RECT -0.155 7.460 2.375 7.770 ;
+        RECT -0.155 4.340 0.155 7.460 ;
+        RECT 0.585 5.230 0.755 7.460 ;
+        RECT 1.465 5.310 1.635 7.460 ;
+        RECT 0.585 5.060 0.825 5.230 ;
+        RECT 0.655 2.055 0.825 5.060 ;
+        RECT 2.065 4.340 2.375 7.460 ;
+      LAYER mcon ;
+        RECT 0.275 7.525 0.445 7.695 ;
+        RECT 0.635 7.525 0.805 7.695 ;
+        RECT 1.025 7.525 1.195 7.695 ;
+        RECT 1.415 7.525 1.585 7.695 ;
+        RECT 1.775 7.525 1.945 7.695 ;
+      LAYER met1 ;
+        RECT -0.155 7.460 2.375 7.770 ;
+    END
+  END VDD
+  PIN VSS
+    ANTENNAGATEAREA 0.600000 ;
+    ANTENNADIFFAREA 4.025550 ;
+    PORT
+      LAYER pwell ;
+        RECT -0.285 -0.065 2.505 2.990 ;
+        RECT -0.285 -0.075 0.285 -0.065 ;
+        RECT 1.935 -0.075 2.505 -0.065 ;
+      LAYER li1 ;
+        RECT -0.155 0.310 0.155 2.860 ;
+        RECT 1.395 1.975 1.565 5.095 ;
+        RECT 0.545 0.755 0.715 1.885 ;
+        RECT 1.395 1.805 1.685 1.975 ;
+        RECT 1.025 0.755 1.195 1.310 ;
+        RECT 1.515 0.755 1.685 1.805 ;
+        RECT 0.545 0.585 1.685 0.755 ;
+        RECT 0.545 0.310 0.715 0.585 ;
+        RECT 1.025 0.310 1.195 0.585 ;
+        RECT 1.515 0.310 1.685 0.585 ;
+        RECT 2.065 0.310 2.375 2.860 ;
+        RECT -0.155 0.000 2.375 0.310 ;
+      LAYER mcon ;
+        RECT 0.275 0.065 0.445 0.235 ;
+        RECT 0.635 0.065 0.805 0.235 ;
+        RECT 1.025 0.065 1.195 0.235 ;
+        RECT 1.415 0.065 1.585 0.235 ;
+        RECT 1.775 0.065 1.945 0.235 ;
+      LAYER met1 ;
+        RECT -0.155 0.000 2.375 0.310 ;
+    END
+  END VSS
+END TIEHI
+
+
+
+
+
+
+MACRO TIELO
+  CLASS BLOCK ;
+  FOREIGN TIELO ;
+  ORIGIN 0.420 0.075 ;
+  SIZE 3.060 BY 7.950 ;
+  PIN YN
+    ANTENNADIFFAREA 0.191900 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.025 0.975 1.195 3.125 ;
+      LAYER mcon ;
+        RECT 1.025 2.875 1.195 3.045 ;
+      LAYER met1 ;
+        RECT 0.995 3.045 1.225 3.075 ;
+        RECT 0.965 2.875 1.375 3.045 ;
+        RECT 0.995 2.845 1.225 2.875 ;
+    END
+  END YN
+  PIN VDD
+    ANTENNAGATEAREA 0.427250 ;
+    ANTENNADIFFAREA 4.676900 ;
+    PORT
+      LAYER nwell ;
+        RECT -0.420 4.160 2.640 7.875 ;
+      LAYER li1 ;
+        RECT -0.155 7.460 2.375 7.770 ;
+        RECT -0.155 4.340 0.155 7.460 ;
+        RECT 0.585 5.230 0.755 7.460 ;
+        RECT 1.025 5.310 1.195 7.460 ;
+        RECT 1.465 5.310 1.635 7.460 ;
+        RECT 0.585 5.060 0.825 5.230 ;
+        RECT 0.655 2.055 0.825 5.060 ;
+        RECT 2.065 4.340 2.375 7.460 ;
+      LAYER mcon ;
+        RECT 0.275 7.525 0.445 7.695 ;
+        RECT 0.635 7.525 0.805 7.695 ;
+        RECT 1.025 7.525 1.195 7.695 ;
+        RECT 1.415 7.525 1.585 7.695 ;
+        RECT 1.775 7.525 1.945 7.695 ;
+      LAYER met1 ;
+        RECT -0.155 7.460 2.375 7.770 ;
+    END
+  END VDD
+  PIN VSS
+    ANTENNAGATEAREA 0.600000 ;
+    ANTENNADIFFAREA 3.833650 ;
+    PORT
+      LAYER pwell ;
+        RECT -0.285 -0.065 2.505 2.990 ;
+        RECT -0.285 -0.075 0.285 -0.065 ;
+        RECT 1.935 -0.075 2.505 -0.065 ;
+      LAYER li1 ;
+        RECT -0.155 0.310 0.155 2.860 ;
+        RECT 1.395 1.975 1.565 5.095 ;
+        RECT 0.545 0.755 0.715 1.885 ;
+        RECT 1.395 1.805 1.685 1.975 ;
+        RECT 1.515 0.755 1.685 1.805 ;
+        RECT 0.545 0.585 1.685 0.755 ;
+        RECT 0.545 0.310 0.715 0.585 ;
+        RECT 1.025 0.310 1.195 0.585 ;
+        RECT 1.515 0.310 1.685 0.585 ;
+        RECT 2.065 0.310 2.375 2.860 ;
+        RECT -0.155 0.000 2.375 0.310 ;
+      LAYER mcon ;
+        RECT 0.275 0.065 0.445 0.235 ;
+        RECT 0.635 0.065 0.805 0.235 ;
+        RECT 1.025 0.065 1.195 0.235 ;
+        RECT 1.415 0.065 1.585 0.235 ;
+        RECT 1.775 0.065 1.945 0.235 ;
+      LAYER met1 ;
+        RECT -0.155 0.000 2.375 0.310 ;
+    END
+  END VSS
+END TIELO
+
+
+
+
+
+
 MACRO TMRDFFQNX1
   CLASS BLOCK ;
   FOREIGN TMRDFFQNX1 ;

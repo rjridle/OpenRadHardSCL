@@ -25,7 +25,7 @@ X20 a_1295_209 a_661_1050 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0
 X21 a_3007_411 a_2405_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X22 Q a_1295_209 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X23 a_2405_209 a_1771_1050 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 a_661_1050 VDD 2.27fF
-C1 a_1771_1050 VDD 2.27fF
+C0 a_1771_1050 VDD 2.27fF
+C1 a_661_1050 VDD 2.27fF
 C2 VDD VSS 7.44fF
 .ends

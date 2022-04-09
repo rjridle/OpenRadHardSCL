@@ -15,7 +15,7 @@ X10 a_661_1050 A0 a_556_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u 
 X11 VDD a_661_1050 Y VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2u l=0.15u M=2
 X12 VSS a_661_1050 a_1888_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
 X13 VSS a_185_209 a_1222_101 VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=3u l=0.15u
-C0 VDD a_661_1050 2.21fF
-C1 VDD a_1327_1050 2.21fF
+C0 VDD a_1327_1050 2.21fF
+C1 VDD a_661_1050 2.21fF
 C2 VDD VSS 3.98fF
 .ends
