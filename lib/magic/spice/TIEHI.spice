@@ -1,6 +1,6 @@
 * SPICE3 file created from TIEHI.ext - technology: sky130A
 
 .subckt TIEHI Y VDD VSS
-X0 Y VSS VDD VDD sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=1.1p ps=9.1u w=2u l=0.15u M=2
-X1 VSS VDD VSS VSS sky130_fd_pr__nfet_01v8 ad=1.3199p pd=9.67u as=0p ps=0u w=3u l=0.15u
+X0 Y a_121_411 VDD VDD sky130_fd_pr__pfet_01v8 ad=5.8p pd=4.58u as=1.1p ps=9.1u w=2u l=0.15u M=2
+X1 a_121_411 a_121_411 VSS VSS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1.1408p ps=8.1u w=3u l=0.15u
 .ends

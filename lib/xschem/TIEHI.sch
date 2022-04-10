@@ -24,28 +24,14 @@ N 10 50 10 90 {
 lab=VSS}
 N 0 90 10 90 {
 lab=VSS}
-N 0 20 10 20 {
-lab=VSS}
-N 10 20 10 50 {
-lab=VSS}
-N -60 -50 -40 -50 {
-lab=VSS}
-N -80 -90 -0 -90 {
-lab=VDD}
-N -80 -90 -80 50 {
-lab=VDD}
-N -80 50 -40 50 {
-lab=VDD}
-N -60 90 -0 90 {
-lab=VSS}
-N -60 -50 -60 90 {
-lab=VSS}
 N 0 -10 -0 0 {
 lab=Y}
 N -0 0 50 0 {
 lab=Y}
 N 0 -20 0 -10 {
 lab=Y}
+N -40 -50 -40 50 {}
+N -40 20 0 20 {}
 C {sky130_fd_pr/nfet_01v8.sym} -20 50 0 0 {name=M1
 L=0.15
 W=3
