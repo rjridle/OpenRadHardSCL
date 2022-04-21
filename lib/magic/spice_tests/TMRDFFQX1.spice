@@ -1,6 +1,6 @@
 * SPICE3 file created from TMRDFFQX1.ext - technology: sky130A
 
-.subckt TMRDFFQX1 D CLK Q VDD VSS
+.subckt TMRDFFQX1 Q D CLK VDD VSS
 X0 VDD a_8731_187 a_8861_1050 VDD sky130_fd_pr__pfet_01v8 ad=0.003476 pd=2.8276 as=0 ps=0 w=2 l=0.15 M=2
 X1 a_3177_1050 a_277_1050 VDD VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=2 l=0.15 M=2
 X2 VDD a_1845_1050 a_147_187 VDD sky130_fd_pr__pfet_01v8 ad=0 pd=0 as=0 ps=0 w=2 l=0.15 M=2
@@ -122,6 +122,4 @@ C25 VDD a_6137_1050 2.20f
 C26 VDD a_11761_1050 2.49f
 C27 D a_7595_411 2.81f
 C28 VDD VSS 24.49f
-C29 a_7595_411 VSS 2.31f **FLOATING
-C30 a_3303_411 VSS 4.95f **FLOATING
 .ends

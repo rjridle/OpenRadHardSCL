@@ -46,17 +46,20 @@ for i in ${FILES}; do
 
     mv $i magic/tmp.mag
     echo "source magic_flatten.tcl" | magic -dnull -noconsole magic/tmp.mag
-    echo "source magic_extract.tcl" | magic -dnull -noconsole ${CELLNAME}.mag
+    echo "source magic_sim_extract.tcl" | magic -dnull -noconsole ${CELLNAME}.mag
+    cat ${CELLNAME}.ext ${CELLNAME}.res.ext > ${CELLNAME}.2.ext
+    ext2sim -R -t! -t\# ${CELLNAME}.2.ext.
+    echo "source magic_spice_extract.tcl" | magic -dnull -noconsole ${CELLNAME}.mag
     cat ${CELLNAME}.lef >> tmp.lef
-
-
-    mv ${CELLNAME}.mag ../magic/flattened/
-    mv ${CELLNAME}.spice ../magic/spice/
-    mv ${CELLNAME}.gds ../magic/gds/
-    rm ${CELLNAME}.ext
-    rm ${CELLNAME}.lef
-
+    cp ${CELLNAME}.mag ../magic/flattened/
+    cp ${CELLNAME}.spice ../magic/spice/
+    cp ${CELLNAME}.gds ../magic/gds/
+    cp ${CELLNAME}.ext ../magic/ext/
+    cp ${CELLNAME}.nodes ../magic/nodes/
+    cp ${CELLNAME}.res.* ../magic/res/
+    cp ${CELLNAME}.sim ../magic/sim/
 done
+
 
 ./sedLEF.sh
 echo 'VERSION 5.7 ;' >> sky130_fd_sc_rh.lef
@@ -65,6 +68,7 @@ echo '  DIVIDERCHAR "/" ;' >> sky130_fd_sc_rh.lef
 echo '  BUSBITCHARS "[]" ;' >> sky130_fd_sc_rh.lef
 cat tmp.lef >> sky130_fd_sc_rh.lef
 echo 'END LIBRARY' >> sky130_fd_sc_rh.lef
+cp sky130_fd_sc_rh.lef ../lef/
 
 sed -i 's/w=3\.01/w=3/g' ../magic/spice/*.spice
 sed -i 's/e+[0-9][0-9]//g' ../magic/spice/*.spice
