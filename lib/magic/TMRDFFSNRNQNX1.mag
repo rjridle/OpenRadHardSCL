@@ -1,11 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648750605
+timestamp 1651076923
 << locali >>
 rect 15819 575 15853 609
 << metal1 >>
-rect 55 1505 89 1539
+rect -31 1492 19345 1554
 rect 1378 945 14855 979
 rect 171 871 11787 905
 rect 11971 871 18230 905
@@ -21,7 +21,7 @@ rect 10314 575 11425 609
 rect 16077 575 17184 609
 rect 427 501 15854 535
 rect 2344 427 14020 461
-rect 55 13 89 47
+rect -31 0 19345 62
 use li1_M1_contact  li1_M1_contact_9 pcells
 timestamp 1648061256
 transform 1 0 5032 0 1 740
@@ -129,8 +129,6 @@ rlabel metal1 2351 427 2385 461 1 SN
 port 4 n
 rlabel metal1 427 501 461 535 1 RN
 port 5 n
-rlabel metal1 55 1505 89 1539 1 VDD
-port 6 n
-rlabel metal1 55 13 89 47 1 VSS
-port 7 n
+rlabel metal1 -31 1492 19345 1554 1 VDD
+rlabel metal1 -31 0 19345 62 1 GND
 << end >>

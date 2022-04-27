@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648751651
+timestamp 1651076207
 << nwell >>
 rect 55 1505 89 1539
 << psubdiffcont >>
@@ -12,6 +12,10 @@ rect 55 1505 89 1539
 rect 55 1505 89 1539
 rect 55 13 89 47
 << metal1 >>
+rect -31 1539 14905 1554
+rect -31 1505 55 1539
+rect 89 1505 14905 1539
+rect -31 1492 14905 1505
 rect 427 945 461 979
 rect 3349 978 11270 979
 rect 479 947 11270 978
@@ -25,6 +29,10 @@ rect 11931 797 13041 831
 rect 3348 649 14068 683
 rect 7639 501 13263 535
 rect 1279 427 9942 461
+rect -31 47 14905 62
+rect -31 13 55 47
+rect 89 13 14905 47
+rect -31 0 14905 13
 use li1_M1_contact  li1_M1_contact_9 pcells
 timestamp 1648061256
 transform -1 0 3478 0 -1 814
@@ -112,8 +120,6 @@ rlabel metal1 1315 427 1349 461 1 D
 port 2 n
 rlabel metal1 427 945 461 979 1 CLK
 port 3 n
-rlabel metal1 72 1522 72 1522 1 VDD
-port 4 n
-rlabel metal1 72 30 72 30 1 VSS
-port 5 n
+rlabel metal1 -31 1492 14905 1554 1 VDD
+rlabel metal1 -31 0 14905 62 1 GND
 << end >>

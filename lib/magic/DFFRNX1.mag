@@ -1,40 +1,40 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648740009
+timestamp 1651073416
 << metal1 >>
-rect 55 1505 89 1539
+rect -31 1492 5211 1554
 rect 427 945 461 979
 rect 4235 797 5012 831
 rect 5015 797 5049 831
 rect 4349 723 4695 757
 rect 1389 649 1423 683
 rect 1611 501 1645 535
-rect 55 13 89 47
-use li1_M1_contact  li1_M1_contact_3 pcells
+rect -31 0 5211 62
+use dffrnx1_pcell  dffrnx1_pcell_0 pcells
+timestamp 1648739814
+transform 1 0 0 0 1 0
+box -84 0 5264 1575
+use li1_M1_contact  li1_M1_contact_13 pcells
 timestamp 1648061256
-transform 1 0 1406 0 1 666
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_2
-timestamp 1648061256
-transform -1 0 4366 0 -1 740
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1648061256
-transform -1 0 4218 0 -1 814
+transform 1 0 5032 0 1 814
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
 transform 1 0 4736 0 1 740
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_13
+use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
-transform 1 0 5032 0 1 814
+transform -1 0 4218 0 -1 814
 box -53 -33 29 33
-use dffrnx1_pcell  dffrnx1_pcell_0 pcells
-timestamp 1648739814
-transform 1 0 0 0 1 0
-box -84 0 5264 1575
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform -1 0 4366 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_3
+timestamp 1648061256
+transform 1 0 1406 0 1 666
+box -53 -33 29 33
 << labels >>
 rlabel metal1 5015 797 5049 831 1 Q
 port 1 n
@@ -46,8 +46,6 @@ rlabel metal1 427 945 461 979 1 CLK
 port 4 n
 rlabel metal1 1611 501 1645 535 1 RN
 port 5 n
-rlabel metal1 55 1505 89 1539 1 VDD
-port 6 n
-rlabel metal1 55 13 89 47 1 VSS
-port 7 n
+rlabel metal1 -31 1492 5211 1554 1 VDD
+rlabel metal1 -31 0 5211 62 1 GND
 << end >>

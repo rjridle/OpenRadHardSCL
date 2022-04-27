@@ -1,32 +1,32 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648157816
+timestamp 1651075354
 << metal1 >>
-rect 55 1505 89 1539
+rect -31 1492 2473 1554
 rect 1463 797 1497 831
 rect 797 723 831 757
 rect 649 649 683 683
 rect 797 649 831 683
 rect 2277 649 2311 683
 rect 131 575 165 609
-rect 55 13 89 47
-use mux2x1_pcell  mux2x1_pcell_0 pcells
-timestamp 1648156629
-transform 1 0 0 0 1 0
-box -84 0 2526 1575
-use li1_M1_contact  li1_M1_contact_1 pcells
+rect -31 0 2473 62
+use li1_M1_contact  li1_M1_contact_4 pcells
 timestamp 1648061256
-transform 1 0 814 0 1 740
+transform -1 0 2294 0 -1 666
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform 1 0 1480 0 1 814
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_4
+use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
-transform -1 0 2294 0 -1 666
+transform 1 0 814 0 1 740
 box -53 -33 29 33
+use mux2x1_pcell  mux2x1_pcell_0 pcells
+timestamp 1648156629
+transform 1 0 0 0 1 0
+box -84 0 2526 1575
 << labels >>
 rlabel metal1 2277 649 2311 683 1 Y
 port 1 n
@@ -36,8 +36,6 @@ rlabel metal1 1463 797 1497 831 1 A1
 port 3 n
 rlabel metal1 131 575 165 609 1 S
 port 4 n
-rlabel metal1 72 1522 72 1522 1 VDD
-port 5 n
-rlabel metal1 72 30 72 30 1 VSS
-port 6 n
+rlabel metal1 -31 1492 2473 1554 1 VDD
+rlabel metal1 -31 0 2473 62 1 GND
 << end >>

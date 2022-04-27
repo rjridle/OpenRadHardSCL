@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1649525805
+timestamp 1651075030
 << nwell >>
 rect 22 1492 132 1554
 rect 31 868 117 930
@@ -16,15 +16,17 @@ rect 22 1492 132 1554
 rect 27 11 118 62
 rect 28 0 118 11
 << metal1 >>
-rect 22 1492 132 1554
-rect 27 11 118 62
-rect 28 0 118 11
-use diff_ring_side  diff_ring_side_1 pcells
-timestamp 1648063806
-transform 1 0 148 0 1 0
-box -84 0 84 1575
-use diff_ring_side  diff_ring_side_0
+rect -31 1492 179 1554
+rect -31 0 179 62
+use diff_ring_side  diff_ring_side_0 pcells
 timestamp 1648063806
 transform 1 0 0 0 1 0
 box -84 0 84 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1648063806
+transform 1 0 148 0 1 0
+box -84 0 84 1575
+<< labels >>
+rlabel metal1 -31 1492 179 1554 1 VDD
+rlabel metal1 -31 0 179 62 1 GND
 << end >>

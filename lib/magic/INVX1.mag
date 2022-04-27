@@ -1,31 +1,29 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1648064962
+timestamp 1651075280
 << metal1 >>
-rect 55 1505 89 1539
+rect -31 1492 475 1554
 rect 131 649 165 683
 rect 279 649 313 683
-rect 55 13 89 47
+rect -31 0 475 62
+use li1_M1_contact  li1_M1_contact_1 pcells
+timestamp 1648061256
+transform 1 0 148 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_2
+timestamp 1648061256
+transform -1 0 296 0 -1 666
+box -53 -33 29 33
 use invx1_pcell  invx1_pcell_0 pcells
 timestamp 1648064504
 transform 1 0 0 0 1 0
 box -84 0 528 1575
-use li1_M1_contact  li1_M1_contact_2 pcells
-timestamp 1648061256
-transform -1 0 296 0 -1 666
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform 1 0 148 0 1 666
-box -53 -33 29 33
 << labels >>
 rlabel metal1 279 649 313 683 1 Y
 port 1 n
 rlabel metal1 131 649 165 683 1 A
 port 2 n
-rlabel metal1 55 1505 89 1539 1 VDD
-port 3 n
-rlabel metal1 55 13 89 47 1 VSS
-port 4 n
+rlabel metal1 -31 1492 475 1554 1 VDD
+rlabel metal1 -31 0 475 62 1 GND
 << end >>
