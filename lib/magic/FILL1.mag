@@ -28,5 +28,7 @@ transform 1 0 148 0 1 0
 box -84 0 84 1575
 << labels >>
 rlabel metal1 -31 1492 179 1554 1 VDD
+port 1 n
 rlabel metal1 -31 0 179 62 1 GND
+port 2 n
 << end >>

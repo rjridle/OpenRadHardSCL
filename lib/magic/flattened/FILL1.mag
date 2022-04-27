@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1649945909
+timestamp 1651077793
 << nwell >>
 rect -84 832 232 1575
 << psubdiff >>
@@ -234,4 +234,9 @@ rect -31 0 179 62
 << metal1 >>
 rect -31 1492 179 1554
 rect -31 0 179 62
+<< labels >>
+rlabel metal1 -31 1492 179 1554 1 VDD
+port 1 n
+rlabel metal1 -31 0 179 62 1 GND
+port 2 n
 << end >>

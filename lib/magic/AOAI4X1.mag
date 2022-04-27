@@ -46,5 +46,7 @@ port 4 n
 rlabel metal1 1685 797 1719 831 1 D
 port 5 n
 rlabel metal1 -31 1492 2029 1554 1 VDD
+port 6 n
 rlabel metal1 -31 0 2029 62 1 GND
+port 7 n
 << end >>

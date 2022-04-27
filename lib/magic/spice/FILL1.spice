@@ -1,2 +1,7 @@
 * SPICE3 file created from FILL1.ext - technology: sky130A
 
+.subckt FILL1 VDD GND
+C0 VDD w_n84_832# 0.21fF
+C1 GND a_n31_11# 0.16fF
+C2 w_n84_832# a_n31_11# 0.69fF
+.ends

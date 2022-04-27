@@ -110,5 +110,7 @@ port 2 n
 rlabel metal1 -313 575 -279 609 1 GATE_N
 port 3 n
 rlabel metal1 -475 1492 4027 1554 1 VDD
+port 4 n
 rlabel metal1 -475 0 4027 62 1 GND
+port 5 n
 << end >>

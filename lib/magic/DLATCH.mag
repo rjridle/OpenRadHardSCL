@@ -97,5 +97,7 @@ port 2 n
 rlabel metal1 797 575 831 609 1 GATE
 port 3 n
 rlabel metal1 -31 1492 4027 1554 1 VDD
+port 4 n
 rlabel metal1 -31 0 4027 62 1 GND
+port 5 n
 << end >>

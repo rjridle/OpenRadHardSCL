@@ -103,5 +103,7 @@ port 4 n
 rlabel metal1 4645 871 4679 905 1 CIN
 port 5 n
 rlabel metal1 -31 1492 7801 1554 1 VDD
+port 6 n
 rlabel metal1 -31 0 7801 62 1 GND
+port 7 n
 << end >>

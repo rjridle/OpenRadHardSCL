@@ -38,6 +38,8 @@ rlabel metal1 444 740 444 740 1 B
 port 3 n
 rlabel metal1 666 666 666 666 1 C
 port 4 n
-rlabel space -31 1492 1437 1554 1 VDD
-rlabel space -31 0 1437 62 1 GND
+rlabel metal1 -31 1492 1437 1554 1 VDD
+port 5 n
+rlabel metal1 -31 0 1437 62 1 GND
+port 6 n
 << end >>
