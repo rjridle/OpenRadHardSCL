@@ -5,7 +5,7 @@
 
 
 # MUST CHANGE THIS TO REPOSITORIES TOP LEVEL DIRECTORY
-set PDK_ROOT /path/to/OpenRadHardSCL
+set PDK_ROOT /home/rjridle/OpenRadHardSCL
 
 
 puts stdout "Sourcing design .magicrc for technology sky130 ..."
@@ -34,12 +34,12 @@ ext2spice scale off
 set TECH_ROOT ${PDK_ROOT}/.magic_tech
 
 # loading technology
-tech load ${TECH_ROOT}/sky130A.tech
+tech load ${TECH_ROOT}/sky130.tech
 # load device generator
 #source $TECH_ROOT/sky130.tcl
 
 # load bind keys (optional)
- source ${TECH_ROOT}/sky130.BindKeys
+source ${TECH_ROOT}/sky130.BindKeys
 
 # set units to lambda grid 
 snap internal

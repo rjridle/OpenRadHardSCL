@@ -17,7 +17,9 @@ respective github repositories:
 * [magic](https://github.com/RTimothyEdwards/magic): Layout, GDS, and LEF Generation
 * [xschem](https://github.com/StefanSchippers/xschem): Schematic Generation
 * [netgen](https://github.com/RTimothyEdwards/netgen): LVS
-* [ngspice](https://github.com/ngspice/ngspice): SPICE Simulator
+* [ngspice](https://github.com/ngspice/ngspice): SPICE Simulator (This repository
+  hasn't been updated in 8 years. Better to download from their website
+  [here](http://ngspice.sourceforge.net/)
 * Liberty Generation: Still working on finding an open source option
 * [OpenROAD-flow-scripts](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts): Synthesis and PnR
 
@@ -51,13 +53,13 @@ skywater-pdk is the model files for the primitive devices.
 This is the current status of this project. Following are the things I'm hoping
 to add here soon:
 
-* Complete the Rad-Hard standard cells.
-* Complete the schematics for standard cells.
-* Flesh out the Makefile so that it will extract the layouts, schematics, run
-  LVS, generate LEF and Liberty files, and get setup to run the PnR flow.
-* Get PnR flow setup
-* Make a nice verilog design for PnR testing
-* A bunch more stuff
+* Add more drive strengths for each cell.
+* Improve PnR results. Current cell placement is not very good, likely due to
+  improper lef generation of the library.
+* Flesh out the Makefile so that it will generate the Liberty file, and get
+  setup to run synthesis and PnR flow.
+* Incorporate OpenROAD-Flow-Scripts to replace Synopsys Design Compiler and
+  Calibre Innovus for synthesis and PnR.
 
 
 

@@ -31,8 +31,6 @@ set XSCHEM_LIBRARY_PATH {}
 append XSCHEM_LIBRARY_PATH ${XSCHEM_SHAREDIR}/xschem_library
 #### include skywater libraries. Here i use [pwd]. This works if i start xschem from here.
 append XSCHEM_LIBRARY_PATH :$env(PWD)
-append XSCHEM_LIBRARY_PATH :$env(PDK_ROOT)/sky130A/libs.tech/xschem
-# append XSCHEM_LIBRARY_PATH :/mnt/sda7/home/schippes/pdks/sky130A/libs.tech/xschem
 #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
@@ -92,7 +90,7 @@ set netlist_dir $env(PWD)
 #### SOME DEFAULT BEHAVIOR
 ###########################################################################
 #### Allowed values:  spice, verilog, vhdl, tedax, default: spice
-set netlist_type spice
+# set netlist_type spice
 
 #### Some netlisting options (these are the defaults)
 # set hspice_netlist 1
@@ -122,11 +120,11 @@ set netlist_type spice
 
 #### if set to 1 continue drawing lines / wires after click
 #### default: 0
-set persistent_command 1
+# set persistent_command 1
 
 #### if set to 1 a wire is inserted when separating components that are
 #### connected by pins. Default: not enabled (0)
- set connect_by_kissing 1
+# set connect_by_kissing 1
 
 #### if set to 1 automatically join/trim wires while editing
 #### this may slow down on rally big designs. Can be disabled via menu 
@@ -335,6 +333,7 @@ if {[info exists PDK_ROOT]} {
     set PDK sky130A
   }
   set SKYWATER_MODELS ${PDK_ROOT}/${PDK}/libs.tech/ngspice
+  set SKYWATER_STDCELLS ${PDK_ROOT}/${PDK}/libs.ref/sky130_fd_sc_hd/spice
   puts stderr "open_pdks installation: using $PDK_ROOT"
   puts stderr "SKYWATER_MODELS: $SKYWATER_MODELS"
   puts stderr "SKYWATER_STDCELLS: $SKYWATER_STDCELLS"
