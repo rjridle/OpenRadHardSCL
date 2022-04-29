@@ -1,9 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648063806
+timestamp 1651259451
 << nwell >>
 rect -84 832 84 1575
+<< pwell >>
+rect -31 0 31 572
 << psubdiff >>
 rect -31 546 31 572
 rect -31 512 -17 546
@@ -26,7 +28,7 @@ rect 17 152 31 186
 rect -31 114 31 152
 rect -31 80 -17 114
 rect 17 80 31 114
-rect -31 11 31 80
+rect -31 13 31 80
 << nsubdiff >>
 rect -31 1470 31 1539
 rect -31 1436 -17 1470

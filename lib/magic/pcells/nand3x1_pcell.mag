@@ -1,7 +1,7 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648064657
+timestamp 1651259484
 << nwell >>
 rect 84 1573 880 1575
 rect 84 1556 878 1573
@@ -16,6 +16,8 @@ rect 84 935 878 1102
 rect 84 934 929 935
 rect 84 859 931 934
 rect 84 832 878 859
+<< pwell >>
+rect -31 0 993 572
 << pdiffc >>
 rect 201 1105 235 1139
 rect 289 1105 323 1139
@@ -187,9 +189,13 @@ rect 835 13 873 47
 rect 907 13 931 47
 rect 31 0 931 13
 use diff_ring_side  diff_ring_side_1
-timestamp 1648063806
+timestamp 1651259451
 transform 1 0 0 0 1 0
 box -84 0 84 1575
+use nmos_bottom  nmos_bottom_0
+timestamp 1651256857
+transform -1 0 339 0 1 103
+box 0 0 248 302
 use poly_li1_contact  poly_li1_contact_0
 timestamp 1648060378
 transform 0 1 223 -1 0 987
@@ -198,22 +204,18 @@ use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
 transform 0 -1 221 1 0 443
 box -32 -28 34 26
-use nmos_bottom  nmos_bottom_0
-timestamp 1648062456
-transform -1 0 339 0 1 103
-box 0 0 248 302
 use pmos2  pmos2_0
 timestamp 1648061063
 transform 1 0 103 0 1 1450
 box 52 -461 352 42
+use nmos_side_left  nmos_side_left_0
+timestamp 1651256873
+transform 1 0 285 0 1 103
+box 0 0 248 302
 use poly_li1_contact  poly_li1_contact_3
 timestamp 1648060378
 transform 0 -1 443 1 0 985
 box -32 -28 34 26
-use nmos_side_left  nmos_side_left_0
-timestamp 1648062678
-transform 1 0 285 0 1 103
-box 0 0 248 302
 use poly_li1_contact  poly_li1_contact_2
 timestamp 1648060378
 transform 0 -1 443 1 0 443
@@ -226,6 +228,10 @@ use pmos2  pmos2_1
 timestamp 1648061063
 transform 1 0 279 0 1 1450
 box 52 -461 352 42
+use nmos_top_trim1  nmos_top_trim1_0
+timestamp 1651256895
+transform -1 0 841 0 1 103
+box 0 0 248 309
 use poly_li1_contact  poly_li1_contact_5
 timestamp 1648060378
 transform 0 1 667 -1 0 987
@@ -234,12 +240,8 @@ use poly_li1_contact  poly_li1_contact_4
 timestamp 1648060378
 transform 0 -1 665 1 0 443
 box -32 -28 34 26
-use nmos_top_trim1  nmos_top_trim1_0
-timestamp 1648061897
-transform -1 0 841 0 1 103
-box 0 0 248 309
 use diff_ring_side  diff_ring_side_0
-timestamp 1648063806
+timestamp 1651259451
 transform 1 0 962 0 1 0
 box -84 0 84 1575
 << end >>

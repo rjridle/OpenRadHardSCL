@@ -1,7 +1,7 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648317085
+timestamp 1651260581
 << nwell >>
 rect 528 1554 1026 1575
 rect 1194 1554 1692 1575
@@ -16,6 +16,8 @@ rect 1194 1487 1692 1492
 rect 1194 1015 1205 1487
 rect 1681 1015 1692 1487
 rect 1194 832 1692 1015
+<< pwell >>
+rect -31 0 2251 572
 << pdiffc >>
 rect 585 1377 619 1411
 rect 761 1377 795 1411
@@ -280,6 +282,14 @@ rect 1577 13 1615 47
 rect 1649 13 1687 47
 rect 1721 13 1745 47
 rect 1141 0 1745 13
+use invx1_pcell  invx1_pcell_0
+timestamp 1651259471
+transform 1 0 0 0 1 0
+box -84 0 528 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1651259451
+transform 1 0 444 0 1 0
+box -84 0 84 1575
 use li1_M1_contact  li1_M1_contact_4
 timestamp 1648061256
 transform -1 0 296 0 -1 518
@@ -288,14 +298,6 @@ use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
 transform -1 0 148 0 -1 888
 box -53 -33 29 33
-use invx1_pcell  invx1_pcell_0
-timestamp 1648064504
-transform 1 0 0 0 1 0
-box -84 0 528 1575
-use diff_ring_side  diff_ring_side_1
-timestamp 1648063806
-transform 1 0 444 0 1 0
-box -84 0 84 1575
 use poly_li1_contact  poly_li1_contact_0
 timestamp 1648060378
 transform 0 1 667 -1 0 988
@@ -304,14 +306,6 @@ use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
 transform 0 1 667 -1 0 445
 box -32 -28 34 26
-use nmos_top_trim1  nmos_top_trim1_0
-timestamp 1648061897
-transform -1 0 998 0 1 101
-box 0 0 248 309
-use nmos_bottom  nmos_bottom_0
-timestamp 1648062456
-transform -1 0 804 0 1 101
-box 0 0 248 302
 use pmos2_1  pmos2_1_0
 timestamp 1647326732
 transform 1 0 487 0 1 1450
@@ -324,14 +318,18 @@ use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform 1 0 666 0 1 888
 box -53 -33 29 33
+use nmos_top_trim1  nmos_top_trim1_0
+timestamp 1651256895
+transform -1 0 998 0 1 101
+box 0 0 248 309
+use nmos_bottom  nmos_bottom_0
+timestamp 1651256857
+transform -1 0 804 0 1 101
+box 0 0 248 302
 use li1_M1_contact  li1_M1_contact_3
 timestamp 1648061256
 transform -1 0 888 0 -1 814
 box -53 -33 29 33
-use diff_ring_side  diff_ring_side_0
-timestamp 1648063806
-transform 1 0 1110 0 1 0
-box -84 0 84 1575
 use poly_li1_contact  poly_li1_contact_3
 timestamp 1648060378
 transform 0 1 889 -1 0 988
@@ -348,6 +346,10 @@ use li1_M1_contact  li1_M1_contact_9
 timestamp 1648061256
 transform -1 0 888 0 -1 592
 box -53 -33 29 33
+use diff_ring_side  diff_ring_side_0
+timestamp 1651259451
+transform 1 0 1110 0 1 0
+box -84 0 84 1575
 use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform -1 0 1332 0 -1 666
@@ -364,14 +366,6 @@ use poly_li1_contact  poly_li1_contact_4
 timestamp 1648060378
 transform 0 1 1333 -1 0 445
 box -32 -28 34 26
-use nmos_top_trim1  nmos_top_trim1_1
-timestamp 1648061897
-transform -1 0 1664 0 1 101
-box 0 0 248 309
-use nmos_bottom  nmos_bottom_1
-timestamp 1648062456
-transform -1 0 1470 0 1 101
-box 0 0 248 302
 use pmos2_1  pmos2_1_3
 timestamp 1647326732
 transform 1 0 1329 0 1 1450
@@ -380,10 +374,14 @@ use pmos2_1  pmos2_1_2
 timestamp 1647326732
 transform 1 0 1153 0 1 1450
 box 52 -460 352 37
-use diff_ring_side  diff_ring_side_3
-timestamp 1648063806
-transform 1 0 1776 0 1 0
-box -84 0 84 1575
+use nmos_top_trim1  nmos_top_trim1_1
+timestamp 1651256895
+transform -1 0 1664 0 1 101
+box 0 0 248 309
+use nmos_bottom  nmos_bottom_1
+timestamp 1651256857
+transform -1 0 1470 0 1 101
+box 0 0 248 302
 use poly_li1_contact  poly_li1_contact_7
 timestamp 1648060378
 transform 0 1 1555 -1 0 988
@@ -400,8 +398,12 @@ use li1_M1_contact  li1_M1_contact_5
 timestamp 1648061256
 transform 1 0 1554 0 1 518
 box -53 -33 29 33
+use diff_ring_side  diff_ring_side_3
+timestamp 1651259451
+transform 1 0 1776 0 1 0
+box -84 0 84 1575
 use invx1_pcell  invx1_pcell_1
-timestamp 1648064504
+timestamp 1651259471
 transform -1 0 2220 0 1 0
 box -84 0 528 1575
 use li1_M1_contact  li1_M1_contact_13

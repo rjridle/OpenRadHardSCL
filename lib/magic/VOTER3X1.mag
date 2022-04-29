@@ -1,7 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651077469
+timestamp 1651261286
+<< nwell >>
+rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
 << metal1 >>
 rect -31 1492 2473 1554
 rect 131 945 165 979
@@ -9,23 +13,29 @@ rect 353 871 387 905
 rect 2277 798 2311 832
 rect 1167 427 1201 461
 rect -31 0 2473 62
+use voter3x1_pcell  voter3x1_pcell_0 pcells
+timestamp 1651259615
+transform 1 0 0 0 1 0
+box -84 0 2526 1575
 use li1_M1_contact  li1_M1_contact_0 pcells
 timestamp 1648061256
 transform -1 0 2294 0 -1 815
 box -53 -33 29 33
-use voter3x1_pcell  voter3x1_pcell_0 pcells
-timestamp 1648740352
-transform 1 0 0 0 1 0
-box -84 0 2526 1575
 << labels >>
 rlabel metal1 2277 798 2311 832 1 Y
-port 1 n
+port 1 nsew signal output
 rlabel metal1 353 871 387 905 1 A
-port 2 n
+port 2 nsew signal input
 rlabel metal1 131 945 165 979 1 B
-port 3 n
+port 3 nsew signal input
 rlabel metal1 1167 427 1201 461 1 C
-port 4 n
-rlabel metal1 -31 1492 2473 1554 1 VDD
-rlabel metal1 -31 0 2473 62 1 GND
+port 4 nsew signal input
+rlabel metal1 -31 1492 2473 1554 1 VPWR
+port 5 nsew power bidirectional abutment
+rlabel metal1 -31 0 2473 62 1 VGND
+port 6 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 7 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 8 nsew ground bidirectional
 << end >>

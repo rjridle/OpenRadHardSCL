@@ -1,7 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651077014
+timestamp 1651261257
+<< nwell >>
+rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
 << locali >>
 rect 15819 575 15853 609
 << metal1 >>
@@ -22,6 +26,14 @@ rect 16077 575 17184 609
 rect 427 501 15854 535
 rect 2344 427 14020 461
 rect -31 0 19789 62
+use dffsnrnx1_pcell  dffsnrnx1_pcell_0 pcells
+timestamp 1651259629
+transform 1 0 0 0 1 0
+box -84 0 5856 1575
+use dffsnrnx1_pcell  dffsnrnx1_pcell_1
+timestamp 1651259629
+transform 1 0 5772 0 1 0
+box -84 0 5856 1575
 use li1_M1_contact  li1_M1_contact_9 pcells
 timestamp 1648061256
 transform 1 0 5032 0 1 740
@@ -30,14 +42,6 @@ use li1_M1_contact  li1_M1_contact_8
 timestamp 1648061256
 transform -1 0 4662 0 -1 740
 box -53 -33 29 33
-use dffsnrnx1_pcell  dffsnrnx1_pcell_0 pcells
-timestamp 1648742386
-transform 1 0 0 0 1 0
-box -84 0 5856 1575
-use dffsnrnx1_pcell  dffsnrnx1_pcell_1
-timestamp 1648742386
-transform 1 0 5772 0 1 0
-box -84 0 5856 1575
 use li1_M1_contact  li1_M1_contact_20
 timestamp 1648061256
 transform 1 0 5624 0 1 666
@@ -50,6 +54,10 @@ use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
 transform 1 0 222 0 1 888
 box -53 -33 29 33
+use dffsnrnx1_pcell  dffsnrnx1_pcell_2
+timestamp 1651259629
+transform 1 0 11544 0 1 0
+box -84 0 5856 1575
 use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform 1 0 10804 0 1 740
@@ -58,10 +66,6 @@ use li1_M1_contact  li1_M1_contact_10
 timestamp 1648061256
 transform -1 0 10434 0 -1 740
 box -53 -33 29 33
-use dffsnrnx1_pcell  dffsnrnx1_pcell_2
-timestamp 1648742386
-transform 1 0 11544 0 1 0
-box -84 0 5856 1575
 use li1_M1_contact  li1_M1_contact_7
 timestamp 1648061256
 transform 1 0 11396 0 1 592
@@ -82,6 +86,10 @@ use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform -1 0 5994 0 -1 888
 box -53 -33 29 33
+use voter3x1_pcell  voter3x1_pcell_0 pcells
+timestamp 1651259615
+transform 1 0 17316 0 1 0
+box -84 0 2526 1575
 use li1_M1_contact  li1_M1_contact_17
 timestamp 1648061256
 transform 1 0 17464 0 -1 814
@@ -106,10 +114,6 @@ use li1_M1_contact  li1_M1_contact_6
 timestamp 1648061256
 transform -1 0 17168 0 1 814
 box -53 -33 29 33
-use voter3x1_pcell  voter3x1_pcell_0 pcells
-timestamp 1648740352
-transform 1 0 17316 0 1 0
-box -84 0 2526 1575
 use li1_M1_contact  li1_M1_contact_12
 timestamp 1648061256
 transform 1 0 18500 0 -1 666
@@ -120,15 +124,21 @@ transform -1 0 19610 0 -1 814
 box -53 -33 29 33
 << labels >>
 rlabel metal1 19593 797 19627 831 1 Q
-port 1 n
+port 1 nsew signal output
 rlabel metal1 205 871 239 905 1 D
-port 2 n
+port 2 nsew signal input
 rlabel metal1 1388 945 1422 979 1 CLK
-port 3 n
+port 3 nsew signal input
 rlabel metal1 2351 427 2385 461 1 SN
-port 4 n
+port 4 nsew signal input
 rlabel metal1 427 501 461 535 1 RN
-port 5 n
-rlabel metal1 -31 1492 19789 1554 1 VDD
-rlabel metal1 -31 0 19789 62 1 GND
+port 5 nsew signal input
+rlabel metal1 -31 1492 19789 1554 1 VPWR
+port 6 nsew power bidirectional abutment
+rlabel metal1 -31 0 19789 62 1 VGND
+port 7 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 8 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 9 nsew ground bidirectional
 << end >>

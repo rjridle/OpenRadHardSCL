@@ -1,34 +1,54 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651075030
+timestamp 1651260875
 << nwell >>
 rect 22 1492 132 1554
 rect 31 868 117 930
+<< pwell >>
+rect -31 0 179 572
 << psubdiff >>
 rect 31 510 117 572
-rect 27 11 118 62
+rect 28 47 31 62
+rect 117 47 118 62
+rect 30 13 57 47
+rect 91 13 118 47
 << nsubdiff >>
-rect 22 1492 124 1539
+rect 22 1505 57 1539
+rect 91 1505 124 1539
+rect 22 1492 124 1505
 rect 31 868 117 930
+<< psubdiffcont >>
+rect 57 13 91 47
+<< nsubdiffcont >>
+rect 57 1505 91 1539
 << locali >>
-rect 22 1492 132 1554
-rect 27 11 118 62
-rect 28 0 118 11
+rect 22 1539 132 1554
+rect 22 1505 57 1539
+rect 91 1505 132 1539
+rect 22 1492 132 1505
+rect 28 47 118 62
+rect 30 13 57 47
+rect 91 13 118 47
+rect 28 0 118 13
 << metal1 >>
 rect -31 1492 179 1554
 rect -31 0 179 62
 use diff_ring_side  diff_ring_side_0 pcells
-timestamp 1648063806
+timestamp 1651259451
 transform 1 0 0 0 1 0
 box -84 0 84 1575
 use diff_ring_side  diff_ring_side_1
-timestamp 1648063806
+timestamp 1651259451
 transform 1 0 148 0 1 0
 box -84 0 84 1575
 << labels >>
-rlabel metal1 -31 1492 179 1554 1 VDD
-port 1 n
-rlabel metal1 -31 0 179 62 1 GND
-port 2 n
+rlabel metal1 -31 1492 179 1554 1 VPWR
+port 1 nsew power bidirectional abutment
+rlabel metal1 -31 0 179 62 1 VGND
+port 2 nsew ground bidirectional abutment
+rlabel nwell 57 13 91 47 1 VNB
+port 3 nsew power bidirectional
+rlabel pwell 57 1505 91 1539 1 VPB
+port 4 nsew ground bidirectional
 << end >>

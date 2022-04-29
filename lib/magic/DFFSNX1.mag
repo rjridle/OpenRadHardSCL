@@ -1,7 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651074515
+timestamp 1651260304
+<< nwell >>
+rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
 << metal1 >>
 rect -31 1492 4915 1554
 rect 1093 945 1127 979
@@ -12,43 +16,47 @@ rect 3793 649 4101 683
 rect 4127 649 4161 683
 rect 2055 501 2089 535
 rect -31 0 4915 62
-use li1_M1_contact  li1_M1_contact_11 pcells
+use dffsnx1_pcell  dffsnx1_pcell_0 pcells
+timestamp 1651259636
+transform 1 0 0 0 1 0
+box -84 0 4968 1575
+use li1_M1_contact  li1_M1_contact_3 pcells
 timestamp 1648061256
-transform 1 0 4736 0 1 740
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1648061256
-transform 1 0 4144 0 1 666
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform -1 0 3774 0 -1 666
+transform 1 0 222 0 1 814
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_2
 timestamp 1648061256
 transform -1 0 3626 0 -1 740
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_3
+use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
-transform 1 0 222 0 1 814
+transform -1 0 3774 0 -1 666
 box -53 -33 29 33
-use dffsnx1_pcell  dffsnx1_pcell_0 pcells
-timestamp 1648748925
-transform 1 0 0 0 1 0
-box -84 0 4968 1575
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform 1 0 4144 0 1 666
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_11
+timestamp 1648061256
+transform 1 0 4736 0 1 740
+box -53 -33 29 33
 << labels >>
 rlabel metal1 4719 723 4753 757 1 Q
-port 1 n
+port 1 nsew signal output
 rlabel metal1 4127 649 4161 683 1 QN
-port 2 n
+port 2 nsew signal output
 rlabel metal1 205 797 239 831 1 D
-port 3 n
+port 3 nsew signal input
 rlabel metal1 1093 945 1127 979 1 CLK
-port 4 n
+port 4 nsew signal input
 rlabel metal1 2055 501 2089 535 1 SN
-port 5 n
-rlabel metal1 -31 1492 4915 1554 1 VDD
-port 6 n
-rlabel metal1 -31 0 4915 62 1 GND
-port 7 n
+port 5 nsew signal input
+rlabel metal1 -31 1492 4915 1554 1 VPWR
+port 6 nsew power bidirectional abutment
+rlabel metal1 -31 0 4915 62 1 VGND
+port 7 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 8 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 9 nsew ground bidirectional
 << end >>

@@ -1,15 +1,15 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648740352
+timestamp 1651259615
 << metal1 >>
 rect 1867 797 2108 831
 use votern3x1_pcell  votern3x1_pcell_0
-timestamp 1648740297
+timestamp 1651259610
 transform 1 0 0 0 1 0
 box -84 0 2082 1575
 use invx1_pcell  invx1_pcell_0
-timestamp 1648064504
+timestamp 1651259471
 transform 1 0 1998 0 1 0
 box -84 0 528 1575
 use li1_M1_contact  li1_M1_contact_16

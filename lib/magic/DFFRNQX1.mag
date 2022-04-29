@@ -1,51 +1,59 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648740065
-<< metal1 >>
+timestamp 1651260029
+<< nwell >>
 rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
+<< metal1 >>
+rect -31 1492 5211 1554
 rect 427 945 461 979
 rect 4235 797 5012 831
 rect 5015 797 5049 831
 rect 4349 723 4695 757
 rect 1389 649 1423 683
 rect 1611 501 1645 535
-rect 55 13 89 47
+rect -31 0 5211 62
 use dffrnx1_pcell  dffrnx1_pcell_0 pcells
-timestamp 1648739814
+timestamp 1651259642
 transform 1 0 0 0 1 0
 box -84 0 5264 1575
-use li1_M1_contact  li1_M1_contact_13 pcells
+use li1_M1_contact  li1_M1_contact_3 pcells
 timestamp 1648061256
-transform 1 0 5032 0 1 814
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform 1 0 4736 0 1 740
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1648061256
-transform -1 0 4218 0 -1 814
+transform 1 0 1406 0 1 666
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_2
 timestamp 1648061256
 transform -1 0 4366 0 -1 740
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_3
+use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
-transform 1 0 1406 0 1 666
+transform -1 0 4218 0 -1 814
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_1
+timestamp 1648061256
+transform 1 0 4736 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_13
+timestamp 1648061256
+transform 1 0 5032 0 1 814
 box -53 -33 29 33
 << labels >>
 rlabel metal1 5015 797 5049 831 1 Q
-port 1 n
+port 1 nsew signal output
 rlabel metal1 1389 649 1423 683 1 D
-port 2 n
+port 2 nsew signal input
 rlabel metal1 427 945 461 979 1 CLK
-port 3 n
+port 3 nsew signal input
 rlabel metal1 1611 501 1645 535 1 RN
-port 4 n
-rlabel metal1 55 1505 89 1539 1 VDD
-port 5 n
-rlabel metal1 55 13 89 47 1 VSS
-port 6 n
+port 4 nsew signal input
+rlabel metal1 -31 1492 5211 1554 1 VPWR
+port 5 nsew power bidirectional abutment
+rlabel metal1 -31 0 5211 62 1 VGND
+port 6 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 7 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 8 nsew ground bidirectional
 << end >>

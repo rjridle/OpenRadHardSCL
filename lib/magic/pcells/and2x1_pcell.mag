@@ -1,7 +1,7 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648064711
+timestamp 1651259578
 << nwell >>
 rect 55 1505 89 1539
 << psubdiffcont >>
@@ -14,11 +14,11 @@ rect 55 13 89 47
 << metal1 >>
 rect 547 649 761 683
 use invx1_pcell  invx1_pcell_0
-timestamp 1648064504
+timestamp 1651259471
 transform 1 0 666 0 1 0
 box -84 0 528 1575
 use nand2x1_pcell  nand2x1_pcell_0
-timestamp 1648064633
+timestamp 1651259477
 transform 1 0 0 0 1 0
 box -84 0 750 1575
 use li1_M1_contact  li1_M1_contact_0

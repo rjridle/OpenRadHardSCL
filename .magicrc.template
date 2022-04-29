@@ -34,7 +34,7 @@ ext2spice scale off
 set TECH_ROOT ${PDK_ROOT}/.magic_tech
 
 # loading technology
-tech load ${TECH_ROOT}/sky130.tech
+tech load ${TECH_ROOT}/sky130A.tech
 # load device generator
 #source $TECH_ROOT/sky130.tcl
 

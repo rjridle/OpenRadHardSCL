@@ -1,9 +1,17 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648661302
+timestamp 1651259549
 << metal1 >>
 rect 1869 501 2114 535
+use invx1_pcell  invx1_pcell_0
+timestamp 1651259471
+transform 1 0 1998 0 1 0
+box -84 0 528 1575
+use aoai4x1_pcell  aoai4x1_pcell_0
+timestamp 1651259543
+transform 1 0 0 0 1 0
+box -84 0 2082 1575
 use li1_M1_contact  li1_M1_contact_3
 timestamp 1648061256
 transform 1 0 2146 0 1 518
@@ -12,12 +20,4 @@ use li1_M1_contact  li1_M1_contact_2
 timestamp 1648061256
 transform -1 0 1850 0 -1 518
 box -53 -33 29 33
-use invx1_pcell  invx1_pcell_0
-timestamp 1648064504
-transform 1 0 1998 0 1 0
-box -84 0 528 1575
-use aoai4x1_pcell  aoai4x1_pcell_0
-timestamp 1648661172
-transform 1 0 0 0 1 0
-box -84 0 2082 1575
 << end >>

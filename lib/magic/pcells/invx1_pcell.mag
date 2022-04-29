@@ -1,11 +1,13 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1648064504
+timestamp 1651259471
 << nwell >>
 rect 84 1539 360 1575
 rect 55 1505 360 1539
 rect 84 832 360 1505
+<< pwell >>
+rect -31 0 475 572
 << pdiffc >>
 rect 117 1105 151 1139
 rect 205 1105 239 1139
@@ -99,28 +101,28 @@ rect 239 13 283 47
 rect 317 13 355 47
 rect 389 13 413 47
 rect 31 0 413 13
+use diff_ring_side  diff_ring_side_0
+timestamp 1651259451
+transform 1 0 444 0 1 0
+box -84 0 84 1575
+use diff_ring_side  diff_ring_side_1
+timestamp 1651259451
+transform 1 0 0 0 1 0
+box -84 0 84 1575
 use nmos_top  nmos_top_0
-timestamp 1648061425
+timestamp 1651256841
 transform -1 0 345 0 1 101
 box 0 0 246 308
-use poly_li1_contact  poly_li1_contact_0
-timestamp 1648060378
-transform 0 1 149 -1 0 987
-box -32 -28 34 26
-use poly_li1_contact  poly_li1_contact_1
-timestamp 1648060378
-transform 0 -1 147 1 0 443
-box -32 -28 34 26
 use pmos2  pmos2_0
 timestamp 1648061063
 transform 1 0 19 0 1 1450
 box 52 -461 352 42
-use diff_ring_side  diff_ring_side_1
-timestamp 1648063806
-transform 1 0 0 0 1 0
-box -84 0 84 1575
-use diff_ring_side  diff_ring_side_0
-timestamp 1648063806
-transform 1 0 444 0 1 0
-box -84 0 84 1575
+use poly_li1_contact  poly_li1_contact_1
+timestamp 1648060378
+transform 0 -1 147 1 0 443
+box -32 -28 34 26
+use poly_li1_contact  poly_li1_contact_0
+timestamp 1648060378
+transform 0 1 149 -1 0 987
+box -32 -28 34 26
 << end >>

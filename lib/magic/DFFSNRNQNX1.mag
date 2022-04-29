@@ -1,9 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651073669
+timestamp 1651260204
 << nwell >>
 rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
 << psubdiffcont >>
 rect 55 13 89 47
 << nsubdiffcont >>
@@ -31,6 +33,14 @@ rect -31 47 5803 62
 rect -31 13 55 47
 rect 89 13 5803 47
 rect -31 0 5803 13
+use nand3x1_pcell  nand3x1_pcell_1 pcells
+timestamp 1651259484
+transform 1 0 962 0 1 0
+box -84 0 1046 1575
+use nand3x1_pcell  nand3x1_pcell_0
+timestamp 1651259484
+transform 1 0 0 0 1 0
+box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_1 pcells
 timestamp 1648061256
 transform -1 0 666 0 -1 740
@@ -39,14 +49,6 @@ use li1_M1_contact  li1_M1_contact_2
 timestamp 1648061256
 transform -1 0 444 0 -1 888
 box -53 -33 29 33
-use nand3x1_pcell  nand3x1_pcell_1 pcells
-timestamp 1648064657
-transform 1 0 962 0 1 0
-box -84 0 1046 1575
-use nand3x1_pcell  nand3x1_pcell_0
-timestamp 1648064657
-transform 1 0 0 0 1 0
-box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_3
 timestamp 1648061256
 transform -1 0 814 0 -1 593
@@ -55,6 +57,10 @@ use li1_M1_contact  li1_M1_contact_0
 timestamp 1648061256
 transform 1 0 222 0 1 592
 box -53 -33 29 33
+use nand3x1_pcell  nand3x1_pcell_2
+timestamp 1651259484
+transform 1 0 1924 0 1 0
+box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_4
 timestamp 1648061256
 transform -1 0 1627 0 -1 814
@@ -67,10 +73,6 @@ use li1_M1_contact  li1_M1_contact_5
 timestamp 1648061256
 transform -1 0 1184 0 -1 593
 box -53 -33 29 33
-use nand3x1_pcell  nand3x1_pcell_2
-timestamp 1648064657
-transform 1 0 1924 0 1 0
-box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_8
 timestamp 1648061256
 transform 1 0 2146 0 1 593
@@ -79,6 +81,10 @@ use li1_M1_contact  li1_M1_contact_7
 timestamp 1648061256
 transform -1 0 1776 0 -1 740
 box -53 -33 29 33
+use nand3x1_pcell  nand3x1_pcell_3
+timestamp 1651259484
+transform 1 0 2886 0 1 0
+box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_17
 timestamp 1648061256
 transform 1 0 3108 0 1 592
@@ -91,10 +97,6 @@ use li1_M1_contact  li1_M1_contact_10
 timestamp 1648061256
 transform -1 0 2368 0 -1 519
 box -53 -33 29 33
-use nand3x1_pcell  nand3x1_pcell_3
-timestamp 1648064657
-transform 1 0 2886 0 1 0
-box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_16
 timestamp 1648061256
 transform 1 0 3330 0 1 666
@@ -103,6 +105,10 @@ use li1_M1_contact  li1_M1_contact_11
 timestamp 1648061256
 transform -1 0 2738 0 -1 592
 box -53 -33 29 33
+use nand3x1_pcell  nand3x1_pcell_4
+timestamp 1651259484
+transform 1 0 3848 0 1 0
+box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_12
 timestamp 1648061256
 transform -1 0 3552 0 -1 888
@@ -115,14 +121,14 @@ use li1_M1_contact  li1_M1_contact_18
 timestamp 1648061256
 transform 1 0 4292 0 1 888
 box -53 -33 29 33
-use nand3x1_pcell  nand3x1_pcell_4
-timestamp 1648064657
-transform 1 0 3848 0 1 0
-box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_13
 timestamp 1648061256
 transform -1 0 3700 0 -1 814
 box -53 -33 29 33
+use nand3x1_pcell  nand3x1_pcell_5
+timestamp 1651259484
+transform 1 0 4810 0 1 0
+box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_20
 timestamp 1648061256
 transform 1 0 5476 0 1 814
@@ -135,10 +141,6 @@ use li1_M1_contact  li1_M1_contact_22
 timestamp 1648061256
 transform 1 0 5254 0 1 518
 box -53 -33 29 33
-use nand3x1_pcell  nand3x1_pcell_5
-timestamp 1648064657
-transform 1 0 4810 0 1 0
-box -84 0 1046 1575
 use li1_M1_contact  li1_M1_contact_15
 timestamp 1648061256
 transform -1 0 4662 0 -1 666
@@ -153,17 +155,21 @@ transform 1 0 5624 0 1 740
 box -53 -33 29 33
 << labels >>
 rlabel metal1 4645 649 4679 683 1 QN
-port 1 n
+port 1 nsew signal output
 rlabel metal1 205 575 239 609 1 D
-port 2 n
+port 2 nsew signal input
 rlabel metal1 1389 649 1423 683 1 CLK
-port 3 n
+port 3 nsew signal input
 rlabel metal1 2351 502 2385 536 1 SN
-port 4 n
+port 4 nsew signal input
 rlabel metal1 427 871 461 905 1 RN
-port 5 n
-rlabel metal1 -31 1492 5803 1554 1 VDD
-port 6 n
-rlabel metal1 -31 0 5803 62 1 GND
-port 7 n
+port 5 nsew signal input
+rlabel metal1 -31 1492 5803 1554 1 VPWR
+port 6 nsew power bidirectional abutment
+rlabel metal1 -31 0 5803 62 1 VGND
+port 7 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 8 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 9 nsew ground bidirectional
 << end >>

@@ -1,7 +1,11 @@
 magic
-tech sky130A
+tech sky130
 magscale 1 2
-timestamp 1651072504
+timestamp 1651259848
+<< nwell >>
+rect 55 1505 89 1539
+<< pwell >>
+rect 55 13 89 47
 << metal1 >>
 rect -31 1492 4323 1554
 rect 427 945 461 979
@@ -10,38 +14,42 @@ rect 3497 723 3868 757
 rect 1315 649 1349 683
 rect -31 0 4323 62
 use dffx1_pcell  dffx1_pcell_0 pcells
-timestamp 1648742316
+timestamp 1651259622
 transform 1 0 0 0 1 0
 box -84 0 4376 1575
-use li1_M1_contact  li1_M1_contact_15 pcells
+use li1_M1_contact  li1_M1_contact_4 pcells
 timestamp 1648061256
-transform 1 0 4144 0 1 814
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1648061256
-transform -1 0 3478 0 -1 740
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform 1 0 3848 0 1 740
+transform 1 0 1332 0 1 666
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_8
 timestamp 1648061256
 transform -1 0 3330 0 -1 814
 box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_4
+use li1_M1_contact  li1_M1_contact_1
 timestamp 1648061256
-transform 1 0 1332 0 1 666
+transform 1 0 3848 0 1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform -1 0 3478 0 -1 740
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_15
+timestamp 1648061256
+transform 1 0 4144 0 1 814
 box -53 -33 29 33
 << labels >>
 rlabel metal1 3831 723 3865 757 1 QN
-port 1 n
+port 1 nsew signal output
 rlabel metal1 1315 649 1349 683 1 D
-port 2 n
+port 2 nsew signal input
 rlabel metal1 427 945 461 979 1 CLK
-port 3 n
-rlabel metal1 -31 1492 4323 1554 1 VDD
-port 4 n
-rlabel metal1 -31 0 4323 62 1 GND
-port 5 n
+port 3 nsew signal input
+rlabel metal1 -31 1492 4323 1554 1 VPWR
+port 4 nsew power bidirectional abutment
+rlabel metal1 -31 0 4323 62 1 VGND
+port 5 nsew ground bidirectional abutment
+rlabel nwell 55 1505 89 1539 1 VPB
+port 6 nsew power bidirectional
+rlabel pwell 55 13 89 47 1 VNB
+port 7 nsew ground bidirectional
 << end >>
