@@ -1,23 +1,11 @@
 magic
-tech sky130
+tech sky130A
 magscale 1 2
-timestamp 1652299340
-<< error_s >>
-rect -17 1497 7 1521
-rect 437 1497 461 1521
-rect -41 1473 -31 1497
-rect 475 1473 485 1497
-rect -41 -17 -31 7
-rect 475 -17 485 7
-rect -17 -41 7 -31
-rect 437 -41 461 -31
+timestamp 1652386292
 << nwell >>
 rect 57 1463 91 1497
 << pwell >>
 rect 57 -17 91 17
-rect 31 -31 413 -17
-<< psubdiff >>
-rect 31 -31 413 -17
 << locali >>
 rect 131 871 165 905
 rect 279 871 313 905
@@ -25,55 +13,60 @@ rect 131 797 165 831
 rect 279 797 313 831
 rect 131 723 165 757
 rect 279 723 313 757
+rect 131 649 165 683
+rect 279 649 313 683
 rect 131 575 165 609
 rect 279 575 313 609
 rect 131 501 165 535
 rect 279 501 313 535
-rect 31 -31 413 -17
+rect 131 427 165 461
+rect 279 427 313 461
 << metal1 >>
-rect -31 1450 475 1512
-rect -31 -31 475 31
+rect -34 1446 478 1514
+rect -34 -34 478 34
 use invx1_pcell  invx1_pcell_0 pcells
-timestamp 1652298653
+timestamp 1652329846
 transform 1 0 0 0 1 0
-box -84 -41 528 1533
+box -87 -34 531 1550
 << labels >>
 rlabel locali 279 649 313 683 1 Y
 port 1 nsew signal output
-rlabel locali 131 649 165 683 1 A
-port 2 nsew signal input
 rlabel locali 279 723 313 757 1 Y
 port 1 nsew signal output
-rlabel locali 131 723 165 757 1 A
-port 2 nsew signal input
 rlabel locali 279 797 313 831 1 Y
 port 1 nsew signal output
-rlabel locali 131 797 165 831 1 A
-port 2 nsew signal input
 rlabel locali 279 575 313 609 1 Y
 port 1 nsew signal output
-rlabel locali 131 575 165 609 1 A
-port 2 nsew signal input
-rlabel locali 279 501 313 535 1 Y
-port 1 nsew signal output
-rlabel locali 131 501 165 535 1 A
-port 2 nsew signal input
 rlabel locali 279 871 313 905 1 Y
 port 1 nsew signal output
+rlabel locali 279 501 313 535 1 Y
+port 1 nsew signal output
+rlabel locali 279 427 313 461 1 Y
+port 1 nsew signal output
+rlabel locali 131 649 165 683 1 A
+port 2 nsew signal input
+rlabel locali 131 723 165 757 1 A
+port 2 nsew signal input
+rlabel locali 131 797 165 831 1 A
+port 2 nsew signal input
+rlabel locali 131 575 165 609 1 A
+port 2 nsew signal input
 rlabel locali 131 871 165 905 1 A
 port 2 nsew signal input
-rlabel metal1 -31 -31 475 31 1 VGND
-port 4 nsew ground bidirectional abutment
-rlabel pwell 57 -17 91 17 1 VNB
-port 6 nsew ground bidirectional
-rlabel metal1 -31 1450 475 1512 1 VPWR
+rlabel locali 131 501 165 535 1 A
+port 2 nsew signal input
+rlabel locali 131 427 165 461 1 A
+port 2 nsew signal input
+rlabel metal1 -34 1446 478 1514 1 VPWR
 port 3 nsew power bidirectional abutment
+rlabel metal1 -34 -34 478 34 1 VGND
+port 4 nsew ground bidirectional abutment
 rlabel nwell 57 1463 91 1497 1 VPB
 port 5 nsew power bidirectional
+rlabel pwell 57 -17 91 17 1 VNB
+port 6 nsew ground bidirectional
 << properties >>
 string LEFclass CORE
 string LEFsite unithd
-string FIXED_BBOX ‡ œz¡U
 string LEFsymmetry X Y R90
-string path 0.000 0.000 27.600 0.000
 << end >>

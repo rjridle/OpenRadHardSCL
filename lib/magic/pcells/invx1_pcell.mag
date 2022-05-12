@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652321374
+timestamp 1652329846
 << nwell >>
 rect -87 786 531 1550
 << pwell >>
@@ -12,14 +12,13 @@ rect 206 1059 240 1093
 rect 294 1059 328 1093
 << psubdiff >>
 rect 34 482 410 544
-rect 31 -17 57 17
+rect 34 -17 57 17
 rect 91 -17 131 17
 rect 165 -17 205 17
 rect 239 -17 279 17
 rect 313 -17 353 17
-rect 387 -17 413 17
-rect 31 -31 413 -17
-rect 34 -34 410 -31
+rect 387 -17 410 17
+rect 34 -34 410 -17
 << nsubdiff >>
 rect 34 1497 410 1514
 rect 34 1463 57 1497
@@ -28,9 +27,7 @@ rect 165 1463 205 1497
 rect 239 1463 279 1497
 rect 313 1463 353 1497
 rect 387 1463 410 1497
-rect 410 884 413 888
-rect 34 826 413 884
-rect 34 822 410 826
+rect 34 822 410 884
 << psubdiffcont >>
 rect 57 -17 91 17
 rect 131 -17 165 17
@@ -68,16 +65,14 @@ rect 205 233 239 399
 rect 109 34 143 90
 rect 206 34 240 91
 rect 303 34 337 90
-rect 34 31 410 34
-rect 31 17 413 31
-rect 31 -17 57 17
+rect 34 17 410 34
+rect 34 -17 57 17
 rect 91 -17 131 17
 rect 165 -17 205 17
 rect 239 -17 279 17
 rect 313 -17 353 17
-rect 387 -17 413 17
-rect 31 -31 413 -17
-rect 34 -34 410 -31
+rect 387 -17 410 17
+rect 34 -34 410 -17
 << viali >>
 rect 57 1463 91 1497
 rect 131 1463 165 1497
@@ -98,24 +93,14 @@ rect 239 1463 279 1497
 rect 313 1463 353 1497
 rect 387 1463 410 1497
 rect 34 1446 410 1463
-rect 34 31 410 34
-rect 31 17 413 31
-rect 31 -17 57 17
+rect 34 17 410 34
+rect 34 -17 57 17
 rect 91 -17 131 17
 rect 165 -17 205 17
 rect 239 -17 279 17
 rect 313 -17 353 17
-rect 387 -17 413 17
-rect 31 -31 413 -17
-rect 34 -34 410 -31
-use diff_ring_side  diff_ring_side_1
-timestamp 1652319726
-transform 1 0 0 0 1 0
-box -87 -34 87 1550
-use diff_ring_side  diff_ring_side_0
-timestamp 1652319726
-transform 1 0 444 0 1 0
-box -87 -34 87 1550
+rect 387 -17 410 17
+rect 34 -34 410 -17
 use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
 transform 0 -1 147 1 0 416
@@ -132,4 +117,12 @@ use poly_li1_contact  poly_li1_contact_0
 timestamp 1648060378
 transform 0 1 149 -1 0 941
 box -32 -28 34 26
+use diff_ring_side  diff_ring_side_0
+timestamp 1652319726
+transform 1 0 444 0 1 0
+box -87 -34 87 1550
+use diff_ring_side  diff_ring_side_1
+timestamp 1652319726
+transform 1 0 0 0 1 0
+box -87 -34 87 1550
 << end >>
