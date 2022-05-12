@@ -1,42 +1,36 @@
 magic
-tech sky130
+tech sky130A
 magscale 1 2
-timestamp 1652298653
-<< error_s >>
-rect -17 1497 7 1521
-rect 437 1497 461 1521
-rect -41 1473 -31 1497
-rect 475 1473 485 1497
-rect -41 -17 -31 7
-rect 475 -17 485 7
-rect -17 -41 7 -31
-rect 437 -41 461 -31
+timestamp 1652321374
 << nwell >>
-rect 84 1508 360 1533
-rect 57 1474 360 1508
-rect 84 790 360 1474
+rect -87 786 531 1550
 << pwell >>
-rect -31 -31 475 541
+rect -34 -34 478 544
 << pdiffc >>
-rect 117 1063 151 1097
-rect 205 1063 239 1097
-rect 293 1063 327 1097
+rect 118 1059 152 1093
+rect 206 1059 240 1093
+rect 294 1059 328 1093
 << psubdiff >>
-rect 31 479 413 541
+rect 34 482 410 544
 rect 31 -17 57 17
 rect 91 -17 131 17
 rect 165 -17 205 17
 rect 239 -17 279 17
 rect 313 -17 353 17
 rect 387 -17 413 17
+rect 31 -31 413 -17
+rect 34 -34 410 -31
 << nsubdiff >>
-rect 31 1463 57 1497
+rect 34 1497 410 1514
+rect 34 1463 57 1497
 rect 91 1463 131 1497
 rect 165 1463 205 1497
 rect 239 1463 279 1497
 rect 313 1463 353 1497
-rect 387 1463 413 1497
-rect 31 826 413 888
+rect 387 1463 410 1497
+rect 410 884 413 888
+rect 34 826 413 884
+rect 34 822 410 826
 << psubdiffcont >>
 rect 57 -17 91 17
 rect 131 -17 165 17
@@ -50,30 +44,31 @@ rect 205 1463 239 1497
 rect 279 1463 313 1497
 rect 353 1463 387 1497
 << poly >>
-rect 155 378 185 410
+rect 155 381 185 413
 << locali >>
-rect 31 1497 413 1512
-rect 31 1463 57 1497
+rect 34 1497 410 1514
+rect 34 1463 57 1497
 rect 91 1463 131 1497
 rect 165 1463 205 1497
 rect 239 1463 279 1497
 rect 313 1463 353 1497
-rect 387 1463 413 1497
-rect 31 1450 413 1463
-rect 117 1097 151 1115
-rect 117 1041 151 1063
-rect 205 1097 239 1115
-rect 205 937 239 1063
-rect 293 1097 327 1115
-rect 293 1041 327 1063
-rect 131 446 165 912
-rect 205 903 313 937
-rect 279 430 313 903
-rect 205 396 313 430
-rect 205 230 239 396
-rect 109 31 143 87
-rect 206 31 240 88
-rect 303 31 337 87
+rect 387 1463 410 1497
+rect 34 1446 410 1463
+rect 118 1093 152 1111
+rect 118 1037 152 1059
+rect 206 1093 240 1111
+rect 206 933 240 1059
+rect 294 1093 328 1111
+rect 294 1037 328 1059
+rect 131 449 165 908
+rect 206 899 313 933
+rect 279 433 313 899
+rect 205 399 313 433
+rect 205 233 239 399
+rect 109 34 143 90
+rect 206 34 240 91
+rect 303 34 337 90
+rect 34 31 410 34
 rect 31 17 413 31
 rect 31 -17 57 17
 rect 91 -17 131 17
@@ -82,6 +77,7 @@ rect 239 -17 279 17
 rect 313 -17 353 17
 rect 387 -17 413 17
 rect 31 -31 413 -17
+rect 34 -34 410 -31
 << viali >>
 rect 57 1463 91 1497
 rect 131 1463 165 1497
@@ -94,14 +90,15 @@ rect 205 -17 239 17
 rect 279 -17 313 17
 rect 353 -17 387 17
 << metal1 >>
-rect 31 1497 413 1512
-rect 31 1463 57 1497
+rect 34 1497 410 1514
+rect 34 1463 57 1497
 rect 91 1463 131 1497
 rect 165 1463 205 1497
 rect 239 1463 279 1497
 rect 313 1463 353 1497
-rect 387 1463 413 1497
-rect 31 1450 413 1463
+rect 387 1463 410 1497
+rect 34 1446 410 1463
+rect 34 31 410 34
 rect 31 17 413 31
 rect 31 -17 57 17
 rect 91 -17 131 17
@@ -110,28 +107,29 @@ rect 239 -17 279 17
 rect 313 -17 353 17
 rect 387 -17 413 17
 rect 31 -31 413 -17
-use diff_ring_side  diff_ring_side_0
-timestamp 1652298390
-transform 1 0 444 0 1 0
-box -84 -41 84 1533
+rect 34 -34 410 -31
 use diff_ring_side  diff_ring_side_1
-timestamp 1652298390
+timestamp 1652319726
 transform 1 0 0 0 1 0
-box -84 -41 84 1533
-use pmos2  pmos2_0
-timestamp 1648061063
-transform 1 0 19 0 1 1408
-box 52 -461 352 42
-use poly_li1_contact  poly_li1_contact_0
+box -87 -34 87 1550
+use diff_ring_side  diff_ring_side_0
+timestamp 1652319726
+transform 1 0 444 0 1 0
+box -87 -34 87 1550
+use poly_li1_contact  poly_li1_contact_1
 timestamp 1648060378
-transform 0 1 149 -1 0 945
+transform 0 -1 147 1 0 416
 box -32 -28 34 26
 use nmos_top  nmos_top_0
 timestamp 1651256841
-transform -1 0 345 0 1 71
+transform -1 0 345 0 1 74
 box 0 0 246 308
-use poly_li1_contact  poly_li1_contact_1
+use pmos2  pmos2_0
+timestamp 1648061063
+transform 1 0 20 0 1 1404
+box 52 -461 352 42
+use poly_li1_contact  poly_li1_contact_0
 timestamp 1648060378
-transform 0 -1 147 1 0 413
+transform 0 1 149 -1 0 941
 box -32 -28 34 26
 << end >>
