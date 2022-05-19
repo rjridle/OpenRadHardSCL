@@ -9,7 +9,7 @@
 #### Normally there is no reason to set this variable if using standard
 #### installation. Location of files is set at compile time but may be overridden
 #### with following line:
-# set XSCHEM_SHAREDIR $env(HOME)/share/xschem
+#set XSCHEM_SHAREDIR $env(HOME)/local/share/xschem
 
 ###########################################################################
 #### XSCHEM SYSTEM-WIDE DESIGN LIBRARY PATHS: XSCHEM_LIBRARY_PATH
@@ -29,8 +29,8 @@
 set XSCHEM_LIBRARY_PATH {}
 #### include devices/*.sym
 append XSCHEM_LIBRARY_PATH ${XSCHEM_SHAREDIR}/xschem_library
-#### include skywater libraries. Here i use [pwd]. This works if i start xschem from here.
 append XSCHEM_LIBRARY_PATH :$env(PWD)
+# append XSCHEM_LIBRARY_PATH :/mnt/sda7/home/schippes/pdks/sky130A/libs.tech/xschem
 #### add ~/.xschem/xschem_library (USER_CONF_DIR is normally ~/.xschem)
 append XSCHEM_LIBRARY_PATH :$USER_CONF_DIR/xschem_library 
 
@@ -90,7 +90,7 @@ set netlist_dir $env(PWD)
 #### SOME DEFAULT BEHAVIOR
 ###########################################################################
 #### Allowed values:  spice, verilog, vhdl, tedax, default: spice
-# set netlist_type spice
+set netlist_type spice
 
 #### Some netlisting options (these are the defaults)
 # set hspice_netlist 1
@@ -172,8 +172,8 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 ###########################################################################
 #### Warning: changing these values will likely break compatibility
 #### with existing symbol libraries. Defaults: grid 20, snap 10.
-# set grid 20
-# set snap 10
+set grid 20
+set snap 10
 
 ###########################################################################
 #### CUSTOM COLORS  MAY BE DEFINED HERE
@@ -243,7 +243,7 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 #### editor must not detach from launching shell (-f mandatory for gvim)
 #### default for linux: gvim -f
 # set editor {gvim -f -geometry 90x28}
-# set editor { xterm -geometry 100x40 -e nano }
+set editor { xterm -geometry 100x40 -e vim }
 # set editor { xterm -geometry 100x40 -e pico }
 
 #### For Windows
@@ -280,7 +280,7 @@ set to_pdf {ps2pdf -dAutoRotatePages=/None}
 #### BESPICE WAVE SOCKET CONNECTION
 ###########################################################################
 #### set bespice wave listening port; default: not enabled
-set bespice_listen_port 2022
+# set bespice_listen_port 2022
 
 ###########################################################################
 #### TCL FILES TO LOAD AT STARTUP
