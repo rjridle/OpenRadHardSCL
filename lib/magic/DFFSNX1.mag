@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652396787
+timestamp 1653509206
 << nwell >>
 rect 57 1463 91 1497
 << pwell >>
@@ -19,9 +19,6 @@ rect 4349 871 4383 905
 rect 4719 871 4753 905
 rect 205 797 239 831
 rect 3609 797 3643 831
-rect 3757 797 3791 831
-rect 4127 797 4161 831
-rect 4349 797 4383 831
 rect 4719 797 4753 831
 rect 205 723 239 757
 rect 1093 723 1127 757
@@ -31,6 +28,9 @@ rect 1093 649 1127 683
 rect 2055 649 2089 683
 rect 2943 649 2977 683
 rect 3609 649 3643 683
+rect 3757 649 3791 683
+rect 4127 649 4161 683
+rect 4349 649 4383 683
 rect 4719 649 4753 683
 rect 205 575 239 609
 rect 1093 575 1127 609
@@ -53,29 +53,29 @@ rect 2055 427 2089 461
 rect 4719 427 4753 461
 << metal1 >>
 rect -34 1446 4918 1514
-rect 3645 649 4701 683
+rect 3645 797 4701 831
 rect 3793 575 4101 609
 rect -34 -34 4918 34
 use li1_M1_contact  li1_M1_contact_11 pcells
 timestamp 1648061256
-transform 1 0 4736 0 1 666
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_0
-timestamp 1648061256
-transform 1 0 4144 0 1 592
-box -53 -33 29 33
-use li1_M1_contact  li1_M1_contact_1
-timestamp 1648061256
-transform -1 0 3774 0 -1 592
+transform 1 0 4736 0 1 814
 box -53 -33 29 33
 use li1_M1_contact  li1_M1_contact_2
 timestamp 1648061256
-transform -1 0 3626 0 -1 666
+transform -1 0 3626 0 -1 814
 box -53 -33 29 33
 use dffsnx1_pcell  dffsnx1_pcell_0 pcells
 timestamp 1652396184
 transform 1 0 0 0 1 0
 box -87 -34 4971 1550
+use li1_M1_contact  li1_M1_contact_1
+timestamp 1648061256
+transform -1 0 3774 0 -1 592
+box -53 -33 29 33
+use li1_M1_contact  li1_M1_contact_0
+timestamp 1648061256
+transform 1 0 4144 0 1 592
+box -53 -33 29 33
 << labels >>
 rlabel locali 4719 649 4753 683 1 Q
 port 1 nsew signal output
@@ -107,15 +107,11 @@ rlabel locali 4127 575 4161 609 1 QN
 port 2 nsew signal output
 rlabel locali 4127 501 4161 535 1 QN
 port 2 nsew signal output
-rlabel locali 4127 797 4161 831 1 QN
-port 2 nsew signal output
 rlabel locali 4127 871 4161 905 1 QN
 port 2 nsew signal output
 rlabel locali 3757 501 3791 535 1 QN
 port 2 nsew signal output
 rlabel locali 3757 575 3791 609 1 QN
-port 2 nsew signal output
-rlabel locali 3757 797 3791 831 1 QN
 port 2 nsew signal output
 rlabel locali 3757 871 3791 905 1 QN
 port 2 nsew signal output
@@ -161,8 +157,6 @@ rlabel locali 4349 501 4383 535 1 SN
 port 5 nsew signal input
 rlabel locali 4349 575 4383 609 1 SN
 port 5 nsew signal input
-rlabel locali 4349 797 4383 831 1 SN
-port 5 nsew signal input
 rlabel locali 4349 871 4383 905 1 SN
 port 5 nsew signal input
 rlabel metal1 -34 1446 4918 1514 1 VPWR
@@ -173,8 +167,14 @@ rlabel nwell 57 1463 91 1497 1 VPB
 port 8 nsew power bidirectional
 rlabel pwell 57 -17 91 17 1 VNB
 port 9 nsew ground bidirectional
+rlabel locali 4127 649 4161 683 1 QN
+port 2 nsew signal output
+rlabel locali 4349 649 4383 683 1 SN
+port 5 nsew signal input
+rlabel locali 3757 649 3791 683 1 QN
+port 2 nsew signal output
 << properties >>
-string LEFclass CORE
 string LEFsite unithd
+string LEFclass CORE
 string LEFsymmetry X Y R90
 << end >>
