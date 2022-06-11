@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654784499
+timestamp 1654964768
 << nwell >>
 rect 57 1463 91 1497
 << pwell >>
@@ -61,8 +61,12 @@ rlabel metal1 -34 1446 478 1514 1 VPWR
 port 3 nsew power bidirectional abutment
 rlabel metal1 -34 -34 478 34 1 VGND
 port 4 nsew ground bidirectional abutment
+rlabel nwell 57 1463 91 1497 1 VPB
+port 5 nsew power bidirectional
+rlabel pwell 57 -17 91 17 1 VNB
+port 6 nsew ground bidirectional
 << properties >>
-string LEFsite unithd
 string LEFclass CORE
+string LEFsite unithd
 string LEFsymmetry X Y R90
 << end >>

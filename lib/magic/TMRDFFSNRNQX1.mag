@@ -1,7 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654886336
+timestamp 1654964994
+<< nwell >>
+rect 57 1463 91 1497
+<< pwell >>
+rect 57 -17 91 17
 << locali >>
 rect 205 871 239 905
 rect 427 871 461 905
@@ -70,6 +74,7 @@ rect 11971 427 12005 461
 rect 15079 427 15113 461
 rect 15819 427 15853 461
 << metal1 >>
+rect -34 1446 19792 1514
 rect 5643 945 15039 979
 rect 15005 905 15039 945
 rect 1458 871 3277 905
@@ -103,6 +108,7 @@ rect 10093 427 11959 461
 rect 12041 427 15067 461
 rect 15149 427 15783 461
 rect 16111 427 18523 461
+rect -34 -34 19792 34
 use li1_M1_contact  li1_M1_contact_9 pcells
 timestamp 1648061256
 transform 1 0 5032 0 1 518
@@ -191,22 +197,6 @@ use li1_M1_contact  li1_M1_contact_16
 timestamp 1648061256
 transform -1 0 19610 0 -1 814
 box -53 -33 29 33
-use VOTER3X1  VOTER3X1_0
-timestamp 1652394001
-transform 1 0 17316 0 1 1703
-box -87 -34 2529 1550
-use DFFSNRNX1  DFFSNRNX1_2
-timestamp 1652427256
-transform 1 0 11544 0 1 1703
-box -87 -34 5859 1550
-use DFFSNRNX1  DFFSNRNX1_1
-timestamp 1652427256
-transform 1 0 5772 0 1 1703
-box -87 -34 5859 1550
-use DFFSNRNX1  DFFSNRNX1_0
-timestamp 1652427256
-transform 1 0 0 0 1 1703
-box -87 -34 5859 1550
 << labels >>
 rlabel metal1 19593 797 19627 831 1 Q
 port 1 nsew signal output
@@ -340,4 +330,16 @@ rlabel locali 13895 501 13929 535 1 SN
 port 4 nsew signal input
 rlabel locali 9085 501 9119 535 1 CLK
 port 3 nsew signal input
+rlabel metal1 -34 1446 19792 1514 1 VPWR
+port 6 nsew power bidirectional abutment
+rlabel metal1 -34 -34 19792 34 1 VGND
+port 7 nsew ground bidirectional abutment
+rlabel nwell 57 1463 91 1497 1 VPB
+port 8 nsew power bidirectional
+rlabel pwell 57 -17 91 17 1 VNB
+port 9 nsew ground bidirectional
+<< properties >>                                                                
+string LEFsite unithd                                                           
+string LEFclass CORE
+string LEFsymmetry X Y R90
 << end >>
