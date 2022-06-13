@@ -14,7 +14,9 @@ char/*
 work/*
 transcript
 vsim.wlf
-lib/magic/res
-lib/magic/ext
-lib/magic/nodes
-lib/magic/sim
+lib/magic/res/*
+lib/magic/ext/*
+lib/magic/nodes/*
+lib/magic/sim/*
+lib/scripts/magic/*
+tmp*
